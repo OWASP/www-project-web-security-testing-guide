@@ -1,3 +1,8 @@
 __pycache__
 env
 .vscode
+
+# Eclipse
+# -------
+*.project
+*.settings

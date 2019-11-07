@@ -1,17 +1,14 @@
-### testing Information
-* [Flagship Project](#)
-* [Tool Project](#)
-* [Version 2.8.0](#)
-* [Builder](#)
-* [Breaker](#)
+### Project Classification
 
-### Downloads or Social Links
-* [Download](#)
-* [Meetup](#)
+![Flagship Project](/assets/images/common/owasp_level_flagship.svg)
+
+![Builders](/assets/images/common/owasp_breakers.svg)
+![Breakers](/assets/images/common/owasp_builders.svg)
+
+![Tool Project](assets/images/common/owasp_documentation_project.svg)
 
 ### Code Repository
-* [repo](#)
+* [Web Security Testing Guide](https://github.com/OWASP/wstg)
 
-### Change Log
-* [changes](#)
-
+### License
+* [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
