@@ -3,7 +3,7 @@ title: History
 layout:  null
 tab: true
 order: 2
-tags: history
+tags: wstg
 ---
 
 ## OWASP Testing Guide v4
