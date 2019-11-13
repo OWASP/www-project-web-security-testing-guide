@@ -20,8 +20,8 @@ tags: wstg
 ## OWASP Testing Guide v2
 
 10th February 2007: The OWASP Testing Guide v2 is now published Matteo Meucci (as part of his AoC project) has just published the latest version of Testing guide which:
-- Download the Guide in [Adobe PDF format](assets/archive/File_OWASP_Testing_Guide_v2_pdf.zip) or in [MS Doc format](assets/archive/File_OWASP_Testing_Guide_v2_doc.zip).
-- WASP Testing Guide v2 in Spanish: Now you can get a complete translation in [MS Doc format](assets/archive/File_OWASP_Testing_Guide_v2_spanish_doc.zip). 
+- Download the Guide in [Adobe PDF format](assets/archive/OWASP_Testing_Guide_v2_pdf.zip) or in [MS Doc format](assets/archive/OWASP_Testing_Guide_v2_doc.zip).
+- WASP Testing Guide v2 in Spanish: Now you can get a complete translation in [MS Doc format](assets/archive/OWASP_Testing_Guide_v2_spanish_doc.zip). 
 
 ## Other
 
