@@ -2,8 +2,8 @@
 
 ![Flagship Project](/assets/images/common/owasp_level_flagship.svg)
 
-![Builders](/assets/images/common/owasp_breakers.svg)
-![Breakers](/assets/images/common/owasp_builders.svg)
+![Breakers](/assets/images/common/owasp_breakers.svg)
+![Builders](/assets/images/common/owasp_builders.svg)
 
 ![Tool Project](assets/images/common/owasp_documentation_project.svg)
 
