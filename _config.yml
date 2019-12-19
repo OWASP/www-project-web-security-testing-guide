@@ -4,5 +4,9 @@ remote_theme: "owasp/www--site-theme"
 code_user: OWASP
 code_repo: wstg
 
+# core files/folders to exclude
+exclude:
+ - README.md
+
 plugins:
  - jekyll-include-cache-0.2.0
