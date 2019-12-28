@@ -1,3 +1,5 @@
 ### Leaders
 
-* [Rick Mitchell](mailto://rick.mitchell@owasp.org)
+* Matteo Meucci
+* Elie Saad
+* [Rick Mitchell](mailto:kingthorin@gmail.com)
