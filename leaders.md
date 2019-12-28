@@ -1,5 +1,3 @@
 ### Leaders
 
-* Matteo Meucci
-* Elie Saad
-* Rick Mitchell
+* [Rick Mitchell](mailto://rick.mitchell@owasp.org)
