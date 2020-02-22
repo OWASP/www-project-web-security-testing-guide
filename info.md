@@ -1,11 +1,9 @@
 ### Project Classification
 
-![Flagship Project](/assets/images/common/owasp_level_flagship.svg)
-
-![Breakers](/assets/images/common/owasp_breakers.svg)
-![Builders](/assets/images/common/owasp_builders.svg)
-
-![Tool Project](assets/images/common/owasp_documentation_project.svg)
+* <i class="fas fa-flag" style="color:#2ADA08;"></i>Flagship Project
+* <i class="fas fa-book" style="font-size: 1.2em; color:#233e81;"></i> Documentation
+* <i class="fas fa-hammer" style="color:#233e81;"></i> Breaker
+* <i class="fas fa-toolbox" style="color:#233e81;"></i> Builder
 
 ### GitHub Repository
 
