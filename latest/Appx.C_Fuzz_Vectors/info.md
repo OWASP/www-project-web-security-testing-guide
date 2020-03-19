@@ -3,7 +3,7 @@
   {% unless node.name == "README.md"%}
     {% unless node.name == "index.md" %}
       {% unless node.name == "info.md" %}
-<a href="{{ site.baseurl }}{{ node.url  | remove_first: '/' }}">{{ node.name }}</a>
+<a href="{{ site.baseurl }}{{ node.url }}">{{ node.name }}</a>
       {% endunless %}
     {% endunless %}
   {% endunless %}
