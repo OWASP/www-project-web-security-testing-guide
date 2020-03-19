@@ -2,7 +2,6 @@
 layout: col-document
 title: WSTG - Latest
 tags: WSTG
-stamp: 20200319005119
 ---
 # OWASP Web Security Testing Guide 4.1
 
