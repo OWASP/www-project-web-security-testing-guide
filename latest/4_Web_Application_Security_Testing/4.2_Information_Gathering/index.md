@@ -1,7 +1,9 @@
 ---
+
 layout: col-document
 title: WSTG - Latest
 tags: WSTG
+
 ---
 # 4.2 Testing for Information Gathering
 

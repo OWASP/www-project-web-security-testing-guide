@@ -1,7 +1,9 @@
 ---
+
 layout: col-document
 title: WSTG - Latest
 tags: WSTG
+
 ---
 # 4.10 Testing for Weak Cryptography
 
