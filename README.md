@@ -6,7 +6,7 @@ Documentation explaining the files in this repo can be found at: https://owasp.o
 
 For the main WSTG repository, go to: https://github.com/OWASP/wstg
 
-## Getting started
+## Getting Started
 
 To set up a local development environment for this [Jekyll](https://jekyllrb.com/docs/installation/ubuntu/) site:
 
