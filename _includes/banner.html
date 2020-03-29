@@ -1,0 +1,19 @@
+<div role="banner" style="position:sticky;top:0;text-align:center;box-sizing:border-box;font-size:0.875em;width:100%;">
+    {% if page.url contains "/latest/" %}
+    <div style="background-color:#FFBABA;color:#6A0E0E;padding:8px 20px 8px;">
+        This content represents the latest contributions to the Web Security Testing Guide, and may frequently change.
+    </div>
+    {% endif %}
+
+    {% if page.url contains "/stable/" %}
+    <div style="background-color:#9ce37d;color:#344d2a;padding:8px 20px 8px;">
+        You're viewing the current stable version of the Web Security Testing Guide project.
+    </div>
+    {% endif %}
+
+    {% if page.url contains "/v" %}
+    <div style="background-color:#f7ee7f;color:#666334;padding:8px 20px 8px;">
+        You're viewing a past version of the Web Security Testing Guide project. For the latest stable version, <a href="/stable">visit /stable</a>.
+    </div>
+    {% endif %}
+</div>
