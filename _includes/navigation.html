@@ -1,0 +1,6 @@
+<h2>{{ site.data.nav_toc.docs_list_title }}</h2>
+<ul style="font-size:0.9em">
+   {% for item in site.data.nav_toc.docs %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
+</ul>
