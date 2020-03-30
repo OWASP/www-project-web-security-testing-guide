@@ -9,7 +9,7 @@ tags: WSTG
 
 |ID             |
 |---------------|
-|WSTG-INPVAL-011|
+|WSTG-INPV-11|
 
 ## Summary
 

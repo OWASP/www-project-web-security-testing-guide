@@ -9,7 +9,7 @@ tags: WSTG
 
 |ID             |
 |---------------|
-|WSTG-INPVAL-009|
+|WSTG-INPV-09|
 
 ## Summary
 
@@ -68,4 +68,4 @@ If there is no knowledge about the XML data internal details and if the applicat
 ### Whitepapers
 
 - [Amit Klein: “Blind XPath Injection”](http://dl.packetstormsecurity.net/papers/bypass/Blind_XPath_Injection_20040518.pdf)
-- [XPath 1.0 specifications](http://www.w3.org/TR/xpath)
+- [XPath 1.0 specifications](https://www.w3.org/TR/1999/REC-xpath-19991116/)
