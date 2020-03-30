@@ -1,6 +1,8 @@
-<h2>{{ site.data.nav_toc.docs_list_title }}</h2>
+{% assign nav = site.data[include.collection] %}
+
+<h2>{{ nav.docs_list_title }}</h2>
 <ul style="font-size:0.9em">
-   {% for item in site.data.nav_toc.docs %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% for item in nav.docs %}
+      <li><a href="{{ site.baseurl }}/{{ include.collection }}/{{ item.url }}">{{ item.title }}</a></li>
    {% endfor %}
-</ul>
+</ul> 
