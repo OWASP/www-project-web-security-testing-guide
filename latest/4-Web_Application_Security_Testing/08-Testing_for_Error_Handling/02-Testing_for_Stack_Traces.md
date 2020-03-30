@@ -9,7 +9,7 @@ tags: WSTG
 
 |ID          |
 |------------|
-|WSTG-ERR-002|
+|WSTG-ERRH-02|
 
 ## Summary
 

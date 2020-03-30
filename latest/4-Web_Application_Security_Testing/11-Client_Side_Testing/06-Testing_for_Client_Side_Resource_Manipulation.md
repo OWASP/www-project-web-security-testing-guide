@@ -9,7 +9,7 @@ tags: WSTG
 
 |ID             |
 |---------------|
-|WSTG-CLIENT-006|
+|WSTG-CLNT-06|
 
 ## Summary
 

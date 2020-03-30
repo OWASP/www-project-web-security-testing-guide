@@ -191,7 +191,7 @@ tags: WSTG
 
 ##### [4.7.5.6 Testing for NoSQL Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection.md)
 
-##### [4.7.5.7 ORM Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.7_Testing_for_ORM_Injection.md)
+##### [4.7.5.7 ORM Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.7-Testing_for_ORM_Injection.md)
 
 ##### [4.7.5.8 Client Side SQLi](4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.8-Testing_for_Client_Side.md)
 
@@ -299,41 +299,10 @@ tags: WSTG
 
 ## [Appendix A: Testing Tools Resource](Appx.A_Testing_Tools_Resource/README.md)
 
-### Security Testing Tools
-
-- [PTES_Technical_Guidelines](http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines)
-- [http://www.vulnerabilityassessment.co.uk/Penetration%20Test.html](http://www.vulnerabilityassessment.co.uk/Penetration%20Test.html)
-- [https://sectools.org](https://sectools.org/)
-- [https://www.kali.org](https://www.kali.org/)
-- [https://www.blackarch.org/tools.html](https://www.blackarch.org/tools.html)
-
-### Security Testing Tools in Virtual Image
-
-- [https://tools.pentestbox.com/](https://tools.pentestbox.com/)
-- [https://sourceforge.net/p/samurai/wiki/Home/](https://sourceforge.net/p/samurai/wiki/Home/)
-- [https://sourceforge.net/projects/santoku/](https://sourceforge.net/projects/santoku/)
-- [https://sourceforge.net/projects/parrotsecurity/?source=navbar](https://sourceforge.net/projects/parrotsecurity/?source=navbar)
-- [https://sourceforge.net/projects/matriux/?source=navbar](https://sourceforge.net/projects/matriux/?source=navbar)
-- [https://www.blackarch.org/downloads.html](https://www.blackarch.org/downloads.html)
-- [https://www.kali.org/](https://www.kali.org/)
-- [https://www.caine-live.net/index.html](https://www.caine-live.net/index.html)
-- [https://www.pentoo.ch/download/](https://www.pentoo.ch/download/)
-
 ## [Appendix B: Suggested Reading](Appx.B_Suggested_Reading/README.md)
-
-- Whitepapers
-- Books
-- Useful Websites
 
 ## [Appendix C: Fuzz Vectors](Appx.C_Fuzz_Vectors/README.md)
 
-- Fuzz Categories
-
 ## [Appendix D: Encoded Injection](Appx.D_Encoded_Injection/README.md)
 
-- Input Encoding
-- Output Encoding
-
 ## [Appendix E: Misc](Appx.E_Misc/README.md)
-
-- History

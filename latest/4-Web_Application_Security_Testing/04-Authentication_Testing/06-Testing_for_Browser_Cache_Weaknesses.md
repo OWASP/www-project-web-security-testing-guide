@@ -9,7 +9,7 @@ tags: WSTG
 
 |ID            |
 |--------------|
-|WSTG-AUTHN-006|
+|WSTG-ATHN-06|
 
 ## Summary
 

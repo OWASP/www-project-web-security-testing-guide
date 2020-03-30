@@ -9,7 +9,7 @@ tags: WSTG
 
 |ID           |
 |-------------|
-|WSTG-INFO-008|
+|WSTG-INFO-08|
 
 ## Summary
 

@@ -9,7 +9,7 @@ tags: WSTG
 
 |ID               |
 |-----------------|
-|WSTG-BUSLOGIC-005|
+|WSTG-BUSL-05|
 
 ## Summary
 
