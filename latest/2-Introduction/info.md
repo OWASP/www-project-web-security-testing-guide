@@ -1,1 +1,1 @@
-{% include navigation.html %}
+{% include navigation.html collection="latest" %}
