@@ -7,7 +7,7 @@
 
 ### Project Links
 
-* [Latest](/latest/)
+* [Latest](/www-project-web-security-testing-guide/latest/)
 * [GitHub Repository](https://github.com/OWASP/wstg)
 
 ### Getting Involved
