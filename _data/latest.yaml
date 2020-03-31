@@ -14,61 +14,61 @@ docs:
   url: 2-Introduction/
 
 - title: '2.1 The OWASP Testing Project'
-  url: 2-Introduction/README.html#The-OWASP-Testing-Project
+  url: 2-Introduction/README.html#the-owasp-testing-project
 
 - title: '2.2 Principles of Testing'
-  url: 2-Introduction/README.html#Principles-of-Testing
+  url: 2-Introduction/README.html#principles-of-testing
 
 - title: '2.3 Testing Techniques Explained'
-  url: 2-Introduction/README.html#Testing-Techniques-Explained
+  url: 2-Introduction/README.html#testing-techniques-explained
 
 - title: '2.4 Manual Inspections & Reviews'
-  url: 2-Introduction/README.html#Manual-Inspections-and-Reviews
+  url: 2-Introduction/README.html#manual-inspections-and-reviews
 
 - title: '2.5 Threat Modeling'
-  url: 2-Introduction/README.html#Threat-Modeling
+  url: 2-Introduction/README.html#threat-modeling
 
 - title: '2.6 Source Code Review'
-  url: 2-Introduction/README.html#Source-Code-Review
+  url: 2-Introduction/README.html#source-code-review
 
 - title: '2.7 Penetration Testing'
-  url: 2-Introduction/README.html#Penetration-Testing
+  url: 2-Introduction/README.html#penetration-testing
 
 - title: '2.8 The Need for a Balanced Approach'
-  url: 2-Introduction/README.html#The-Need-for-a-Balanced-Approach
+  url: 2-Introduction/README.html#the-need-for-a-balanced-approach
 
 - title: '2.9 Deriving Security Test Requirements'
-  url: 2-Introduction/README.html#Deriving-Security-Test-Requirements
+  url: 2-Introduction/README.html#deriving-security-test-requirements
 
 - title: '2.10 Security Tests Integrated in Development and Testing Workflows'
-  url: 2-Introduction/README.html#Security-Tests-Integrated-in-Development-and-Testing-Workflows
+  url: 2-Introduction/README.html#security-tests-integrated-in-development-and-testing-workflows
 
 - title: '2.11 Security Test Data Analysis and Reporting'
-  url: 2-Introduction/README.html#Security-Test-Data-Analysis-and-Reporting
+  url: 2-Introduction/README.html#security-test-data-analysis-and-reporting
 
 - title: '3. The OWASP Testing Framework'
   url: 3-The_OWASP_Testing_Framework/
 
 - title: '3.1 Overview'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#Overview
+  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#overview
 
 - title: '3.2 Phase 1: Before Development Begins'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#Phase-1:-Before-Development-Begins
+  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#phase-1:-before-development-begins
 
 - title: '3.3 Phase 2: During Definition and Design'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#Phase-2:-During-Definition-and-Design
+  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#phase-2:-during-definition-and-design
 
 - title: '3.4 Phase 3: During Development'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#Phase-3:-During-Development
+  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#phase-3:-during-development
 
 - title: '3.5 Phase 4: During Deployment'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#Phase-4:-During-Deployment
+  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#phase-4:-during-deployment
 
 - title: '3.6 Phase 5: Maintenance and Operations'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#Phase-5:-During-Maintenance-and-Operations
+  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#phase-5:-during-maintenance-and-operations
 
 - title: '3.7 A Typical SDLC Testing Workflow'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#A-Typical-SDLC-Testing-Workflow
+  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#a-typical-sdlc-testing-workflow
 
 - title: '3.8 Penetration Testing Methodologies'
   url: 3-The_OWASP_Testing_Framework/1-Penetration_Testing_Methodologies.html
