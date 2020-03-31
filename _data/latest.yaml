@@ -205,7 +205,7 @@ docs:
 - title: '4.5.1 Testing Directory Traversal/File Include'
   url: 4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include.html
 
-- title: '4.5.2 Testing for Bypassing Authorization Schema)'
+- title: '4.5.2 Testing for Bypassing Authorization Schema'
   url: 4-Web_Application_Security_Testing/05-Authorization_Testing/02-Testing_for_Bypassing_Authorization_Schema.html
 
 - title: '4.5.3 Testing for Privilege Escalation'
@@ -298,7 +298,7 @@ docs:
 - title: '4.7.10 IMAP/SMTP Injection'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/10-Testing_for_IMAP_SMTP_Injection.html
 
-- title: '4.7.11 Code Injection)'
+- title: '4.7.11 Code Injection'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/11-Testing_for_Code_Injection.html
 
 - title: '4.7.11.1 Local File Inclusion'
