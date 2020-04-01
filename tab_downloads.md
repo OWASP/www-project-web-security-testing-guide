@@ -9,11 +9,11 @@ tags: wstg
 
 ## Stable
 
-View the always-current stable version at [/stable](/stable).
+View the always-current stable version at [/stable](stable/).
 
-## [Unreleased 4.1] - 2020
+## [Version 4.1] - 2020-04-01
 
-Version 4.1 serves as a post-migration stable version under the new GitHub repository workflow.
+[Version 4.1](v41/) serves as a post-migration stable version under the new GitHub repository workflow.
 
 ## [Version 4.0] - 2014-09-17
 
