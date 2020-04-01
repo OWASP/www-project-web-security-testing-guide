@@ -18,10 +18,10 @@ The WSTG is a comprehensive guide to testing the security of web applications an
 
 ## Stable
 
-View the always-current stable version at [/stable](/stable).
+View the always-current stable version at [/stable](/www-project-web-security-testing-guide/stable).
 
 ## Latest
 
 We are currently developing release version 5.0.
 
-You can [read the latest development documents in our official GitHub repository](https://github.com/OWASP/wstg/tree/master/document) or view the bleeding-edge content at [/latest](/latest).
+You can [read the latest development documents in our official GitHub repository](https://github.com/OWASP/wstg/tree/master/document) or view the bleeding-edge content at [/latest](/www-project-web-security-testing-guide/latest).
