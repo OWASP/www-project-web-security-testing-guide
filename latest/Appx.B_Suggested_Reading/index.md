@@ -5,7 +5,7 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Suggested Reading
+# Appendix B: Suggested Reading
 
 ## Whitepapers
 

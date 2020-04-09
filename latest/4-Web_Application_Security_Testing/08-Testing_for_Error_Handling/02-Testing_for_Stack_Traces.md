@@ -5,7 +5,7 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing of Stack Traces
+# Testing for Stack Traces
 
 |ID          |
 |------------|
