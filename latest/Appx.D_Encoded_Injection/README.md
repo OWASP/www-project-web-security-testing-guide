@@ -5,7 +5,7 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Appendix D
+# Appendix D: Encoded Injection
 
 ## Background
 
