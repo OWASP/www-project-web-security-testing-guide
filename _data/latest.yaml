@@ -1,7 +1,7 @@
 docs_list_title: WSTG Contents
 docs:
 
-- title: 'Foreword by Eoin Keary'
+- title: '0. Foreword by Eoin Keary'
   url: 0-Foreword/README.html
 
 - title: '1. Frontispiece'
