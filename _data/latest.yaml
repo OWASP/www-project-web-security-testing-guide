@@ -46,26 +46,26 @@ docs:
 - title: '3. The OWASP Testing Framework'
   url: 3-The_OWASP_Testing_Framework/
 
-- title: '3.1 Overview'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#overview
+- title: '3.1 The OWASP Testing Framework'
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html
 
 - title: '3.2 Phase 1: Before Development Begins'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#phase-1-before-development-begins
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-1-before-development-begins
 
 - title: '3.3 Phase 2: During Definition and Design'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#phase-2-during-definition-and-design
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-2-during-definition-and-design
 
 - title: '3.4 Phase 3: During Development'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#phase-3-during-development
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-3-during-development
 
 - title: '3.5 Phase 4: During Deployment'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#phase-4-during-deployment
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-4-during-deployment
 
 - title: '3.6 Phase 5: During Maintenance and Operations'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#phase-5-during-maintenance-and-operations
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-5-during-maintenance-and-operations
 
 - title: '3.7 A Typical SDLC Testing Workflow'
-  url: 3-The_OWASP_Testing_Framework/0-The_OWASP_Testing_Framework.html#a-typical-sdlc-testing-workflow
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#a-typical-sdlc-testing-workflow
 
 - title: '3.8 Penetration Testing Methodologies'
   url: 3-The_OWASP_Testing_Framework/1-Penetration_Testing_Methodologies.html
@@ -227,7 +227,7 @@ docs:
   url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/04-Testing_for_Exposed_Session_Variables.html
 
 - title: '4.6.5 Testing for Cross Site Request Forgery'
-  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_CSRF.html
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery.html
 
 - title: '4.6.6 Testing for Logout Functionality'
   url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/06-Testing_for_Logout_Functionality.html
@@ -346,7 +346,7 @@ docs:
 - title: '4.9 Testing for Weak Cryptography'
   url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README.html
 
-- title: '4.9.1 Testing for Weak Cryptography'
+- title: '4.9.1 Testing for Weak SSL TLS Ciphers Insufficient Transport Layer Protection'
   url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_SSL_TLS_Ciphers_Insufficient_Transport_Layer_Protection.html
 
 - title: '4.9.2 Testing for Padding Oracle'
@@ -425,7 +425,7 @@ docs:
   url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/11-Testing_Web_Messaging.html
 
 - title: '4.11.12 Testing Browser Storage'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/12-Testing_Web_Storage.html
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/12-Testing_Browser_Storage.html
 
 - title: '4.11.13 Testing for Cross Site Script Inclusion'
   url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/13-Testing_for_Cross_Site_Script_Inclusion.html

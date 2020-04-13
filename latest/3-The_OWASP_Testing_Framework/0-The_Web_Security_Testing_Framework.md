@@ -5,7 +5,7 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# The OWASP Testing Framework
+# The Web Security Testing Framework
 
 ## Overview
 
