@@ -5,7 +5,7 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Weak Cryptography
+# Testing for Weak SSL TLS Ciphers Insufficient Transport Layer Protection
 
 |ID             |
 |---------------|
