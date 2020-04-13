@@ -5,7 +5,7 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Appendix A: Testing Tools Resource
+# Testing Tools Resource
 
 ## General Testing
 
