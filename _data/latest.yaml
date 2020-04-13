@@ -74,7 +74,7 @@ docs:
   url: 4-Web_Application_Security_Testing/
 
 - title: '4.0 Introduction and Objectives'
-  url: 4-Web_Application_Security_Testing/0-Introduction_and_Objectives/README.html
+  url: 4-Web_Application_Security_Testing/00-Introduction_and_Objectives/README.html
 
 - title: '4.1 Information Gathering'
   url: 4-Web_Application_Security_Testing/01-Information_Gathering/README.html
@@ -433,17 +433,17 @@ docs:
 - title: '5. Reporting'
   url: 5-Reporting/README.html
 
-- title: 'Appendix A: Testing Tools Resource'
-  url: Appx.A_Testing_Tools_Resource/README.html
+- title: 'Appendix A. Testing Tools Resource'
+  url: 6-Appendix/A-Testing_Tools_Resource.html
 
-- title: 'Appendix B: Suggested Reading'
-  url: Appx.B_Suggested_Reading/README.html
+- title: 'Appendix B. Suggested Reading'
+  url: 6-Appendix/B-Suggested_Reading.html
 
-- title: 'Appendix C: Fuzz Vectors'
-  url: Appx.C_Fuzz_Vectors/README.html
+- title: 'Appendix C. Fuzz Vectors'
+  url: 6-Appendix/C-Fuzz_Vectors.html
 
-- title: 'Appendix D: Encoded Injection'
-  url: Appx.D_Encoded_Injection/README.html
+- title: 'Appendix D. Encoded Injection'
+  url: 6-Appendix/D-Encoded_Injection.html
 
-- title: 'Appendix E: Misc'
-  url: Appx.E_Misc/README.html
+- title: 'Appendix E. History'
+  url: 6-Appendix/E-History.html
