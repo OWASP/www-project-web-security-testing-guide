@@ -16,7 +16,7 @@ To report issues or make suggestions for the WSTG, please use [GitHub Issues](ht
 
 For everything else, we're easy to find on Slack:
 
-1. Join the OWASP Group Slack with this [invitation link](https://join.slack.com/t/owasp/shared_invite/enQtNjExMTc3MTg0MzU4LWQ2Nzg3NGJiZGQ2MjRmNzkzN2Q4YzU1MWYyZTdjYjA2ZTA5M2RkNzE2ZjdkNzI5ZThhOWY5MjljYWZmYmY4ZjM).
+1. Join the OWASP Group Slack with this [invitation link](https://owasp-slack.herokuapp.com/).
 2. Join this project's [channel, #testing-guide](https://app.slack.com/client/T04T40NHX/CJ2QDHLRJ).
 
 You can @ us on Twitter [@owasp_wstg](https://twitter.com/owasp_wstg).
