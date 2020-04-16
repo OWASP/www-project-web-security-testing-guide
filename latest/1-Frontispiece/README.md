@@ -29,9 +29,9 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 
 ## Leaders
 
-- Rick Mitchell
 - Elie Saad
 - Matteo Meucci
+- Rick Mitchell
 
 ## Core Team
 
@@ -53,8 +53,9 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 
 ## Graphic Designers
 
-- Muhammed Anees
+- Hugo Costa
 - Jishnu Vijayan C K
+- Muhammed Anees
 
 ## Reviewers or Editors
 
