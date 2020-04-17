@@ -46,7 +46,7 @@ docs:
 - title: '3. The OWASP Testing Framework'
   url: 3-The_OWASP_Testing_Framework/
 
-- title: '3.1 The OWASP Testing Framework'
+- title: '3.1 The Web Security Testing Framework'
   url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html
 
 - title: '3.2 Phase 1 Before Development Begins'
@@ -360,6 +360,9 @@ docs:
 
 - title: '4.10 Business Logic Testing'
   url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/README.html
+
+- title: '4.10.0 Introduction to Business Logic'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/00-Introduction_to_Business_Logic.html
 
 - title: '4.10.1 Test Business Logic Data Validation'
   url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/01-Test_Business_Logic_Data_Validation.html
