@@ -5,7 +5,7 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# OWASP Web Security Testing Guide 4.1
+# Frontispiece
 
 ## Welcome
 
@@ -29,9 +29,9 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 
 ## Leaders
 
-- Rick Mitchell
 - Elie Saad
 - Matteo Meucci
+- Rick Mitchell
 
 ## Core Team
 
@@ -50,6 +50,12 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 - Rubal Jain
 - Tal Argoni
 - Victoria Drake
+
+## Graphic Designers
+
+- Hugo Costa
+- Jishnu Vijayan C K
+- Muhammed Anees
 
 ## Reviewers or Editors
 
@@ -82,5 +88,6 @@ Contact details for the [OWASP Foundation](https://owasp.org/) are available [on
 
 ### Follow Us
 
-- [![Follow OWASP on LinkedIn](images/follow_badge.png)](https://www.linkedin.com/company/owasp/)
-- [![Follow @owasp_wstg on twitter](https://img.shields.io/twitter/follow/owasp_wstg?style=social)](https://twitter.com/owasp_wstg)
+[![Follow OWASP on LinkedIn](images/follow_badge.png)](https://www.linkedin.com/company/owasp/)
+
+[![Follow @owasp_wstg on twitter](https://img.shields.io/twitter/follow/owasp_wstg?style=social)](https://twitter.com/owasp_wstg)

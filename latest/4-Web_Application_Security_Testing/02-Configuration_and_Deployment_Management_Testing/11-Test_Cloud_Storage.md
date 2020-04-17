@@ -5,7 +5,7 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing Cloud Storage
+# Test Cloud Storage
 
 |ID             |
 |---------------|

@@ -64,7 +64,7 @@ Input stored by the application is normally used in HTML tags, but it can also b
 **Example**: Email stored data in index2.php
 
 ![Stored Input Example](images/Stored_input_example.jpg)\
-*Figure 4.7.2-1:Stored Input Example*
+*Figure 4.7.2-1: Stored Input Example*
 
 The HTML code of index2.php where the email value is located:
 
@@ -88,7 +88,7 @@ This involves testing the input validation and filtering controls of the applica
 Ensure the input is submitted through the application. This normally involves disabling JavaScript if client-side security controls are implemented or modifying the HTTP request with a web proxy. It is also important to test the same injection with both HTTP GET and POST requests. The above injection results in a popup window containing the cookie values.
 
 > ![Stored XSS Exxample](images/Stored_xss_example.jpg)\
-> *Figure 4.7.2-2:Stored Input Example*
+> *Figure 4.7.2-2: Stored Input Example*
 >
 > The HTML code following the injection:
 >
@@ -117,7 +117,7 @@ The JavaScript hook can be injected by exploiting the XSS vulnerability in the w
 When the user loads the page index2.php, the script hook.js is executed by the browser. It is then possible to access cookies, user screenshot, user clipboard, and launch complex XSS attacks.
 
 > ![Beef Injection Example](images/RubyBeef.png)\
-> *Figure 4.7.2-3:Beef Injection Example*
+> *Figure 4.7.2-3: Beef Injection Example*
 >
 > This attack is particularly effective in vulnerable pages that are viewed by many users with different privileges.
 
@@ -170,7 +170,7 @@ The following table summarizes some special variables and functions to look at w
 |----------------|-------------------|------------------|
 | $_GET - HTTP GET variables  | Request.QueryString - HTTP GET | doGet, doPost servlets - HTTP GET and POST |
 | $_POST - HTTP POST variables| Request.Form - HTTP POST | request.getParameter - HTTP GET/POST variables |
-| $_REQUEST – http POST, GET and COOKIE variables | Server.CreateObject - used to upload files |
+| $_REQUEST – HTTP POST, GET and COOKIE variables | Server.CreateObject - used to upload files |
 | $_FILES - HTTP File Upload variables |
 
 **Note**: The table above is only a summary of the most important parameters but, all user input parameters should be investigated.
