@@ -49,19 +49,19 @@ docs:
 - title: '3.1 The OWASP Testing Framework'
   url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html
 
-- title: '3.2 Phase 1: Before Development Begins'
+- title: '3.2 Phase 1 Before Development Begins'
   url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-1-before-development-begins
 
-- title: '3.3 Phase 2: During Definition and Design'
+- title: '3.3 Phase 2 During Definition and Design'
   url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-2-during-definition-and-design
 
-- title: '3.4 Phase 3: During Development'
+- title: '3.4 Phase 3 During Development'
   url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-3-during-development
 
-- title: '3.5 Phase 4: During Deployment'
+- title: '3.5 Phase 4 During Deployment'
   url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-4-during-deployment
 
-- title: '3.6 Phase 5: During Maintenance and Operations'
+- title: '3.6 Phase 5 During Maintenance and Operations'
   url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-5-during-maintenance-and-operations
 
 - title: '3.7 A Typical SDLC Testing Workflow'
@@ -109,7 +109,7 @@ docs:
 - title: '4.1.10 Map Application Architecture'
   url: 4-Web_Application_Security_Testing/01-Information_Gathering/10-Map_Application_Architecture.html
 
-- title: '4.2 Testing for Configuration and Deployment Management'
+- title: '4.2 Configuration and Deployment Management Testing'
   url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README.html
 
 - title: '4.2.1 Test Network Infrastructure Configuration'
@@ -142,10 +142,10 @@ docs:
 - title: '4.2.10 Test for Subdomain Takeover'
   url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/10-Test_for_Subdomain_Takeover.html
 
-- title: '4.2.11 Testing Cloud Storage'
+- title: '4.2.11 Test Cloud Storage'
   url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/11-Test_Cloud_Storage.html
 
-- title: '4.3 Testing for Identity Management'
+- title: '4.3 Identity Management Testing'
   url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/README.html
 
 - title: '4.3.1 Test Role Definitions'
@@ -232,7 +232,7 @@ docs:
 - title: '4.6.6 Testing for Logout Functionality'
   url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/06-Testing_for_Logout_Functionality.html
 
-- title: '4.6.7 Test Session Timeout'
+- title: '4.6.7 Testing Session Timeout'
   url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/07-Testing_Session_Timeout.html
 
 - title: '4.6.8 Testing for Session Puzzling'
@@ -277,7 +277,7 @@ docs:
 - title: '4.7.5.7 Testing for ORM Injection'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.7-Testing_for_ORM_Injection.html
 
-- title: '4.7.5.8 Testing for Client Side SQL Injection'
+- title: '4.7.5.8 Testing for Client Side'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.8-Testing_for_Client_Side.html
 
 - title: '4.7.6 Testing for LDAP Injection'
@@ -358,7 +358,7 @@ docs:
 - title: '4.9.4 Testing for Weak Encryption'
   url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_Encryption.html
 
-- title: '4.10 Testing Business Logic'
+- title: '4.10 Business Logic Testing'
   url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/README.html
 
 - title: '4.10.1 Test Business Logic Data Validation'
@@ -409,7 +409,7 @@ docs:
 - title: '4.11.6 Testing for Client Side Resource Manipulation'
   url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/06-Testing_for_Client_Side_Resource_Manipulation.html
 
-- title: '4.11.7 Testing for Cross Origin Resource Sharing'
+- title: '4.11.7 Testing Cross Origin Resource Sharing'
   url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/07-Testing_Cross_Origin_Resource_Sharing.html
 
 - title: '4.11.8 Testing for Cross Site Flashing'
