@@ -4,7 +4,9 @@ This repository contains the files that build the Web Security Testing Guide (WS
 
 Documentation explaining the files in this repo can be found at: https://owasp.org/migration
 
-For the main WSTG repository, go to: https://github.com/OWASP/wstg
+## Contributions
+
+Any contributions to the guide itself should be made via the [guide's project repo](https://github.com/OWASP/wstg).
 
 ## Getting Started
 
