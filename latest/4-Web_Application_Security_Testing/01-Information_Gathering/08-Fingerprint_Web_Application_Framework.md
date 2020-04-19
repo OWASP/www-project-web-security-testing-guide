@@ -295,7 +295,7 @@ RewriteCond %{REQUEST_URI} /wp-admin/$
 RewriteRule $ /http://your_website [R=404,L]
 ```
 
-However, these are not the only ways to restrict access. In order to automate this process, certain framework-specific plugins exist. One example for WordPress is [StealthLogin](https://wordpress.org/plugins/stealth-login-page).
+However, these are not the only ways to restrict access. In order to automate this process, certain framework-specific plugins exist.
 
 ### Additional Approaches
 
