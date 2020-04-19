@@ -16,6 +16,10 @@ The Web Security Testing Guide (WSTG) Project produces the premier cybersecurity
 
 The WSTG is a comprehensive guide to testing the security of web applications and web services. Created by the collaborative efforts of cybersecurity professionals and dedicated volunteers, the WSTG provides a framework of best practices used by penetration testers and organizations all over the world.
 
+## Contributions
+
+Any contributions to the guide itself should be made via the [guide's project repo](https://github.com/OWASP/wstg).
+
 ## Stable
 
 View the always-current stable version at [/stable](/www-project-web-security-testing-guide/stable).
