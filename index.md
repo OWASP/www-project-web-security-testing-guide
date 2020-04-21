@@ -22,13 +22,13 @@ Any contributions to the guide itself should be made via the [guide's project re
 
 ## Stable
 
-View the always-current stable version at [/stable](stable/).
+View the always-current stable version at [stable](stable/).
 
 ## Latest
 
 We are currently developing release version 5.0.
 
-You can [read the latest development documents in our official GitHub repository](https://github.com/OWASP/wstg/tree/master/document) or view the bleeding-edge content at [/latest](latest/).
+You can [read the latest development documents in our official GitHub repository](https://github.com/OWASP/wstg/tree/master/document) or view the bleeding-edge content at [latest](latest/).
 
 ## Versioned Releases
 

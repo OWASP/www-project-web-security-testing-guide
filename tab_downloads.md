@@ -9,7 +9,7 @@ tags: wstg
 
 ## Stable
 
-View the always-current stable version at [/stable](stable/).
+View the always-current stable version at [stable](stable/).
 
 ## [Unreleased 4.2]
 
