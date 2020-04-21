@@ -11,7 +11,9 @@ tags: wstg
 
 View the always-current stable version at [/stable](stable/).
 
-## [Version 4.1] - 2020-04-01
+## [Unreleased 4.2]
+
+## [Version 4.1] - 2020-04-21
 
 [Version 4.1](v41/) serves as a post-migration stable version under the new GitHub repository workflow.
 

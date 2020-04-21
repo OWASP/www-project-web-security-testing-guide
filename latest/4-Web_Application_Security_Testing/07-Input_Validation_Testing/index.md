@@ -31,7 +31,7 @@ tags: WSTG
 
 - 4.7.5.7 [Testing for ORM Injection](05.7-Testing_for_ORM_Injection.md)
 
-- 4.7.5.8 [Testing for Client Side SQL Injection](05.8-Testing_for_Client_Side.md)
+- 4.7.5.8 [Testing for Client Side](05.8-Testing_for_Client_Side.md)
 
 4.7.6 [Testing for LDAP Injection](06-Testing_for_LDAP_Injection.md)
 
