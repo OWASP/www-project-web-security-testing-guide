@@ -1,0 +1,452 @@
+docs_list_title: WSTG Contents (Stable)
+docs:
+
+- title: '0. Foreword by Eoin Keary'
+  url: 0-Foreword/README.html
+
+- title: '1. Frontispiece'
+  url: 1-Frontispiece/
+
+- title: '2. Introduction'
+  url: 2-Introduction/
+
+- title: '2.1 The OWASP Testing Project'
+  url: 2-Introduction/README.html#the-owasp-testing-project
+
+- title: '2.2 Principles of Testing'
+  url: 2-Introduction/README.html#principles-of-testing
+
+- title: '2.3 Testing Techniques Explained'
+  url: 2-Introduction/README.html#testing-techniques-explained
+
+- title: '2.4 Manual Inspections and Reviews'
+  url: 2-Introduction/README.html#manual-inspections-and-reviews
+
+- title: '2.5 Threat Modeling'
+  url: 2-Introduction/README.html#threat-modeling
+
+- title: '2.6 Source Code Review'
+  url: 2-Introduction/README.html#source-code-review
+
+- title: '2.7 Penetration Testing'
+  url: 2-Introduction/README.html#penetration-testing
+
+- title: '2.8 The Need for a Balanced Approach'
+  url: 2-Introduction/README.html#the-need-for-a-balanced-approach
+
+- title: '2.9 Deriving Security Test Requirements'
+  url: 2-Introduction/README.html#deriving-security-test-requirements
+
+- title: '2.10 Security Tests Integrated in Development and Testing Workflows'
+  url: 2-Introduction/README.html#security-tests-integrated-in-development-and-testing-workflows
+
+- title: '2.11 Security Test Data Analysis and Reporting'
+  url: 2-Introduction/README.html#security-test-data-analysis-and-reporting
+
+- title: '3. The OWASP Testing Framework'
+  url: 3-The_OWASP_Testing_Framework/
+
+- title: '3.1 The Web Security Testing Framework'
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html
+
+- title: '3.2 Phase 1 Before Development Begins'
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-1-before-development-begins
+
+- title: '3.3 Phase 2 During Definition and Design'
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-2-during-definition-and-design
+
+- title: '3.4 Phase 3 During Development'
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-3-during-development
+
+- title: '3.5 Phase 4 During Deployment'
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-4-during-deployment
+
+- title: '3.6 Phase 5 During Maintenance and Operations'
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#phase-5-during-maintenance-and-operations
+
+- title: '3.7 A Typical SDLC Testing Workflow'
+  url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework.html#a-typical-sdlc-testing-workflow
+
+- title: '3.8 Penetration Testing Methodologies'
+  url: 3-The_OWASP_Testing_Framework/1-Penetration_Testing_Methodologies.html
+
+- title: '4. Web Application Security Testing'
+  url: 4-Web_Application_Security_Testing/
+
+- title: '4.0 Introduction and Objectives'
+  url: 4-Web_Application_Security_Testing/00-Introduction_and_Objectives/README.html
+
+- title: '4.1 Information Gathering'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/README.html
+
+- title: '4.1.1 Conduct Search Engine Discovery Reconnaissance for Information Leakage'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/01-Conduct_Search_Engine_Discovery_Reconnaissance_for_Information_Leakage.html
+
+- title: '4.1.2 Fingerprint Web Server'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server.html
+
+- title: '4.1.3 Review Webserver Metafiles for Information Leakage'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/03-Review_Webserver_Metafiles_for_Information_Leakage.html
+
+- title: '4.1.4 Enumerate Applications on Webserver'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/04-Enumerate_Applications_on_Webserver.html
+
+- title: '4.1.5 Review Webpage Comments and Metadata for Information Leakage'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Comments_and_Metadata_for_Information_Leakage.html
+
+- title: '4.1.6 Identify Application Entry Points'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/06-Identify_Application_Entry_Points.html
+
+- title: '4.1.7 Map Execution Paths Through Application'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/07-Map_Execution_Paths_Through_Application.html
+
+- title: '4.1.8 Fingerprint Web Application Framework'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework.html
+
+- title: '4.1.9 Fingerprint Web Application'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/09-Fingerprint_Web_Application.html
+
+- title: '4.1.10 Map Application Architecture'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/10-Map_Application_Architecture.html
+
+- title: '4.2 Configuration and Deployment Management Testing'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README.html
+
+- title: '4.2.1 Test Network Infrastructure Configuration'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/01-Test_Network_Infrastructure_Configuration.html
+
+- title: '4.2.2 Test Application Platform Configuration'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/02-Test_Application_Platform_Configuration.html
+
+- title: '4.2.3 Test File Extensions Handling for Sensitive Information'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/03-Test_File_Extensions_Handling_for_Sensitive_Information.html
+
+- title: '4.2.4 Review Old Backup and Unreferenced Files for Sensitive Information'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information.html
+
+- title: '4.2.5 Enumerate Infrastructure and Application Admin Interfaces'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces.html
+
+- title: '4.2.6 Test HTTP Methods'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods.html
+
+- title: '4.2.7 Test HTTP Strict Transport Security'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_HTTP_Strict_Transport_Security.html
+
+- title: '4.2.8 Test RIA Cross Domain Policy'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/08-Test_RIA_Cross_Domain_Policy.html
+
+- title: '4.2.9 Test File Permission'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/09-Test_File_Permission.html
+
+- title: '4.2.10 Test for Subdomain Takeover'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/10-Test_for_Subdomain_Takeover.html
+
+- title: '4.2.11 Test Cloud Storage'
+  url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/11-Test_Cloud_Storage.html
+
+- title: '4.3 Identity Management Testing'
+  url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/README.html
+
+- title: '4.3.1 Test Role Definitions'
+  url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/01-Test_Role_Definitions.html
+
+- title: '4.3.2 Test User Registration Process'
+  url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/02-Test_User_Registration_Process.html
+
+- title: '4.3.3 Test Account Provisioning Process'
+  url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/03-Test_Account_Provisioning_Process.html
+
+- title: '4.3.4 Testing for Account Enumeration and Guessable User Account'
+  url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/04-Testing_for_Account_Enumeration_and_Guessable_User_Account.html
+
+- title: '4.3.5 Testing for Weak or Unenforced Username Policy'
+  url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/05-Testing_for_Weak_or_Unenforced_Username_Policy.html
+
+- title: '4.4 Authentication Testing'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/README.html
+
+- title: '4.4.1 Testing for Credentials Transported over an Encrypted Channel'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/01-Testing_for_Credentials_Transported_over_an_Encrypted_Channel.html
+
+- title: '4.4.2 Testing for Default Credentials'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/02-Testing_for_Default_Credentials.html
+
+- title: '4.4.3 Testing for Weak Lock Out Mechanism'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/03-Testing_for_Weak_Lock_Out_Mechanism.html
+
+- title: '4.4.4 Testing for Bypassing Authentication Schema'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/04-Testing_for_Bypassing_Authentication_Schema.html
+
+- title: '4.4.5 Testing for Vulnerable Remember Password'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/05-Testing_for_Vulnerable_Remember_Password.html
+
+- title: '4.4.6 Testing for Browser Cache Weaknesses'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses.html
+
+- title: '4.4.7 Testing for Weak Password Policy'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/07-Testing_for_Weak_Password_Policy.html
+
+- title: '4.4.8 Testing for Weak Security Question Answer'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/08-Testing_for_Weak_Security_Question_Answer.html
+
+- title: '4.4.9 Testing for Weak Password Change or Reset Functionalities'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/09-Testing_for_Weak_Password_Change_or_Reset_Functionalities.html
+
+- title: '4.4.10 Testing for Weaker Authentication in Alternative Channel'
+  url: 4-Web_Application_Security_Testing/04-Authentication_Testing/10-Testing_for_Weaker_Authentication_in_Alternative_Channel.html
+
+- title: '4.5 Authorization Testing'
+  url: 4-Web_Application_Security_Testing/05-Authorization_Testing/README.html
+
+- title: '4.5.1 Testing Directory Traversal File Include'
+  url: 4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include.html
+
+- title: '4.5.2 Testing for Bypassing Authorization Schema'
+  url: 4-Web_Application_Security_Testing/05-Authorization_Testing/02-Testing_for_Bypassing_Authorization_Schema.html
+
+- title: '4.5.3 Testing for Privilege Escalation'
+  url: 4-Web_Application_Security_Testing/05-Authorization_Testing/03-Testing_for_Privilege_Escalation.html
+
+- title: '4.5.4 Testing for Insecure Direct Object References'
+  url: 4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References.html
+
+- title: '4.6 Session Management Testing'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/README.html
+
+- title: '4.6.1 Testing for Session Management Schema'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/01-Testing_for_Session_Management_Schema.html
+
+- title: '4.6.2 Testing for Cookies Attributes'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html
+
+- title: '4.6.3 Testing for Session Fixation'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/03-Testing_for_Session_Fixation.html
+
+- title: '4.6.4 Testing for Exposed Session Variables'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/04-Testing_for_Exposed_Session_Variables.html
+
+- title: '4.6.5 Testing for Cross Site Request Forgery'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery.html
+
+- title: '4.6.6 Testing for Logout Functionality'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/06-Testing_for_Logout_Functionality.html
+
+- title: '4.6.7 Testing Session Timeout'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/07-Testing_Session_Timeout.html
+
+- title: '4.6.8 Testing for Session Puzzling'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/08-Testing_for_Session_Puzzling.html
+
+- title: '4.7 Input Validation Testing'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/README.html
+
+- title: '4.7.1 Testing for Reflected Cross Site Scripting'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting.html
+
+- title: '4.7.2 Testing for Stored Cross Site Scripting'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/02-Testing_for_Stored_Cross_Site_Scripting.html
+
+- title: '4.7.3 Testing for HTTP Verb Tampering'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/03-Testing_for_HTTP_Verb_Tampering.html
+
+- title: '4.7.4 Testing for HTTP Parameter Pollution'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/04-Testing_for_HTTP_Parameter_Pollution.html
+
+- title: '4.7.5 Testing for SQL Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection.html
+
+- title: '4.7.5.1 Testing for Oracle'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.1-Testing_for_Oracle.html
+
+- title: '4.7.5.2 Testing for MySQL'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.2-Testing_for_MySQL.html
+
+- title: '4.7.5.3 Testing for SQL Server'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.3-Testing_for_SQL_Server.html
+
+- title: '4.7.5.4 Testing PostgreSQL'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.4-Testing_PostgreSQL.html
+
+- title: '4.7.5.5 Testing for MS Access'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.5-Testing_for_MS_Access.html
+
+- title: '4.7.5.6 Testing for NoSQL Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection.html
+
+- title: '4.7.5.7 Testing for ORM Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.7-Testing_for_ORM_Injection.html
+
+- title: '4.7.5.8 Testing for Client Side'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.8-Testing_for_Client_Side.html
+
+- title: '4.7.6 Testing for LDAP Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/06-Testing_for_LDAP_Injection.html
+
+- title: '4.7.7 Testing for XML Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/07-Testing_for_XML_Injection.html
+
+- title: '4.7.8 Testing for SSI Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/08-Testing_for_SSI_Injection.html
+
+- title: '4.7.9 Testing for XPath Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/09-Testing_for_XPath_Injection.html
+
+- title: '4.7.10 Testing for IMAP SMTP Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/10-Testing_for_IMAP_SMTP_Injection.html
+
+- title: '4.7.11 Testing for Code Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/11-Testing_for_Code_Injection.html
+
+- title: '4.7.11.1 Testing for Local File Inclusion'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion.html
+
+- title: '4.7.11.2 Testing for Remote File Inclusion'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.2-Testing_for_Remote_File_Inclusion.html
+
+- title: '4.7.12 Testing for Command Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection.html
+
+- title: '4.7.13 Testing for Buffer Overflow'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Buffer_Overflow.html
+
+- title: '4.7.13.1 Testing for Heap Overflow'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.1-Testing_for_Heap_Overflow.html
+
+- title: '4.7.13.2 Testing for Stack Overflow'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.2-Testing_for_Stack_Overflow.html
+
+- title: '4.7.13.3 Testing for Format String'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.3-Testing_for_Format_String.html
+
+- title: '4.7.14 Testing for Incubated Vulnerability'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/14-Testing_for_Incubated_Vulnerability.html
+
+- title: '4.7.15 Testing for HTTP Splitting Smuggling'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/15-Testing_for_HTTP_Splitting_Smuggling.html
+
+- title: '4.7.16 Testing for HTTP Incoming Requests'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/16-Testing_for_HTTP_Incoming_Requests.html
+
+- title: '4.7.17 Testing for Host Header Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/17-Testing_for_Host_Header_Injection.html
+
+- title: '4.7.18 Testing for Server Side Template Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server_Side_Template_Injection.html
+
+- title: '4.8 Testing for Error Handling'
+  url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/README.html
+
+- title: '4.8.1 Testing for Error Code'
+  url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_for_Error_Code.html
+
+- title: '4.8.2 Testing for Stack Traces'
+  url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces.html
+
+- title: '4.9 Testing for Weak Cryptography'
+  url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README.html
+
+- title: '4.9.1 Testing for Weak SSL TLS Ciphers Insufficient Transport Layer Protection'
+  url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_SSL_TLS_Ciphers_Insufficient_Transport_Layer_Protection.html
+
+- title: '4.9.2 Testing for Padding Oracle'
+  url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/02-Testing_for_Padding_Oracle.html
+
+- title: '4.9.3 Testing for Sensitive Information Sent via Unencrypted Channels'
+  url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/03-Testing_for_Sensitive_Information_Sent_via_Unencrypted_Channels.html
+
+- title: '4.9.4 Testing for Weak Encryption'
+  url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_Encryption.html
+
+- title: '4.10 Business Logic Testing'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/README.html
+
+- title: '4.10.0 Introduction to Business Logic'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/00-Introduction_to_Business_Logic.html
+
+- title: '4.10.1 Test Business Logic Data Validation'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/01-Test_Business_Logic_Data_Validation.html
+
+- title: '4.10.2 Test Ability to Forge Requests'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/02-Test_Ability_to_Forge_Requests.html
+
+- title: '4.10.3 Test Integrity Checks'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/03-Test_Integrity_Checks.html
+
+- title: '4.10.4 Test for Process Timing'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/04-Test_for_Process_Timing.html
+
+- title: '4.10.5 Test Number of Times a Function Can Be Used Limits'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/05-Test_Number_of_Times_a_Function_Can_Be_Used_Limits.html
+
+- title: '4.10.6 Testing for the Circumvention of Work Flows'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/06-Testing_for_the_Circumvention_of_Work_Flows.html
+
+- title: '4.10.7 Test Defenses Against Application Misuse'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/07-Test_Defenses_Against_Application_Misuse.html
+
+- title: '4.10.8 Test Upload of Unexpected File Types'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/08-Test_Upload_of_Unexpected_File_Types.html
+
+- title: '4.10.9 Test Upload of Malicious Files'
+  url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files.html
+
+- title: '4.11 Client Side Testing'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/README.html
+
+- title: '4.11.1 Testing for DOM-Based Cross Site Scripting'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting.html
+
+- title: '4.11.2 Testing for JavaScript Execution'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/02-Testing_for_JavaScript_Execution.html
+
+- title: '4.11.3 Testing for HTML Injection'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/03-Testing_for_HTML_Injection.html
+
+- title: '4.11.4 Testing for Client Side URL Redirect'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/04-Testing_for_Client_Side_URL_Redirect.html
+
+- title: '4.11.5 Testing for CSS Injection'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/05-Testing_for_CSS_Injection.html
+
+- title: '4.11.6 Testing for Client Side Resource Manipulation'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/06-Testing_for_Client_Side_Resource_Manipulation.html
+
+- title: '4.11.7 Testing Cross Origin Resource Sharing'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/07-Testing_Cross_Origin_Resource_Sharing.html
+
+- title: '4.11.8 Testing for Cross Site Flashing'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/08-Testing_for_Cross_Site_Flashing.html
+
+- title: '4.11.9 Testing for Clickjacking'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/09-Testing_for_Clickjacking.html
+
+- title: '4.11.10 Testing WebSockets'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/10-Testing_WebSockets.html
+
+- title: '4.11.11 Testing Web Messaging'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/11-Testing_Web_Messaging.html
+
+- title: '4.11.12 Testing Browser Storage'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/12-Testing_Browser_Storage.html
+
+- title: '4.11.13 Testing for Cross Site Script Inclusion'
+  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/13-Testing_for_Cross_Site_Script_Inclusion.html
+
+- title: '5. Reporting'
+  url: 5-Reporting/README.html
+
+- title: 'Appendix A. Testing Tools Resource'
+  url: 6-Appendix/A-Testing_Tools_Resource.html
+
+- title: 'Appendix B. Suggested Reading'
+  url: 6-Appendix/B-Suggested_Reading.html
+
+- title: 'Appendix C. Fuzz Vectors'
+  url: 6-Appendix/C-Fuzz_Vectors.html
+
+- title: 'Appendix D. Encoded Injection'
+  url: 6-Appendix/D-Encoded_Injection.html
+
+- title: 'Appendix E. History'
+  url: 6-Appendix/E-History.html
