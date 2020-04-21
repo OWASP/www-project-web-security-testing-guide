@@ -9,7 +9,7 @@ tags: wstg
 
 ## Stable
 
-View the always-current stable version at [/stable](/stable).
+View the always-current stable version at [/stable](/www-project-web-security-testing-guide/stable).
 
 ## [Unreleased 4.1] - 2020
 
