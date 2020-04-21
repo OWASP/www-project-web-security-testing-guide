@@ -17,6 +17,8 @@ View the always-current stable version at [stable](stable/).
 
 [Version 4.1](v41/) serves as a post-migration stable version under the new GitHub repository workflow.
 
+[Download the v4.1 PDF](https://github.com/OWASP/wstg/releases/download/v4.1/wstg-v4.1.pdf) here.
+
 ## [Version 4.0] - 2014-09-17
 
 [Download the v4 PDF](assets/archive/OWASP_Testing_Guide_v4.pdf) here.

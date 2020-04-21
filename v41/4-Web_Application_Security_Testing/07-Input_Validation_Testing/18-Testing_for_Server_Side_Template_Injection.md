@@ -51,10 +51,12 @@ def page():
 
 This code snippet is vulnerable to XSS but it is also vulnerable to SSTI. Using the following as a payload in the `name` parameter:
 
+{% raw %}
 ```bash
 $ curl -g 'http://www.target.com/page?name={{7*7}}'
 Hello 49!
 ```
+{% endraw %}
 
 ## How to Test
 
@@ -70,11 +72,13 @@ The first step in testing SSTI in plaintext context is to construct common templ
 
 Common template expression examples:
 
+{% raw %}
 ```html
 a{{bar}}b
 a{{7*7}}
 {var} ${var} {{var}} <%var%> [% var %]
 ```
+{% endraw %}
 
 In this step an extensive [template expression test strings/payloads list](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection) is recommended.
 
