@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Buffer Overflow
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-13|
 
 ## Summary

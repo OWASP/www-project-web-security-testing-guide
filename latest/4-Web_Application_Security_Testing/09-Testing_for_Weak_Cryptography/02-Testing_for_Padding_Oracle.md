@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Padding Oracle
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CRYP-02|
 
 ## Summary

@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for HTML Injection
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CLNT-03|
 
 ## Summary

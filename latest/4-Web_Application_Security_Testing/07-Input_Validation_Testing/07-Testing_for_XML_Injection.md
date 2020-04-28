@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for XML Injection
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-07|
 
 ## Summary

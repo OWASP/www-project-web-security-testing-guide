@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Map Application Architecture
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-INFO-10|
 
 ## Summary

@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Conduct Search Engine Discovery Reconnaissance for Information Leakage
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-INFO-01|
 
 ## Summary

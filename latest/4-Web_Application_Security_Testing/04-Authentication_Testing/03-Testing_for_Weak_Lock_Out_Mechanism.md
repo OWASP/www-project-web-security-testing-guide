@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Weak Lock Out Mechanism
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-ATHN-03|
 
 ## Summary

@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Weak Password Policy
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-ATHN-07|
 
 ## Summary

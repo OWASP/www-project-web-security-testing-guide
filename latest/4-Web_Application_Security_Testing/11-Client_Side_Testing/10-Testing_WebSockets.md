@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing WebSockets
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CLNT-10|
 
 ## Summary

@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Weaker Authentication in Alternative Channel
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-ATHN-10|
 
 ## Summary

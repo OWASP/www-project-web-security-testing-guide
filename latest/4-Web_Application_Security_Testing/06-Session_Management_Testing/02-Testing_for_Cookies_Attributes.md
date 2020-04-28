@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Cookies Attributes
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-SESS-02|
 
 ## Summary

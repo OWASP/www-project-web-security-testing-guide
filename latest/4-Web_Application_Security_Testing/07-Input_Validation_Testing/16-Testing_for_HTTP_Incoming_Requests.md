@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for HTTP Incoming Requests
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-16|
 
 ## Summary

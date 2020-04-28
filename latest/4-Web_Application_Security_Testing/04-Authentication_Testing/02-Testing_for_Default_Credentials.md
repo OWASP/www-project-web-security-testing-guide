@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Default Credentials
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-ATHN-02|
 
 ## Summary

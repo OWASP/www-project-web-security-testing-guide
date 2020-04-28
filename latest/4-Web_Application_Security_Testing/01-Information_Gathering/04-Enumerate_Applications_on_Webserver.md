@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Enumerate Applications on Webserver
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-INFO-04|
 
 ## Summary

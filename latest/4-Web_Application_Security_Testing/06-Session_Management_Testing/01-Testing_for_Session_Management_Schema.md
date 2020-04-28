@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Session Management Schema
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-SESS-01|
 
 ## Summary

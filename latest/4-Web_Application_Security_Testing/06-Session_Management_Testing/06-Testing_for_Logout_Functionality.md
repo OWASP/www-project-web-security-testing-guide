@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Logout Functionality
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-SESS-06|
 
 ## Summary

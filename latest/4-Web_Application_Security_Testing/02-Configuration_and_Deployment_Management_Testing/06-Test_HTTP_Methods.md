@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Test HTTP Methods
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CONF-06|
 
 ## Summary

@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Fingerprint Web Server
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-INFO-02|
 
 ## Summary

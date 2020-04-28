@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Map Execution Paths Through Application
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-INFO-07|
 
 ## Summary
