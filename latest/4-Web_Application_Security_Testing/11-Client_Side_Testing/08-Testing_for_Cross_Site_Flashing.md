@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Cross Site Flashing
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CLNT-08|
 
 ## Summary
@@ -53,7 +53,7 @@ Developers should avoid taking full URLs as FlashVars. If they only plan to navi
 
 Since May 2007, three new versions of Flash Player were released by Adobe. Every new version restricts some of the attacks previously described.
 
-| Player Version | `asfunction` | ExternalInterface | GetURL | Html Injection |
+| Player Version | `asfunction` | ExternalInterface | GetURL | HTML Injection |
 |----------------|--------------|-------------------|--------|----------------|
 | v9.0 r47/48    |  Yes         |   Yes             | Yes    |     Yes        |
 | v9.0 r115      |  No          |   Yes             | Yes    |     Yes        |

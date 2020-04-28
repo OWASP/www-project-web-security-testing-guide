@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Session Puzzling
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-SESS-08|
 
 ## Summary

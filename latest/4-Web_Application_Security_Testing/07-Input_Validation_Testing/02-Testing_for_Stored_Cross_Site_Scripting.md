@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Stored Cross Site Scripting
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-02|
 
 ## Summary

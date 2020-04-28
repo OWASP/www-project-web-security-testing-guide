@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Privilege Escalation
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-ATHZ-03|
 
 ## Summary

@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Code Injection
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-11|
 
 ## Summary

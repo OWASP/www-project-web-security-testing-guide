@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Weak SSL TLS Ciphers Insufficient Transport Layer Protection
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CRYP-01|
 
 ## Summary

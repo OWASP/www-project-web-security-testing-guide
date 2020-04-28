@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Test Account Provisioning Process
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-IDNT-03|
 
 ## Summary

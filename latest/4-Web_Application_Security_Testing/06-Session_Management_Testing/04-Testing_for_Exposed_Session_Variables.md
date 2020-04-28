@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Exposed Session Variables
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-SESS-04|
 
 ## Summary

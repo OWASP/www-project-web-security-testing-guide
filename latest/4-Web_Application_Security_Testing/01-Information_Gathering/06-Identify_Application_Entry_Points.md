@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Identify Application Entry Points
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-INFO-06|
 
 ## Summary

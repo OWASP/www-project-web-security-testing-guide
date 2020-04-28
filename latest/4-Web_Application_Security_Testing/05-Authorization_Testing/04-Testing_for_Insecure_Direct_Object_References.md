@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Insecure Direct Object References
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-ATHZ-04|
 
 ## Summary

@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Cross Site Script Inclusion
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CLNT-13   |
 
 ## Summary

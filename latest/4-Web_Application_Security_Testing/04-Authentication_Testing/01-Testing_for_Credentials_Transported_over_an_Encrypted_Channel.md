@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Credentials Transported over an Encrypted Channel
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-ATHN-01|
 
 ## Summary

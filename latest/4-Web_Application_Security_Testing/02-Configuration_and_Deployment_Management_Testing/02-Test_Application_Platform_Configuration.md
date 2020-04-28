@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Test Application Platform Configuration
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CONF-02|
 
 ## Summary

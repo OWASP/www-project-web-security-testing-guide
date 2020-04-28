@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Test Role Definitions
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-IDNT-01|
 
 ## Summary

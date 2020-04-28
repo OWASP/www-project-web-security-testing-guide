@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing Session Timeout
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-SESS-07|
 
 ## Summary

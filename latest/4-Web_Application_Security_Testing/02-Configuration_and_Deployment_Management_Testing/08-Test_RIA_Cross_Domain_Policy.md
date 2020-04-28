@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Test RIA Cross Domain Policy
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CONF-08|
 
 ## Summary

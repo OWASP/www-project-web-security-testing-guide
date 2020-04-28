@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Test Network Infrastructure Configuration
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CONF-01|
 
 ## Summary

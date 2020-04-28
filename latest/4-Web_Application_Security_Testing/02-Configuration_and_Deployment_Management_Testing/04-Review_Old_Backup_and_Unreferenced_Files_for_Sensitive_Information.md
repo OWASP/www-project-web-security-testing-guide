@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Review Old Backup and Unreferenced Files for Sensitive Information
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CONF-04|
 
 ## Summary

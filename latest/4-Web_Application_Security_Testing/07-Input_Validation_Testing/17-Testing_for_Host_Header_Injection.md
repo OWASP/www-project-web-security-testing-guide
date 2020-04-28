@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Host Header Injection
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-17|
 
 ## Summary

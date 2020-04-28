@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for Sensitive Information Sent via Unencrypted Channels
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CRYP-03|
 
 ## Summary

@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for IMAP SMTP Injection
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-10|
 
 ## Summary

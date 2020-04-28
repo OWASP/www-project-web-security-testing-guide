@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing Web Messaging
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CLNT-11|
 
 ## Summary

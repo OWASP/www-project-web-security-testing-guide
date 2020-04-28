@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for XPath Injection
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-09|
 
 ## Summary

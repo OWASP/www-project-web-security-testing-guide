@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for HTTP Parameter Pollution
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-04|
 
 ## Summary

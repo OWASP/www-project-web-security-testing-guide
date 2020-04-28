@@ -7,8 +7,8 @@ tags: WSTG
 ---
 # Testing for SQL Injection
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-05|
 
 ## Summary
