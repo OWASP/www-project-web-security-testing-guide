@@ -33,3 +33,15 @@ You can [read the latest development documents in our official GitHub repository
 ## Versioned Releases
 
 Only [v4.1](v41/) is currently available as a web-hosted release. Previous releases are available as PDFs on the **Release Versions** tab.
+
+## How To Reference WSTG Scenarios
+
+Each scenario has an identifier in the format `WSTG-<category>-<number>`, where: 'category' is a 4 character upper case string that identifies the type of test or weakness, and 'number' is a zero-padded numeric value from 01 to 99. For example:`WSTG-INFO-02` is the second Information Gathering test.
+
+The identifiers may change between versions therefore it is preferable that other documents, reports, or tools use the format: `WSTG-<version>-<category>-<number>`, where: 'version' is the version tag with punctuation removed. For example: `WSTG-v41-INFO-02` would be understood to mean specifically the second Information Gathering test from version 4.1.
+
+If identifiers are used without including the `<version>` element then they should be assumed to refer to the latest Web Security Testing Guide content. Obviously as the guide grows and changes this becomes problematic, which is why writers or developers should include the version element.
+
+### Linking
+
+Linking to Web Security Testing Guide scenarios should be done using versioned links not `stable` or `latest` which will definitely change with time. However, it is the project team's intention that versioned links not change. For example: `https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server.html`. Note: the `v41` element refers to version 4.1.
