@@ -19,7 +19,7 @@ This section describes practical examples of XML Injection. First, an XML style 
 
 ## How to Test
 
-Let's suppose there is a web application using an XML style communication in order to perform user registration. This is done by creating and adding a new `user>`node in an `xmlDb` file.
+Let's suppose there is a web application using an XML style communication in order to perform user registration. This is done by creating and adding a new `<user>`node in an `xmlDb` file.
 
 Let's suppose the xmlDB file is like the following:
 
