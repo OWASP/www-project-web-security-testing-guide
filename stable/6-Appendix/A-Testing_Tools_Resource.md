@@ -67,7 +67,7 @@ tags: WSTG
 #### Testing SSL
 
 - [O-Saft](https://github.com/OWASP/O-Saft)
-- [sslyze](https://github.com/iSECPartners/sslyze)
+- [SSLyze](https://github.com/nabla-c0d3/sslyze)
 - [TestSSLServer](https://www.bolet.org/TestSSLServer/)
 - [SSLScan](https://sourceforge.net/projects/sslscan/)
 - [SSLScan windows](https://github.com/rbsec/sslscan/releases)
