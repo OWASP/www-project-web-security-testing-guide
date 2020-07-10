@@ -111,7 +111,7 @@ tags: WSTG
 ## Commercial Black-Box Testing Tools
 
 - [NGS Typhon](https://www.nccgroup.trust/uk/our-services/cyber-security/technology-solutions/)
-- [IBM AppScan](https://www.ibm.com/hk-en/security/application-security/appscan)
+- [HCL AppScan](https://www.hcltechsw.com/products/appscan)
 - [Burp Intruder](https://portswigger.net/burp)
 - [Acunetix Web Vulnerability Scanner](https://www.acunetix.com)
 - [MaxPatrol Security Scanner](https://www.ptsecurity.com/ww-en/products/maxpatrol/)
@@ -138,6 +138,7 @@ tags: WSTG
 
 ### Open Source / Freeware
 
+- [HCL AppScan CodeSweep](https://marketplace.visualstudio.com/items?itemName=HCLTechnologies.hclappscancodesweep)
 - [Spotbugs](https://spotbugs.github.io/)
 - [Find Security Bugs](https://find-sec-bugs.github.io/)
 - [FlawFinder](https://dwheeler.com/flawfinder/)
@@ -151,6 +152,7 @@ tags: WSTG
 
 ### Commercial
 
+- [HCL AppScan](https://www.hcltechsw.com/products/appscan)
 - [Checkmarx CxSuite](https://www.checkmarx.com/)
 - [GrammaTech](https://www.grammatech.com/)
 - [ITS4](https://testarmy.com/en/)
