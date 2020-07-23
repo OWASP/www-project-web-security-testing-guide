@@ -102,7 +102,7 @@ tags: WSTG
 - [SAINT](https://www.carson-saint.com/)
 - [QualysGuard WAS](https://www.qualys.com/apps/web-app-scanning/)
 - [IndusGuard Web](https://www.indusface.com/products/application-security/web-application-scanning/)
-- [Fortify WebInspect](https://www.microfocus.com/en-us/products/application-security-testing/overview)
+- [Fortify WebInspect](https://www.microfocus.com/en-us/solutions/application-security)
 
 ### Linux Distrubtion
 
@@ -137,7 +137,7 @@ tags: WSTG
 - [Veracode](https://www.veracode.com/)
 - [Peach Fuzzer](https://www.peach.tech/)
 - [Burp Suite](https://portswigger.net/burp/)
-- [Fortify SCA](https://www.microfocus.com/en-us/products/application-security-testing/overview)
+- [Fortify SCA](https://www.microfocus.com/en-us/solutions/application-security)
 
 ## Acceptance Testing Tools
 
