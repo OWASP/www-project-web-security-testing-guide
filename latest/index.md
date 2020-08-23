@@ -306,3 +306,5 @@ tags: WSTG
 ## Appendix D. [Encoded Injection](6-Appendix/D-Encoded_Injection.md)
 
 ## Appendix E. [History](6-Appendix/E-History.md)
+
+## Appendix F. [Leveraging Dev Tools](6-Appendix/F-Leveraging_Dev_Tools.md)
