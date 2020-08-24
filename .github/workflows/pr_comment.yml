@@ -19,5 +19,5 @@ jobs:
             issue_number: ${{ github.event.number }},
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: ':warning: Have you followed the [Contributions](https://owasp.org/www-project-web-security-testing-guide/#contributions) guidance? Content PRs should generally be made against the source repo `OWASP/wstg`.'
+            body: ':warning: Have you followed the [contributions guideance](https://owasp.org/www-project-web-security-testing-guide/#contributions)? Content PRs should generally be made against the the [source repo `OWASP/wstg`](https://github.com/OWASP/wstg).'
           })
