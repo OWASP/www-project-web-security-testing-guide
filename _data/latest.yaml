@@ -307,17 +307,8 @@ docs:
 - title: '4.7.12 Testing for Command Injection'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection.html
 
-- title: '4.7.13 Testing for Buffer Overflow'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Buffer_Overflow.html
-
-- title: '4.7.13.1 Testing for Heap Overflow'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.1-Testing_for_Heap_Overflow.html
-
-- title: '4.7.13.2 Testing for Stack Overflow'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.2-Testing_for_Stack_Overflow.html
-
-- title: '4.7.13.3 Testing for Format String'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.3-Testing_for_Format_String.html
+- title: '4.7.13 Testing for Format String Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Format_String_Injection.html
 
 - title: '4.7.14 Testing for Incubated Vulnerability'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/14-Testing_for_Incubated_Vulnerability.html
