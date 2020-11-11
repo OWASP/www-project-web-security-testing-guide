@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # 4.4 Authentication Testing
 
 4.4.1 [Testing for Credentials Transported over an Encrypted Channel](01-Testing_for_Credentials_Transported_over_an_Encrypted_Channel.md)

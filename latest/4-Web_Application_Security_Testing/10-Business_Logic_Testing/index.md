@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # 4.10 Business Logic Testing
 
 4.10.0 [Introduction to Business Logic](00-Introduction_to_Business_Logic.md)

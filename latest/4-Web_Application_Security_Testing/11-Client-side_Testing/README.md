@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # 4.11 Client-Side Testing
 
 4.11.1 [Testing for DOM-Based Cross Site Scripting](01-Testing_for_DOM-based_Cross_Site_Scripting.md)

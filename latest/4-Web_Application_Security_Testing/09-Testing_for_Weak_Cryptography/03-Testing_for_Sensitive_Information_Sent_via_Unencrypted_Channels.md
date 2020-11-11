@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for Sensitive Information Sent via Unencrypted Channels
 
 |ID          |
