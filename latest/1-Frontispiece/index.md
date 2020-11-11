@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Frontispiece
+
+{% include breadcrumb.html %}# Frontispiece
 
 ## Welcome
 

@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# 4.5 Authorization Testing
+
+{% include breadcrumb.html %}# 4.5 Authorization Testing
 
 4.5.1 [Testing Directory Traversal File Include](01-Testing_Directory_Traversal_File_Include.md)
 

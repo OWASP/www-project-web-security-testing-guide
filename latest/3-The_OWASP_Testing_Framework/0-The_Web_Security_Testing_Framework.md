@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# The Web Security Testing Framework
+
+{% include breadcrumb.html %}# The Web Security Testing Framework
 
 ## Overview
 

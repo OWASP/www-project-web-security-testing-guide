@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Client-side URL Redirect
+
+{% include breadcrumb.html %}# Testing for Client-side URL Redirect
 
 |ID          |
 |------------|

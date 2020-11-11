@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Conduct Search Engine Discovery Reconnaissance for Information Leakage
+
+{% include breadcrumb.html %}# Conduct Search Engine Discovery Reconnaissance for Information Leakage
 
 |ID          |
 |------------|

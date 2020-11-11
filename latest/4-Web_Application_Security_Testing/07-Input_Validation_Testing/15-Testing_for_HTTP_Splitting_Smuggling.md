@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for HTTP Splitting Smuggling
+
+{% include breadcrumb.html %}# Testing for HTTP Splitting Smuggling
 
 |ID          |
 |------------|

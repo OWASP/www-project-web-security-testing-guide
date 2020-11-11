@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test Integrity Checks
+
+{% include breadcrumb.html %}# Test Integrity Checks
 
 |ID               |
 |-----------------|

@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing Session Timeout
+
+{% include breadcrumb.html %}# Testing Session Timeout
 
 |ID          |
 |------------|

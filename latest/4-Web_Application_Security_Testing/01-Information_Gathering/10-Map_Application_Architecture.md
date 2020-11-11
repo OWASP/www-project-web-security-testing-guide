@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Map Application Architecture
+
+{% include breadcrumb.html %}# Map Application Architecture
 
 |ID          |
 |------------|

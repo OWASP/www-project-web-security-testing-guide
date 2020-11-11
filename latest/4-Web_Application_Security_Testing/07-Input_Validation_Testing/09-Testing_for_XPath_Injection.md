@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for XPath Injection
+
+{% include breadcrumb.html %}# Testing for XPath Injection
 
 |ID          |
 |------------|

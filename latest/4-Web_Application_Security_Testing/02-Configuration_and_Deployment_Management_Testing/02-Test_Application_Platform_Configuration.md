@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test Application Platform Configuration
+
+{% include breadcrumb.html %}# Test Application Platform Configuration
 
 |ID          |
 |------------|

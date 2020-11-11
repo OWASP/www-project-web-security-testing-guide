@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Identify Application Entry Points
+
+{% include breadcrumb.html %}# Identify Application Entry Points
 
 |ID          |
 |------------|

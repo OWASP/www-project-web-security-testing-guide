@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing Directory Traversal File Include
+
+{% include breadcrumb.html %}# Testing Directory Traversal File Include
 
 |ID          |
 |------------|

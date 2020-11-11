@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Weak Encryption
+
+{% include breadcrumb.html %}# Testing for Weak Encryption
 
 |ID          |
 |------------|

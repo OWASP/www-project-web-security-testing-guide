@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Logout Functionality
+
+{% include breadcrumb.html %}# Testing for Logout Functionality
 
 |ID          |
 |------------|

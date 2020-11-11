@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Stored Cross Site Scripting
+
+{% include breadcrumb.html %}# Testing for Stored Cross Site Scripting
 
 |ID          |
 |------------|

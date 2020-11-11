@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test Upload of Malicious Files
+
+{% include breadcrumb.html %}# Test Upload of Malicious Files
 
 |ID               |
 |-----------------|

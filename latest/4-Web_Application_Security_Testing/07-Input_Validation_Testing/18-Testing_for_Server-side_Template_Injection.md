@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Server-side Template Injection
+
+{% include breadcrumb.html %}# Testing for Server-side Template Injection
 
 |ID          |
 |------------|

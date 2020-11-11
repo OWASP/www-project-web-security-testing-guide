@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Session Puzzling
+
+{% include breadcrumb.html %}# Testing for Session Puzzling
 
 |ID          |
 |------------|

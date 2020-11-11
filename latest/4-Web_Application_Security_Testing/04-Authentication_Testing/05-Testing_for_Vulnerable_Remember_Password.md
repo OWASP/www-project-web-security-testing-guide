@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Vulnerable Remember Password
+
+{% include breadcrumb.html %}# Testing for Vulnerable Remember Password
 
 |ID          |
 |------------|

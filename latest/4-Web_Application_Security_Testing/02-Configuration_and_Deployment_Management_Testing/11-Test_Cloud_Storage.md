@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test Cloud Storage
+
+{% include breadcrumb.html %}# Test Cloud Storage
 
 |ID          |
 |------------|

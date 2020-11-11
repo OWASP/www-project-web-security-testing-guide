@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Insecure Direct Object References
+
+{% include breadcrumb.html %}# Testing for Insecure Direct Object References
 
 |ID          |
 |------------|

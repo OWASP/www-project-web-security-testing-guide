@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Weaker Authentication in Alternative Channel
+
+{% include breadcrumb.html %}# Testing for Weaker Authentication in Alternative Channel
 
 |ID          |
 |------------|

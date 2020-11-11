@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Encoded Injection
+
+{% include breadcrumb.html %}# Encoded Injection
 
 ## Background
 

@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Table of Contents
+
+{% include breadcrumb.html %}# Table of Contents
 
 ## 0. [Foreword by Eoin Keary](0-Foreword/README.md)
 

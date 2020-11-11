@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Stack Traces
+
+{% include breadcrumb.html %}# Testing for Stack Traces
 
 |ID          |
 |------------|

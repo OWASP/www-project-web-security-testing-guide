@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test Ability to Forge Requests
+
+{% include breadcrumb.html %}# Test Ability to Forge Requests
 
 |ID               |
 |-----------------|

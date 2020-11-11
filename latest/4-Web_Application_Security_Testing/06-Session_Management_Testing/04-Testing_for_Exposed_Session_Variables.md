@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Exposed Session Variables
+
+{% include breadcrumb.html %}# Testing for Exposed Session Variables
 
 |ID          |
 |------------|

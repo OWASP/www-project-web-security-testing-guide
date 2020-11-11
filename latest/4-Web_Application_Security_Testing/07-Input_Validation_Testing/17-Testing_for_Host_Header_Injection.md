@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Host Header Injection
+
+{% include breadcrumb.html %}# Testing for Host Header Injection
 
 |ID          |
 |------------|

@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Privilege Escalation
+
+{% include breadcrumb.html %}# Testing for Privilege Escalation
 
 |ID          |
 |------------|

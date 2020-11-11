@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Enumerate Infrastructure and Application Admin Interfaces
+
+{% include breadcrumb.html %}# Enumerate Infrastructure and Application Admin Interfaces
 
 |ID          |
 |------------|

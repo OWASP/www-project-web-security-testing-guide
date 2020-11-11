@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test HTTP Methods
+
+{% include breadcrumb.html %}# Test HTTP Methods
 
 |ID          |
 |------------|

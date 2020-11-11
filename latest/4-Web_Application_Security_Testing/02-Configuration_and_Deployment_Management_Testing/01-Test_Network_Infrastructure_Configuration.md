@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test Network Infrastructure Configuration
+
+{% include breadcrumb.html %}# Test Network Infrastructure Configuration
 
 |ID          |
 |------------|

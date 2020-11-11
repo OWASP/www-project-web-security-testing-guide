@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test HTTP Strict Transport Security
+
+{% include breadcrumb.html %}# Test HTTP Strict Transport Security
 
 |ID          |
 |------------|

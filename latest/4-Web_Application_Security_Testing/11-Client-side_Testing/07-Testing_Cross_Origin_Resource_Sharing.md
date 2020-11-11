@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing Cross Origin Resource Sharing
+
+{% include breadcrumb.html %}# Testing Cross Origin Resource Sharing
 
 |ID          |
 |------------|

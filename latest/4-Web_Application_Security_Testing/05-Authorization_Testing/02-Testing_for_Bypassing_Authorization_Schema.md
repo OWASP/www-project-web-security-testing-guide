@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Bypassing Authorization Schema
+
+{% include breadcrumb.html %}# Testing for Bypassing Authorization Schema
 
 |ID          |
 |------------|

@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Credentials Transported over an Encrypted Channel
+
+{% include breadcrumb.html %}# Testing for Credentials Transported over an Encrypted Channel
 
 |ID          |
 |------------|

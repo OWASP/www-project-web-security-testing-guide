@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Browser Cache Weaknesses
+
+{% include breadcrumb.html %}# Testing for Browser Cache Weaknesses
 
 |ID          |
 |------------|

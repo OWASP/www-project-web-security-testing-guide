@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test User Registration Process
+
+{% include breadcrumb.html %}# Test User Registration Process
 
 |ID          |
 |------------|

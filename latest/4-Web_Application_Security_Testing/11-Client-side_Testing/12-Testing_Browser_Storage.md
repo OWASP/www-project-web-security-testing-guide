@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing Browser Storage
+
+{% include breadcrumb.html %}# Testing Browser Storage
 
 |ID          |
 |------------|

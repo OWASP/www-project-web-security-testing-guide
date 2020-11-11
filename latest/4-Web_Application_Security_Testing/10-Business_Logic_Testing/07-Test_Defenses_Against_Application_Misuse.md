@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test Defenses Against Application Misuse
+
+{% include breadcrumb.html %}# Test Defenses Against Application Misuse
 
 |ID               |
 |-----------------|

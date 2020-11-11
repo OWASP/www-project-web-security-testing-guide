@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Enumerate Applications on Webserver
+
+{% include breadcrumb.html %}# Enumerate Applications on Webserver
 
 |ID          |
 |------------|

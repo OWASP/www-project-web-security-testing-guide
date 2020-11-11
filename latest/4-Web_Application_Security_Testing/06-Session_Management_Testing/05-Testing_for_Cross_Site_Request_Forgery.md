@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Testing for Cross Site Request Forgery
+
+{% include breadcrumb.html %}# Testing for Cross Site Request Forgery
 
 |ID          |
 |------------|

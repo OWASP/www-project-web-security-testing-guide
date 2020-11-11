@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Fingerprint Web Server
+
+{% include breadcrumb.html %}# Fingerprint Web Server
 
 |ID          |
 |------------|

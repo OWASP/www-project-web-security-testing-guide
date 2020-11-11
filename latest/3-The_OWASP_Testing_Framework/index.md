@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# The OWASP Testing Framework
+
+{% include breadcrumb.html %}# The OWASP Testing Framework
 
 3.1 [The Web Security Testing Framework](0-The_Web_Security_Testing_Framework.md)
 

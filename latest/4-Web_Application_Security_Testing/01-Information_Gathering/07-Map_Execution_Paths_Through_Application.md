@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Map Execution Paths Through Application
+
+{% include breadcrumb.html %}# Map Execution Paths Through Application
 
 |ID          |
 |------------|

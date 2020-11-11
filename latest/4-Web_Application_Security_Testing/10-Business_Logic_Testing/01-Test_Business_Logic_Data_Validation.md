@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test Business Logic Data Validation
+
+{% include breadcrumb.html %}# Test Business Logic Data Validation
 
 |ID               |
 |-----------------|

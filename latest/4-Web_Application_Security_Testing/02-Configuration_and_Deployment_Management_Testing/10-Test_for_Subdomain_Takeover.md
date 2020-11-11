@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Test for Subdomain Takeover
+
+{% include breadcrumb.html %}# Test for Subdomain Takeover
 
 |ID          |
 |------------|

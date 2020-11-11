@@ -5,7 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
-# Fingerprint Web Application Framework
+
+{% include breadcrumb.html %}# Fingerprint Web Application Framework
 
 |ID          |
 |------------|
