@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Review Webserver Metafiles for Information Leakage
 
 |ID          |

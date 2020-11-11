@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # 4.7 Input Validation Testing
 
 4.7.1 [Testing for Reflected Cross Site Scripting](01-Testing_for_Reflected_Cross_Site_Scripting.md)

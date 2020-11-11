@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Web Application Security Testing
 
 4.0 [Introduction and Objectives](00-Introduction_and_Objectives/README.md)

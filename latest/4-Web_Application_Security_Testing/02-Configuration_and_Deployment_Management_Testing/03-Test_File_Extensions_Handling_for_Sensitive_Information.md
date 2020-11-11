@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Test File Extensions Handling for Sensitive Information
 
 |ID          |
