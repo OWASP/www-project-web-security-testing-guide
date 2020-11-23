@@ -15,7 +15,7 @@ View the always-current stable version at [stable](stable/).
 
 ## [Version 4.2] - TBC
 
-[Version 4.2](v42/) serves as the current stable version under the GitHub repository workflow.
+[Version 4.2](v42/) introduces new testing scenarios, updates existing chapters, and offers an improved writing style and chapter layout.
 
 [Download the v4.2 PDF](https://github.com/OWASP/wstg/releases/download/v4.2/wstg-v4.2.pdf) here.
 
