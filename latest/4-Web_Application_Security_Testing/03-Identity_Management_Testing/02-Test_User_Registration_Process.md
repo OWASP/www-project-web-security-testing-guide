@@ -50,6 +50,10 @@ In contrast, in the Google example below the identification requirements include
 ![Google Registration Page](images/Google_registration_page.jpg)\
 *Figure 4.3.2-2: Google Registration Page*
 
+## Remediation
+
+Implement identification and verification requirements that correspond to the security requirements of the information the credentials protect.
+
 ## Tools
 
 A HTTP proxy can be a useful tool to test this control.
@@ -57,7 +61,3 @@ A HTTP proxy can be a useful tool to test this control.
 ## References
 
 [User Registration Design](https://mashable.com/2011/06/09/user-registration-design/)
-
-## Remediation
-
-Implement identification and verification requirements that correspond to the security requirements of the information the credentials protect.

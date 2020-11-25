@@ -120,7 +120,7 @@ There are other XSSI vulnerabilities that can result in sensitive data leakage e
 
 To leak data the attacker/tester has to be able to inject JavaScript code into the CSV data. The following example code is an excerpt from Takeshi Terada's [Identifier based XSSI attacks](https://www.mbsd.jp/Whitepaper/xssi.pdf) whitepaper.
 
-```txt
+```text
 HTTP/1.1 200 OK
 Content-Type: text/csv
 Content-Disposition: attachment; filename="a.csv"
@@ -135,7 +135,7 @@ Content-Length: xxxx
 
 In this example, using the `___` columns as injection points and inserting JavaScript strings in their place has the following result.
 
-```txt
+```text
 1,"\"",$$$=function(){/*","aaa@a.example","03-0000-0001"
 2,"foo","bbb@b.example","03-0000-0002"
 ...
@@ -166,7 +166,7 @@ In this example, using the `___` columns as injection points and inserting JavaS
 
 Browsers normally present standardized [JavaScript error messages](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors). However, in the case of IE9/10, runtime error messages provided additional details that could be used to leak data. For example, a website `victim.com` serves the following content at the URI `http://victim.com/service/csvendpoint` for authenticated users:
 
-```txt
+```text
 HTTP/1.1 200 OK
 Content-Type: text/csv
 Content-Disposition: attachment; filename="a.csv"
@@ -209,7 +209,7 @@ Here is an excerpt of a JavaScript file containing sensitive data, `javascript.j
 
 The sensitive data can be leaked with the following JavaScript code:
 
-```javascript
+```html
 ...
  <div id="result">
 

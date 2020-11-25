@@ -53,7 +53,7 @@ For each role:
 
 For example, suppose that the `viewSettings` function is part of every account menu of the application with the same role, and it is possible to access it by requesting the following URL: `https://www.example.com/account/viewSettings`. Then, the following HTTP request is generated when calling the `viewSettings` function:
 
-```html
+```http
 POST /account/viewSettings HTTP/1.1
 Host: www.example.com
 [other HTTP headers]
@@ -121,7 +121,7 @@ The application will be considered vulnerable if the:
 
 Suppose that the `deleteEvent` function is part of the administrator account menu of the application, and it is possible to access it by requesting the following URL: `https://www.example.com/account/deleteEvent`. Then, the following HTTP request is generated when calling the `deleteEvent` function:
 
-```html
+```http
 POST /account/deleteEvent HTTP/1.1
 Host: www.example.com
 [other HTTP headers]
@@ -132,7 +132,7 @@ EventID=1000001
 
 The valid response:
 
-```html
+```http
 HTTP/1.1 200 OK
 [other HTTP headers]
 
@@ -141,7 +141,7 @@ HTTP/1.1 200 OK
 
 The attacker may try and execute the same request:
 
-```html
+```http
 POST /account/deleteEvent HTTP/1.1
 Host: www.example.com
 [other HTTP headers]
@@ -160,13 +160,11 @@ The application will be considered vulnerable if any role other than administrat
 
 ### Testing for Access to Administrative Functions
 
-For example, suppose that the `addUser` function is part of the administrative menu of the application, and it is possible to access it by requesting the following URL:
-
-`https://www.example.com/admin/addUser`
+For example, suppose that the `addUser` function is part of the administrative menu of the application, and it is possible to access it by requesting the following URL `https://www.example.com/admin/addUser`.
 
 Then, the following HTTP request is generated when calling the `addUser` function:
 
-```html
+```http
 POST /admin/addUser HTTP/1.1
 Host: www.example.com
 [...]
@@ -198,7 +196,7 @@ To detect the support for the header `X-Original-URL` or `X-Rewrite-URL`, the fo
 
 #### 1. Send a Normal Request without Any X-Original-Url or X-Rewrite-Url Header
 
-```html
+```http
 GET / HTTP/1.1
 Host: www.example.com
 [...]
