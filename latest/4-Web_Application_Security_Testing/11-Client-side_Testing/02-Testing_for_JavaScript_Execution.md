@@ -25,8 +25,9 @@ Here is an example of a script that does not perform any validation of the varia
 
 ```js
 var rr = location.search.substring(1);
-if(rr)
+if(rr) {
     window.location=decodeURIComponent(rr);
+}
 ```
 
 This implies that an attacker could inject JavaScript code simply by submitting the following query string: `www.victim.com/?javascript:alert(1)`.
@@ -37,7 +38,7 @@ This implies that an attacker could inject JavaScript code simply by submitting 
 
 ## How to Test
 
-For example, consider the following URL: `http://www.domxss.com/domxss/01_Basics/04_eval.html`
+Consider the following: [DOM XSS exercise](http://www.domxss.com/domxss/01_Basics/04_eval.html)
 
 The page contains the following script:
 
@@ -48,10 +49,11 @@ function loadObj(){
     document.getElementById('mess').textContent=cc.message;
 }
 
-if(window.location.hash.indexOf('message')==-1)
-    var aMess="({\"message\":\"Hello User!\"})";
-else
-    var aMess=location.hash.substr(window.location.hash.indexOf('message=')+8);
+if(window.location.hash.indexOf('message')==-1) {
+    var aMess='({"message":"Hello User!"})';
+} else {
+    var aMess=location.hash.substr(window.location.hash.indexOf('message=')+8)
+}
 </script>
 ```
 
