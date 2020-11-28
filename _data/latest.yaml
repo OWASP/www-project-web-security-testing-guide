@@ -238,6 +238,9 @@ docs:
 - title: '4.6.8 Testing for Session Puzzling'
   url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/08-Testing_for_Session_Puzzling.html
 
+- title: '4.6.9 Testing for Session Hijacking'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/09-Testing_for_Session_Hijacking.html
+
 - title: '4.7 Input Validation Testing'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/README.html
 
@@ -325,11 +328,17 @@ docs:
 - title: '4.7.18 Testing for Server-side Template Injection'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server-side_Template_Injection.html
 
+- title: '4.7.19 Testing for Server-Side Request Forgery'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/19-Testing_for_Server-Side_Request_Forgery.html
+
 - title: '4.8 Testing for Error Handling'
   url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/README.html
 
 - title: '4.8.1 Testing for Improper Error Handling'
   url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling.html
+
+- title: '4.8.2 Testing for Stack Traces'
+  url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces.html
 
 - title: '4.9 Testing for Weak Cryptography'
   url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README.html
@@ -420,6 +429,12 @@ docs:
 
 - title: '4.11.13 Testing for Cross Site Script Inclusion'
   url: 4-Web_Application_Security_Testing/11-Client-side_Testing/13-Testing_for_Cross_Site_Script_Inclusion.html
+
+- title: '4.12 API Testing'
+  url: 4-Web_Application_Security_Testing/12-API_Testing/README.html
+
+- title: '4.12.1 Testing GraphQL'
+  url: 4-Web_Application_Security_Testing/12-API_Testing/01-Testing_GraphQL.html
 
 - title: '5. Reporting'
   url: 5-Reporting/README.html
