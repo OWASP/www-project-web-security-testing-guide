@@ -41,6 +41,8 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 
 ## Authors
 
+- Aaron Williams
+- Alessia Michela Di Campi
 - Elie Saad
 - Ismael Goncalves
 - Janos Zold
@@ -48,8 +50,13 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 - Joel Espunya
 - Manh Pham Tien
 - Mark Clayton
+- Or Asaf
+- rbsec
 - Rick Mitchell
+- Rishu Ranjan
 - Rubal Jain
+- Samuele Casarin
+- Stefano Calzavara
 - Tal Argoni
 - Victoria Drake
 - Phu Nguyen (Tony)
@@ -63,14 +70,23 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 
 ## Reviewers or Editors
 
+- Abhi M Balakrishnan
 - Asharaf Ali
 - Elie Saad
+- Eoin Murphy
+- Francisco Bustos
+- frozensolid
+- Hsiang-Chih Hsu
 - Jeremy Bonghwan Choi
 - Lukasz Lubczynski
+- Miguel Arevalo
+- Najam Ul Saqib
+- Nikoleta Misheva
 - Patrick Santos
 - Rejah Rehim
 - Rick Mitchell
 - Roman Mueller
+- Thomas Lim
 - Tom Bowyer
 - Victoria Drake
 
