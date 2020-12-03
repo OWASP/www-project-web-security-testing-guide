@@ -1,7 +1,7 @@
 ---
 
 layout: col-document
-title: WSTG - v4.2
+title: WSTG - Stable
 tags: WSTG
 
 ---
