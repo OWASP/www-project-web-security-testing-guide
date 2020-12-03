@@ -5,10 +5,12 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for HTTP Splitting Smuggling
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-15|
 
 ## Summary
@@ -23,17 +25,22 @@ The first attack exploits a lack of input sanitization which allows an intruder 
 
 In the second attack, the attacker exploits the fact that some specially crafted HTTP messages can be parsed and interpreted in different ways depending on the agent that receives them. HTTP smuggling requires some level of knowledge about the different agents that are handling the HTTP messages (web server, proxy, firewall) and therefore will be included only in the gray-box testing section.
 
+## Test Objectives
+
+- Assess if the application is vulnerable to splitting, identifying what possible attacks are achievable.
+- Assess if the chain of communication is vulnerable to smuggling, identifying what possible attacks are achievable.
+
 ## How to Test
 
 ### Black-Box Testing
 
 #### HTTP Splitting
 
-Some web applications use part of the user input to generate the values of some headers of their responses. The most straightforward example is provided by redirections in which the target URL depends on some user-submitted value. Let's say for instance that the user is asked to choose whether he/she prefers a standard or advanced web interface. The choice will be passed as a parameter that will be used in the response header to trigger the redirection to the corresponding page.
+Some web applications use part of the user input to generate the values of some headers of their responses. The most straightforward example is provided by redirections in which the target URL depends on some user-submitted value. Let's say for instance that the user is asked to choose whether they prefer a standard or advanced web interface. The choice will be passed as a parameter that will be used in the response header to trigger the redirection to the corresponding page.
 
 More specifically, if the parameter 'interface' has the value 'advanced', the application will answer with the following:
 
-```html
+```http
 HTTP/1.1 302 Moved Temporarily
 Date: Sun, 03 Dec 2005 16:22:19 GMT
 Location: http://victim.com/main.jsp?interface=advanced
@@ -48,7 +55,7 @@ Let's say that in the previous example the tester passes the following data as t
 
 The resulting answer from the vulnerable application will therefore be the following:
 
-```html
+```http
 HTTP/1.1 302 Moved Temporarily
 Date: Sun, 03 Dec 2005 16:22:19 GMT
 Location: http://victim.com/main.jsp?interface=advanced
@@ -62,18 +69,18 @@ Content-Length: 35
 <other data>
 ```
 
-The web cache will see two different responses, so if the attacker sends, immediately after the first request, a second one asking for `/index.html`, the web cache will match this request with the second response and cache its content, so that all subsequent requests directed to `victim.com/index.html` passing through that web cache will receive the “system down” message. In this way, an attacker would be able to effectively deface the site for all users using that web cache (the whole Internet, if the web cache is a reverse proxy for the web application).
+The web cache will see two different responses, so if the attacker sends, immediately after the first request, a second one asking for `/index.html`, the web cache will match this request with the second response and cache its content, so that all subsequent requests directed to `victim.com/index.html` passing through that web cache will receive the "system down" message. In this way, an attacker would be able to effectively deface the site for all users using that web cache (the whole Internet, if the web cache is a reverse proxy for the web application).
 
-Alternatively, the attacker could pass to those users a JavaScript snippet that mounts a cross site scripting attack, e.g., to steal the cookies. Note that while the vulnerability is in the application, the target here is its users. Therefore, in order to look for this vulnerability, the tester needs to identify all user controlled input that influences one or more headers in the response, and check whether he/she can successfully inject a CR+LF sequence in it.
+Alternatively, the attacker could pass to those users a JavaScript snippet that mounts a cross site scripting attack, e.g., to steal the cookies. Note that while the vulnerability is in the application, the target here is its users. Therefore, in order to look for this vulnerability, the tester needs to identify all user controlled input that influences one or more headers in the response, and check whether they can successfully inject a CR+LF sequence in it.
 
 The headers that are the most likely candidates for this attack are:
 
-- Location
-- Set-Cookie
+- `Location`
+- `Set-Cookie`
 
 It must be noted that a successful exploitation of this vulnerability in a real world scenario can be quite complex, as several factors must be taken into account:
 
-1. The pen-tester must properly set the headers in the fake response for it to be successfully cached (e.g., a Last-Modified header with a date set in the future). He/she might also have to destroy previously cached versions of the target pagers, by issuing a preliminary request with `Pragma: no-cache` in the request headers
+1. The pen-tester must properly set the headers in the fake response for it to be successfully cached (e.g., a Last-Modified header with a date set in the future). They might also have to destroy previously cached versions of the target pagers, by issuing a preliminary request with `Pragma: no-cache` in the request headers
 2. The application, while not filtering the CR+LF sequence, might filter other characters that are needed for a successful attack (e.g., `<` and `>`). In this case, the tester can try to use other encodings (e.g., UTF-7)
 3. Some targets (e.g., ASP) will URL-encode the path part of the Location header (e.g., `www.victim.com/redirect.asp`), making a CRLF sequence useless. However, they fail to encode the query section (e.g., ?interface=advanced), meaning that a leading question mark is enough to bypass this filtering
 
@@ -95,7 +102,7 @@ There are several products that enable a system administration to detect and blo
 
 `http://target/scripts/..%c1%1c../winnt/system32/cmd.exe?/c+<command_to_execute>`
 
-Of course, it is quite easy to spot and filter this attack by the presence of strings like “..” and “cmd.exe” in the URL. However, IIS 5.0 is quite picky about POST requests whose body is up to 48K bytes and truncates all content that is beyond this limit when the Content-Type header is different from application/x-www-form-urlencoded. The pen-tester can leverage this by creating a very large request, structured as follows:
+Of course, it is quite easy to spot and filter this attack by the presence of strings like ".." and "cmd.exe" in the URL. However, IIS 5.0 is quite picky about POST requests whose body is up to 48K bytes and truncates all content that is beyond this limit when the Content-Type header is different from application/x-www-form-urlencoded. The pen-tester can leverage this by creating a very large request, structured as follows:
 
 ```html
 POST /target.asp HTTP/1.1        <-- Request #1
@@ -132,8 +139,8 @@ Note that HTTP Smuggling does `*not*` exploit any vulnerability in the target we
 
 ### Whitepapers
 
-- [Amit Klein, “Divide and Conquer: HTTP Response Splitting, Web Cache Poisoning Attacks, and Related Topics”](https://packetstormsecurity.com/files/32815/Divide-and-Conquer-HTTP-Response-Splitting-Whitepaper.html)
-- [Amit Klein: “HTTP Message Splitting, Smuggling and Other Animals”](https://www.slideserve.com/alicia/http-message-splitting-smuggling-and-other-animals-powerpoint-ppt-presentation)
-- [Amit Klein: “HTTP Request Smuggling - ERRATA (the IIS 48K buffer phenomenon)”](https://www.securityfocus.com/archive/1/411418)
-- [Amit Klein: “HTTP Response Smuggling”](https://www.securityfocus.com/archive/1/425593)
-- [Chaim Linhart, Amit Klein, Ronen Heled, Steve Orrin: “HTTP Request Smuggling”](https://www.cgisecurity.com/lib/http-request-smuggling.pdf)
+- [Amit Klein, "Divide and Conquer: HTTP Response Splitting, Web Cache Poisoning Attacks, and Related Topics"](https://packetstormsecurity.com/files/32815/Divide-and-Conquer-HTTP-Response-Splitting-Whitepaper.html)
+- [Amit Klein: "HTTP Message Splitting, Smuggling and Other Animals"](https://www.slideserve.com/alicia/http-message-splitting-smuggling-and-other-animals-powerpoint-ppt-presentation)
+- [Amit Klein: "HTTP Request Smuggling - ERRATA (the IIS 48K buffer phenomenon)"](https://www.securityfocus.com/archive/1/411418)
+- [Amit Klein: "HTTP Response Smuggling"](https://www.securityfocus.com/archive/1/425593)
+- [Chaim Linhart, Amit Klein, Ronen Heled, Steve Orrin: "HTTP Request Smuggling"](https://www.cgisecurity.com/lib/http-request-smuggling.pdf)

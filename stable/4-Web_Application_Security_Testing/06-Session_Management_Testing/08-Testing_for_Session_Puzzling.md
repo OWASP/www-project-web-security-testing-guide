@@ -5,10 +5,12 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for Session Puzzling
 
-|ID           |
-|-------------|
+|ID          |
+|------------|
 |WSTG-SESS-08|
 
 ## Summary
@@ -27,6 +29,11 @@ For example, an attacker could use session variable overloading to bypass authen
 
 For example - an authentication bypass attack vector could be executed by accessing a publicly accessible entry point (e.g. a password recovery page) that populates the session with an identical session variable, based on fixed values or on user originating input.
 
+## Test Objectives
+
+- Identify all session variables.
+- Break the logical flow of session generation.
+
 ## How to Test
 
 ### Black-Box Testing
@@ -35,19 +42,17 @@ This vulnerability can be detected and exploited by enumerating all of the sessi
 
 #### Examples
 
-A very simple example could be the password reset functionality that, in the entry point, could request the user to provide some identifying information such as the username or the e-mail address. This page might then populate the session with these identifying values, which are received directly from the client side, or obtained from queries or calculations based on the received input. At this point there may be some pages in the application that show private data based on this session object. In this manner the attacker could bypass the authentication process.
+A very simple example could be the password reset functionality that, in the entry point, could request the user to provide some identifying information such as the username or the email address. This page might then populate the session with these identifying values, which are received directly from the client-side, or obtained from queries or calculations based on the received input. At this point there may be some pages in the application that show private data based on this session object. In this manner the attacker could bypass the authentication process.
 
 ### Gray-Box Testing
 
 The most effective way to detect these vulnerabilities is via a source code review.
 
-## References
-
-### Whitepapers
-
-- [Session Puzzles](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf)
-- [Session Puzzling and Session Race Conditions](http://sectooladdict.blogspot.com/2011/09/session-puzzling-and-session-race.html)
-
 ## Remediation
 
 Session variables should only be used for a single consistent purpose.
+
+## References
+
+- [Session Puzzles](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf)
+- [Session Puzzling and Session Race Conditions](http://sectooladdict.blogspot.com/2011/09/session-puzzling-and-session-race.html)

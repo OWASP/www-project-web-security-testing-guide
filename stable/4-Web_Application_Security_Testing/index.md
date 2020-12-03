@@ -5,6 +5,8 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Web Application Security Testing
 
 4.0 [Introduction and Objectives](00-Introduction_and_Objectives/README.md)
@@ -29,4 +31,4 @@ tags: WSTG
 
 4.10 [Business Logic Testing](10-Business_Logic_Testing/README.md)
 
-4.11 [Client Side Testing](11-Client_Side_Testing/README.md)
+4.11 [Client-side Testing](11-Client-side_Testing/README.md)

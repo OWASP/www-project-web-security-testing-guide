@@ -5,6 +5,8 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # 4.2 Configuration and Deployment Management Testing
 
 4.2.1 [Test Network Infrastructure Configuration](01-Test_Network_Infrastructure_Configuration.md)

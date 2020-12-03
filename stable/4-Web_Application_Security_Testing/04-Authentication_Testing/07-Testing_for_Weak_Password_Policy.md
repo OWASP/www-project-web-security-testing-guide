@@ -5,10 +5,12 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for Weak Password Policy
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-ATHN-07|
 
 ## Summary
@@ -17,7 +19,7 @@ The most prevalent and most easily administered authentication mechanism is a st
 
 ## Test Objectives
 
-Determine the resistance of the application against brute force password guessing using available password dictionaries by evaluating the length, complexity, reuse and aging requirements of passwords.
+- Determine the resistance of the application against brute force password guessing using available password dictionaries by evaluating the length, complexity, reuse, and aging requirements of passwords.
 
 ## How to Test
 
@@ -31,10 +33,10 @@ Determine the resistance of the application against brute force password guessin
 7. What are the minimum and maximum password lengths that can be set, and are they appropriate for the sensitivity of the account and application?
 8. Is it possible set common passwords such as `Password1` or `123456`?
 
-## References
-
-- [Brute Force Attacks](https://owasp.org/www-community/attacks/Brute_force_attack)
-
 ## Remediation
 
 To mitigate the risk of easily guessed passwords facilitating unauthorized access there are two solutions: introduce additional authentication controls (i.e. two-factor authentication) or introduce a strong password policy. The simplest and cheapest of these is the introduction of a strong password policy that ensures password length, complexity, reuse and aging; although ideally both of them should be implemented.
+
+## References
+
+- [Brute Force Attacks](https://owasp.org/www-community/attacks/Brute_force_attack)

@@ -4,7 +4,7 @@ code_user: OWASP
 code_repo: wstg
 # core files/folders to exclude
 exclude:
-  - README.md
+    - README.md
 plugins:
-  - jekyll-include-cache-0.2.0
-stable_version: v41
+    - jekyll-include-cache-0.2.0
+stable_version: v42

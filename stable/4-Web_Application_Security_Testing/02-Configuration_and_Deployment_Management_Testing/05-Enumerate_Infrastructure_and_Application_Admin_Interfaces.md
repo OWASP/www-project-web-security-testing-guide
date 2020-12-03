@@ -5,10 +5,12 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Enumerate Infrastructure and Application Admin Interfaces
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CONF-05|
 
 ## Summary
@@ -24,6 +26,10 @@ An application may require an administrator interface to enable a privileged use
 
 In many instances, such interfaces do not have sufficient controls to protect them from unauthorized access. Testing is aimed at discovering these administrator interfaces and accessing functionality intended for the privileged users.
 
+## Test Objectives
+
+- Identify hidden administrator interfaces and functionality.
+
 ## How to Test
 
 ### Black-Box Testing
@@ -31,10 +37,10 @@ In many instances, such interfaces do not have sufficient controls to protect th
 The following section describes vectors that may be used to test for the presence of administrative interfaces. These techniques may also be used to test for related issues including privilege escalation, and are described elsewhere in this guide(for example [Testing for bypassing authorization schema](../05-Authorization_Testing/02-Testing_for_Bypassing_Authorization_Schema.md) and [Testing for Insecure Direct Object References](../05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References.md) in greater detail.
 
 - Directory and file enumeration. An administrative interface may be present but not visibly available to the tester. Attempting to guess the path of the administrative interface may be as simple as requesting: */admin or /administrator etc..* or in some scenarios can be revealed within seconds using [Google dorks](https://www.exploit-db.com/google-hacking-database).
-- There are many tools available to perform brute forcing of server contents, see the tools section below for more information. A tester may have to also identify the file name of the administration page. Forcibly browsing to the identified page may provide access to the interface.
+- There are many tools available to perform brute forcing of server contents, see the tools section below for more information. A tester may have to also identify the filename of the administration page. Forcibly browsing to the identified page may provide access to the interface.
 - Comments and links in source code. Many sites use common code that is loaded for all site users. By examining all source sent to the client, links to administrator functionality may be discovered and should be investigated.
 - Reviewing server and application documentation. If the application server or application is deployed in its default configuration it may be possible to access the administration interface using information described in configuration or help documentation. Default password lists should be consulted if an administrative interface is found and credentials are required.
-- Publicly available information. Many applications such as wordpress have default administrative interfaces .
+- Publicly available information. Many applications such as WordPress have default administrative interfaces .
 - Alternative server port. Administration interfaces may be seen on a different port on the host than the main application. For example, Apache Tomcat's Administration interface can often be seen on port 8080.
 - Parameter tampering. A GET or POST parameter or a cookie variable may be required to enable the administrator functionality. Clues to this include the presence of hidden fields such as:
 
@@ -130,7 +136,6 @@ wp-admin/admin-header.php
 
 ## References
 
-- [Default Password list](https://portforward.com/router-password/)
-- [Default Password list](https://cirt.net/passwords)
-- [FuzzDB can be used to do brute force browsing admin login path](https://github.com/fuzzdb-project/fuzzdb/blob/f801f5c5adc9aa5e54f20d273d213c5ab58826b9/discovery/predictable-filepaths/login-file-locations/Logins.fuzz.txt)
-- [Common admin or debugging parameters](https://github.com/fuzzdb-project/fuzzdb/blob/f801f5c5adc9aa5e54f20d273d213c5ab58826b9/attack/business-logic/CommonDebugParamNames.fuzz.txt)
+- [Cirt: Default Password list](https://cirt.net/passwords)
+- [FuzzDB can be used to do brute force browsing admin login path](https://github.com/fuzzdb-project/fuzzdb/blob/master/discovery/predictable-filepaths/login-file-locations/Logins.txt)
+- [Common admin or debugging parameters](https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/business-logic/CommonDebugParamNames.txt)
