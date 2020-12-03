@@ -91,8 +91,8 @@ docs:
 - title: '4.1.4 Enumerate Applications on Webserver'
   url: 4-Web_Application_Security_Testing/01-Information_Gathering/04-Enumerate_Applications_on_Webserver.html
 
-- title: '4.1.5 Review Webpage Comments and Metadata for Information Leakage'
-  url: 4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Comments_and_Metadata_for_Information_Leakage.html
+- title: '4.1.5 Review Webpage Content for Information Leakage'
+  url: 4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage.html
 
 - title: '4.1.6 Identify Application Entry Points'
   url: 4-Web_Application_Security_Testing/01-Information_Gathering/06-Identify_Application_Entry_Points.html
@@ -238,6 +238,9 @@ docs:
 - title: '4.6.8 Testing for Session Puzzling'
   url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/08-Testing_for_Session_Puzzling.html
 
+- title: '4.6.9 Testing for Session Hijacking'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/09-Testing_for_Session_Hijacking.html
+
 - title: '4.7 Input Validation Testing'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/README.html
 
@@ -277,8 +280,8 @@ docs:
 - title: '4.7.5.7 Testing for ORM Injection'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.7-Testing_for_ORM_Injection.html
 
-- title: '4.7.5.8 Testing for Client Side'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.8-Testing_for_Client_Side.html
+- title: '4.7.5.8 Testing for Client-side'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.8-Testing_for_Client-side.html
 
 - title: '4.7.6 Testing for LDAP Injection'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/06-Testing_for_LDAP_Injection.html
@@ -307,17 +310,8 @@ docs:
 - title: '4.7.12 Testing for Command Injection'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection.html
 
-- title: '4.7.13 Testing for Buffer Overflow'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Buffer_Overflow.html
-
-- title: '4.7.13.1 Testing for Heap Overflow'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.1-Testing_for_Heap_Overflow.html
-
-- title: '4.7.13.2 Testing for Stack Overflow'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.2-Testing_for_Stack_Overflow.html
-
-- title: '4.7.13.3 Testing for Format String'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.3-Testing_for_Format_String.html
+- title: '4.7.13 Testing for Format String Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Format_String_Injection.html
 
 - title: '4.7.14 Testing for Incubated Vulnerability'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/14-Testing_for_Incubated_Vulnerability.html
@@ -331,14 +325,17 @@ docs:
 - title: '4.7.17 Testing for Host Header Injection'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/17-Testing_for_Host_Header_Injection.html
 
-- title: '4.7.18 Testing for Server Side Template Injection'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server_Side_Template_Injection.html
+- title: '4.7.18 Testing for Server-side Template Injection'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server-side_Template_Injection.html
+
+- title: '4.7.19 Testing for Server-Side Request Forgery'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/19-Testing_for_Server-Side_Request_Forgery.html
 
 - title: '4.8 Testing for Error Handling'
   url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/README.html
 
-- title: '4.8.1 Testing for Error Code'
-  url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_for_Error_Code.html
+- title: '4.8.1 Testing for Improper Error Handling'
+  url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling.html
 
 - title: '4.8.2 Testing for Stack Traces'
   url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces.html
@@ -346,8 +343,8 @@ docs:
 - title: '4.9 Testing for Weak Cryptography'
   url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README.html
 
-- title: '4.9.1 Testing for Weak SSL TLS Ciphers Insufficient Transport Layer Protection'
-  url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_SSL_TLS_Ciphers_Insufficient_Transport_Layer_Protection.html
+- title: '4.9.1 Testing for Weak Transport Layer Security'
+  url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security.html
 
 - title: '4.9.2 Testing for Padding Oracle'
   url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/02-Testing_for_Padding_Oracle.html
@@ -391,47 +388,53 @@ docs:
 - title: '4.10.9 Test Upload of Malicious Files'
   url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files.html
 
-- title: '4.11 Client Side Testing'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/README.html
+- title: '4.11 Client-side Testing'
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/README.html
 
 - title: '4.11.1 Testing for DOM-Based Cross Site Scripting'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting.html
 
 - title: '4.11.2 Testing for JavaScript Execution'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/02-Testing_for_JavaScript_Execution.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/02-Testing_for_JavaScript_Execution.html
 
 - title: '4.11.3 Testing for HTML Injection'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/03-Testing_for_HTML_Injection.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/03-Testing_for_HTML_Injection.html
 
-- title: '4.11.4 Testing for Client Side URL Redirect'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/04-Testing_for_Client_Side_URL_Redirect.html
+- title: '4.11.4 Testing for Client-side URL Redirect'
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/04-Testing_for_Client-side_URL_Redirect.html
 
 - title: '4.11.5 Testing for CSS Injection'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/05-Testing_for_CSS_Injection.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/05-Testing_for_CSS_Injection.html
 
-- title: '4.11.6 Testing for Client Side Resource Manipulation'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/06-Testing_for_Client_Side_Resource_Manipulation.html
+- title: '4.11.6 Testing for Client-side Resource Manipulation'
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/06-Testing_for_Client-side_Resource_Manipulation.html
 
 - title: '4.11.7 Testing Cross Origin Resource Sharing'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/07-Testing_Cross_Origin_Resource_Sharing.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/07-Testing_Cross_Origin_Resource_Sharing.html
 
 - title: '4.11.8 Testing for Cross Site Flashing'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/08-Testing_for_Cross_Site_Flashing.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/08-Testing_for_Cross_Site_Flashing.html
 
 - title: '4.11.9 Testing for Clickjacking'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/09-Testing_for_Clickjacking.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking.html
 
 - title: '4.11.10 Testing WebSockets'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/10-Testing_WebSockets.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/10-Testing_WebSockets.html
 
 - title: '4.11.11 Testing Web Messaging'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/11-Testing_Web_Messaging.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/11-Testing_Web_Messaging.html
 
 - title: '4.11.12 Testing Browser Storage'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/12-Testing_Browser_Storage.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/12-Testing_Browser_Storage.html
 
 - title: '4.11.13 Testing for Cross Site Script Inclusion'
-  url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/13-Testing_for_Cross_Site_Script_Inclusion.html
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/13-Testing_for_Cross_Site_Script_Inclusion.html
+
+- title: '4.12 API Testing'
+  url: 4-Web_Application_Security_Testing/12-API_Testing/README.html
+
+- title: '4.12.1 Testing GraphQL'
+  url: 4-Web_Application_Security_Testing/12-API_Testing/01-Testing_GraphQL.html
 
 - title: '5. Reporting'
   url: 5-Reporting/README.html
@@ -450,3 +453,6 @@ docs:
 
 - title: 'Appendix E. History'
   url: 6-Appendix/E-History.html
+
+- title: 'Appendix F. Leveraging Dev Tools'
+  url: 6-Appendix/F-Leveraging_Dev_Tools.html

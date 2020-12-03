@@ -5,10 +5,12 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for SQL Injection
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-05|
 
 ## Summary
@@ -23,7 +25,7 @@ In general the way web applications construct SQL statements involving SQL synta
 
 In the example above the variable `$id` contains user-supplied data, while the remainder is the SQL static part supplied by the programmer; making the SQL statement dynamic.
 
-Because the way it was constructed, the user can supply crafted input trying to make the original SQL statement execute further actions of the user's choice. The example below illustrates the user-supplied data “10 or 1=1”, changing the logic of the SQL statement, modifying the WHERE clause adding a condition “or 1=1”.
+Because the way it was constructed, the user can supply crafted input trying to make the original SQL statement execute further actions of the user's choice. The example below illustrates the user-supplied data "10 or 1=1", changing the logic of the SQL statement, modifying the WHERE clause adding a condition "or 1=1".
 
 `select title, text from news where id=10 or 1=1`
 
@@ -45,7 +47,8 @@ About the techniques to exploit SQL injection flaws there are five commons techn
 
 ## Test Objectives
 
-SQL Injection testing allows the tester to identify and exploit issues pertaining to query inputs where secure practices are not properly implemented.
+- Identify SQL injection points.
+- Assess the severity of the injection and the level of access that can be achieved through it.
 
 ## How to Test
 
@@ -68,7 +71,7 @@ character string ''.
 /target/target.asp, line 113
 ```
 
-Also comment delimiters (-- or /* */, etc) and other SQL keywords like 'AND' and 'OR' can be used to try to modify the query. A very simple but sometimes still effective technique is simply to insert a string where a number is expected, as an error like the following might be generated:
+Also comment delimiters (`--` or `/* */`, etc) and other SQL keywords like `AND` and `OR` can be used to try to modify the query. A very simple but sometimes still effective technique is simply to insert a string where a number is expected, as an error like the following might be generated:
 
 ```asp
 Microsoft OLE DB Provider for ODBC Drivers error '80040e07'
@@ -77,7 +80,7 @@ varchar value 'test' to a column of data type int.
 /target/target.asp, line 113
 ```
 
-Monitor all the responses from the web server and have a look at the HTML/javascript source code. Sometimes the error is present inside them but for some reason (e.g. javascript error, HTML comments, etc) is not presented to the user. A full error message, like those in the examples, provides a wealth of information to the tester in order to mount a successful injection attack. However, applications often do not provide so much detail: a simple '500 Server Error' or a custom error page might be issued, meaning that we need to use blind injection techniques. In any case, it is very important to test each field separately: only one variable must vary while all the other remain constant, in order to precisely understand which parameters are vulnerable and which are not.
+Monitor all the responses from the web server and have a look at the HTML/JavaScript source code. Sometimes the error is present inside them but for some reason (e.g. JavaScript error, HTML comments, etc) is not presented to the user. A full error message, like those in the examples, provides a wealth of information to the tester in order to mount a successful injection attack. However, applications often do not provide so much detail: a simple '500 Server Error' or a custom error page might be issued, meaning that we need to use blind injection techniques. In any case, it is very important to test each field separately: only one variable must vary while all the other remain constant, in order to precisely understand which parameters are vulnerable and which are not.
 
 ### Standard SQL Injection Testing
 
@@ -228,7 +231,7 @@ The UNION operator is used in SQL injections to join a query, purposely forged b
 
 `SELECT Name, Phone, Address FROM Users WHERE Id=$id`
 
-We will set the following $id value:
+We will set the following `$id` value:
 
 `$id=1 UNION ALL SELECT creditCardNumber,1,1 FROM CreditCardTable`
 
@@ -268,7 +271,7 @@ After the successful information gathering, depending on the application, it may
 
 The Boolean exploitation technique is very useful when the tester finds a [Blind SQL Injection](https://owasp.org/www-community/attacks/Blind_SQL_Injection) situation, in which nothing is known on the outcome of an operation. For example, this behavior happens in cases where the programmer has created a custom error page that does not reveal anything on the structure of the query or on the database. (The page does not return a SQL error, it may just return a HTTP 500, 404, or redirect).
 
-By using inference methods, it is possible to avoid this obstacle and thus to succeed in recovering the values of some desired fields. This method consists of carrying out a series of boolean queries against the server, observing the answers and finally deducing the meaning of such answers. We consider, as always, the www.example.com domain and we suppose that it contains a parameter named id vulnerable to SQL injection. This means that carrying out the following request:
+By using inference methods, it is possible to avoid this obstacle and thus to succeed in recovering the values of some desired fields. This method consists of carrying out a series of boolean queries against the server, observing the answers and finally deducing the meaning of such answers. We consider, as always, the www.example.com domain and we suppose that it contains a parameter named `id` vulnerable to SQL injection. This means that carrying out the following request:
 
 `http://www.example.com/index.php?id=1'`
 
@@ -332,7 +335,7 @@ The malicious request would be (e.g. Oracle 10g):
 
 `http://www.example.com/product.php?id=10||UTL_INADDR.GET_HOST_NAME( (SELECT user FROM DUAL) )--`
 
-In this example, the tester is concatenating the value 10 with the result of the function `UTL_INADDR.GET_HOST_NAME`. This Oracle function will try to return the host name of the parameter passed to it, which is other query, the name of the user. When the database looks for a host name with the user database name, it will fail and return an error message like:
+In this example, the tester is concatenating the value 10 with the result of the function `UTL_INADDR.GET_HOST_NAME`. This Oracle function will try to return the hostname of the parameter passed to it, which is other query, the name of the user. When the database looks for a hostname with the user database name, it will fail and return an error message like:
 
 `ORA-292257: host SCOTT unknown`
 
@@ -439,7 +442,7 @@ Most of the situation and techniques presented here can be performed in a automa
 
 The techniques are used to bypass defenses such as Web application firewalls (WAFs) or intrusion prevention systems (IPSs). Also refer to [https://owasp.org/www-community/attacks/SQL_Injection_Bypassing_WAF](https://owasp.org/www-community/attacks/SQL_Injection_Bypassing_WAF)
 
-#### White Space
+#### Whitespace
 
 Dropping space or adding spaces that won't affect the SQL statement. For example
 
@@ -542,7 +545,7 @@ EXEC(@SQLivar)
 
 #### Alternative Expression of 'or 1 = 1'
 
-```text
+```sql
 OR 'SQLi' = 'SQL'+'i'
 OR 'SQLi' &gt; 'S'
 or 20 &gt; 1
@@ -563,16 +566,13 @@ For generic input validation security, refer to the [Input Validation CheatSheet
 ## Tools
 
 - [SQL Injection Fuzz Strings (from wfuzz tool) - Fuzzdb](https://github.com/fuzzdb-project/fuzzdb/tree/master/attack/sql-injection)
-- [Francois Larouche: Multiple DBMS SQL Injection tool -SQL Power Injector](http://www.sqlpowerinjector.com/index.htm)
 - [sqlbftools](http://packetstormsecurity.org/files/43795/sqlbftools-1.2.tar.gz.html)
 - [Bernardo Damele A. G.: sqlmap, automatic SQL injection tool](http://sqlmap.org/)
-- [icesurfer: SQL Server Takeover Tool - sqlninja](http://sqlninja.sourceforge.net)
 - [Muhaimin Dzulfakar: MySqloit, MySql Injection takeover tool](https://github.com/dtrip/mysqloit)
-- [bsqlbf, a blind SQL injection tool in Perl](https://code.google.com/p/bsqlbf-v2/)
 
 ## References
 
-- [Top 10 2017-A1-Injection](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection)
+- [Top 10 2017-A1-Injection](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection)
 - [SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection)
 
 Technology specific Testing Guide pages have been created for the following DBMSs:
@@ -584,19 +584,19 @@ Technology specific Testing Guide pages have been created for the following DBMS
 - [MS Access](05.5-Testing_for_MS_Access.md)
 - [NoSQL](05.6-Testing_for_NoSQL_Injection.md)
 - [ORM](05.7-Testing_for_ORM_Injection.md)
-- [Client Side](05.8-Testing_for_Client_Side.md)
+- [Client-side](05.8-Testing_for_Client-side.md)
 
 ### Whitepapers
 
-- [Victor Chapela: “Advanced SQL Injection”](http://cs.unh.edu/~it666/reading_list/Web/advanced_sql_injection.pdf)
-- [Chris Anley: “More Advanced SQL Injection”](http://www.encription.co.uk/downloads/more_advanced_sql_injection.pdf)
-- [David Litchfield: “Data-mining with SQL Injection and Inference”](https://dl.packetstormsecurity.net/papers/attack/sqlinference.pdf)
-- [Imperva: “Blinded SQL Injection”](https://www.imperva.com/lg/lgw.asp?pid=369)
-- [Ferruh Mavituna: “SQL Injection Cheat Sheet”](http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/)
-- [Kevin Spett from SPI Dynamics: “SQL Injection”](https://docs.google.com/file/d/0B5CQOTY4YRQCSWRHNkNaaFMyQTA/edit)
-- [Kevin Spett from SPI Dynamics: “Blind SQL Injection”](https://repo.zenk-security.com/Techniques%20d.attaques%20%20.%20%20Failles/Blind_SQLInjection.pdf)
-- [“ZeQ3uL” (Prathan Phongthiproek) and “Suphot Boonchamnan”: “Beyond SQLi: Obfuscate and Bypass”](https://www.exploit-db.com/papers/17934/)
-- [Adi Kaploun and Eliran Goshen, Check Point Threat Intelligence & Research Team: “The Latest SQL Injection Trends”](http://blog.checkpoint.com/2015/05/07/latest-sql-injection-trends/)
+- [Victor Chapela: "Advanced SQL Injection"](http://cs.unh.edu/~it666/reading_list/Web/advanced_sql_injection.pdf)
+- [Chris Anley: "More Advanced SQL Injection"](https://www.cgisecurity.com/lib/more_advanced_sql_injection.pdf)
+- [David Litchfield: "Data-mining with SQL Injection and Inference"](https://dl.packetstormsecurity.net/papers/attack/sqlinference.pdf)
+- [Imperva: "Blinded SQL Injection"](https://www.imperva.com/lg/lgw.asp?pid=369)
+- [Ferruh Mavituna: "SQL Injection Cheat Sheet"](http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/)
+- [Kevin Spett from SPI Dynamics: "SQL Injection"](https://docs.google.com/file/d/0B5CQOTY4YRQCSWRHNkNaaFMyQTA/edit)
+- [Kevin Spett from SPI Dynamics: "Blind SQL Injection"](https://repo.zenk-security.com/Techniques%20d.attaques%20%20.%20%20Failles/Blind_SQLInjection.pdf)
+- ["ZeQ3uL" (Prathan Phongthiproek) and "Suphot Boonchamnan": "Beyond SQLi: Obfuscate and Bypass"](https://www.exploit-db.com/papers/17934/)
+- [Adi Kaploun and Eliran Goshen, Check Point Threat Intelligence & Research Team: "The Latest SQL Injection Trends"](http://blog.checkpoint.com/2015/05/07/latest-sql-injection-trends/)
 
 ### Documentation on SQL Injection Vulnerabilities in Products
 
