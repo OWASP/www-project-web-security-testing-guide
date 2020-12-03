@@ -13,7 +13,7 @@ View the always-current stable version at [stable](stable/).
 
 ## [Unreleased 4.3]
 
-## [Version 4.2] - TBC
+## [Version 4.2] - 2020-12-03
 
 [Version 4.2](v42/) introduces new testing scenarios, updates existing chapters, and offers an improved writing style and chapter layout.
 
