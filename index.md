@@ -32,7 +32,7 @@ You can [read the latest development documents in our official GitHub repository
 
 ## Versioned Releases
 
-[v4.2](v42/) is currently available as a web-hosted release. Previous releases are available as PDFs and in some cases web content via the **Release Versions** tab.
+[v4.2](v42/) is currently available as a web-hosted release and PDF. Previous releases are available as PDFs and in some cases web content via the **Release Versions** tab.
 
 ## How To Reference WSTG Scenarios
 
