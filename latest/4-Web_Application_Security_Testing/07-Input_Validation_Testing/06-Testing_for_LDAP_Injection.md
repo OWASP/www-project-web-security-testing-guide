@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for LDAP Injection
 
 |ID          |
@@ -51,6 +53,11 @@ A successful exploitation of an LDAP injection vulnerability could allow the tes
 - Evade application restrictions
 - Gather unauthorized informations
 - Add or modify Objects inside LDAP tree structure.
+
+## Test Objectives
+
+- Identify LDAP injection points.
+- Assess the severity of the injection.
 
 ## How to Test
 

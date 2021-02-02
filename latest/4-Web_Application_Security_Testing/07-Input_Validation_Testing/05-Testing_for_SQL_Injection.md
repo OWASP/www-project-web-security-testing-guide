@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for SQL Injection
 
 |ID          |
@@ -23,7 +25,7 @@ In general the way web applications construct SQL statements involving SQL synta
 
 In the example above the variable `$id` contains user-supplied data, while the remainder is the SQL static part supplied by the programmer; making the SQL statement dynamic.
 
-Because the way it was constructed, the user can supply crafted input trying to make the original SQL statement execute further actions of the user's choice. The example below illustrates the user-supplied data “10 or 1=1”, changing the logic of the SQL statement, modifying the WHERE clause adding a condition “or 1=1”.
+Because the way it was constructed, the user can supply crafted input trying to make the original SQL statement execute further actions of the user's choice. The example below illustrates the user-supplied data "10 or 1=1", changing the logic of the SQL statement, modifying the WHERE clause adding a condition "or 1=1".
 
 `select title, text from news where id=10 or 1=1`
 
@@ -45,7 +47,8 @@ About the techniques to exploit SQL injection flaws there are five commons techn
 
 ## Test Objectives
 
-SQL Injection testing allows the tester to identify and exploit issues pertaining to query inputs where secure practices are not properly implemented.
+- Identify SQL injection points.
+- Assess the severity of the injection and the level of access that can be achieved through it.
 
 ## How to Test
 
@@ -101,15 +104,15 @@ If we suppose that the values of the parameters are sent to the server through t
 
 `http://www.example.com/index.php?username=1'%20or%20'1'%20=%20'1&amp;password=1'%20or%20'1'%20=%20'1`
 
-After a short analysis we notice that the query returns a value (or a set of values) because the condition is always true (OR 1=1). In this way the system has authenticated the user without knowing the username and password.
+After a short analysis we notice that the query returns a value (or a set of values) because the condition is always true (`OR 1=1`). In this way the system has authenticated the user without knowing the username and password.
 
-> In some systems the first row of a user table would be an administrator user. This may be the profile returned in some cases.
+> Note: In some systems the first row of a user table would be an administrator user. This may be the profile returned in some cases.
 
-Another example of query is the following:
+Another example query is the following:
 
 `SELECT * FROM Users WHERE ((Username='$username') AND (Password=MD5('$password')))`
 
-In this case, there are two problems, one due to the use of the parentheses and one due to the use of MD5 hash function. First of all, we resolve the problem of the parentheses. That simply consists of adding a number of closing parentheses until we obtain a corrected query. To resolve the second problem, we try to evade the second condition. We add to our query a final symbol that means that a comment is beginning. In this way, everything that follows such symbol is considered a comment. Every DBMS has its own syntax for comments, however, a common symbol to the greater majority of the databases is `*`. In Oracle the symbol is `--`. This said, the values that we'll use as Username and Password are:
+In this case, there are two problems, one due to the use of the parentheses and one due to the use of MD5 hash function. First of all, we resolve the problem of the parentheses. That simply consists of adding a number of closing parentheses until we obtain a corrected query. To resolve the second problem, we try to evade the second condition. We add to our query a final symbol that means that a comment is beginning. In this way, everything that follows such symbol is considered a comment. Every DBMS has its own syntax for comments, however, a common symbol for the greater majority of databases is `/*`. In Oracle the symbol is `--`. This said, the values that we'll use as Username and Password are:
 
 `$username = 1' or '1' = '1'))/*`
 
@@ -119,19 +122,19 @@ In this way, we'll get the following query:
 
 `SELECT * FROM Users WHERE ((Username='1' or '1' = '1'))/*') AND (Password=MD5('$password')))`
 
-(Due to the inclusion of a comment delimiter in the $username value the password portion of the query will be ignored.)
+(Due to the inclusion of a comment delimiter in the `$username` value the password portion of the query will be ignored.)
 
-The URL request will be:
+The request URL will be:
 
 `http://www.example.com/index.php?username=1'%20or%20'1'%20=%20'1'))/*&amp;password=foo`
 
-This may return a number of values. Sometimes, the authentication code verifies that the number of returned records/results is exactly equal to 1. In the previous examples, this situation would be difficult (in the database there is only one value per user). In order to go around this problem, it is enough to insert a SQL command that imposes a condition that the number of the returned results must be one. (One record returned) In order to reach this goal, we use the operator `LIMIT <num>`, where `<num>` is the number of the results/records that we want to be returned. With respect to the previous example, the value of the fields Username and Password will be modified as follows:
+This may return a number of values. Sometimes, the authentication code verifies that the number of returned records/results is exactly equal to 1. In the previous examples, this situation would be difficult (in the database there is only one value per user). In order to get around this problem, it is enough to insert a SQL command that imposes a condition that the number of the returned results must be one (one record returned). In order to reach this goal, we use the operator `LIMIT <num>`, where `<num>` is the number of the results/records that we want to be returned. With respect to the previous example, the value of the fields Username and Password will be modified as follows:
 
 `$username = 1' or '1' = '1')) LIMIT 1/*`
 
 `$password = foo`
 
-In this way, we create a request like the follow:
+In this way, we create a request like the following:
 
 `http://www.example.com/index.php?username=1'%20or%20'1'%20=%20'1'))%20LIMIT%201/*&amp;password=foo`
 
@@ -302,7 +305,7 @@ Which will create the following query:
 
 The obtained response from the server (that is HTML code) will be the false value for our tests. This is enough to verify whether the value obtained from the execution of the inferential query is equal to the value obtained with the test executed before. Sometimes, this method does not work. If the server returns two different pages as a result of two identical consecutive web requests, we will not be able to discriminate the true value from the false value. In these particular cases, it is necessary to use particular filters that allow us to eliminate the code that changes between the two requests and to obtain a template. Later on, for every inferential request executed, we will extract the relative template from the response using the same function, and we will perform a control between the two templates in order to decide the result of the test.
 
-In the previous discussion, we haven't dealt with the problem of determining the termination condition for out tests, i.e., when we should end the inference procedure. A techniques to do this uses one characteristic of the SUBSTRING function and the LENGTH function. When the test compares the current character with the ASCII code 0 (i.e., the value null) and the test returns the value true, then either we are done with the inference procedure (we have scanned the whole string), or the value we have analyzed contains the null character.
+In the previous discussion, we haven't dealt with the problem of determining the termination condition for our tests, i.e., when we should end the inference procedure. A techniques to do this uses one characteristic of the SUBSTRING function and the LENGTH function. When the test compares the current character with the ASCII code 0 (i.e., the value null) and the test returns the value true, then either we are done with the inference procedure (we have scanned the whole string), or the value we have analyzed contains the null character.
 
 We will insert the following value for the field `Id`:
 
@@ -542,7 +545,7 @@ EXEC(@SQLivar)
 
 #### Alternative Expression of 'or 1 = 1'
 
-```text
+```sql
 OR 'SQLi' = 'SQL'+'i'
 OR 'SQLi' &gt; 'S'
 or 20 &gt; 1
@@ -569,7 +572,7 @@ For generic input validation security, refer to the [Input Validation CheatSheet
 
 ## References
 
-- [Top 10 2017-A1-Injection](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection)
+- [Top 10 2017-A1-Injection](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection)
 - [SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection)
 
 Technology specific Testing Guide pages have been created for the following DBMSs:
@@ -585,15 +588,15 @@ Technology specific Testing Guide pages have been created for the following DBMS
 
 ### Whitepapers
 
-- [Victor Chapela: “Advanced SQL Injection”](http://cs.unh.edu/~it666/reading_list/Web/advanced_sql_injection.pdf)
-- [Chris Anley: “More Advanced SQL Injection”](https://www.cgisecurity.com/lib/more_advanced_sql_injection.pdf)
-- [David Litchfield: “Data-mining with SQL Injection and Inference”](https://dl.packetstormsecurity.net/papers/attack/sqlinference.pdf)
-- [Imperva: “Blinded SQL Injection”](https://www.imperva.com/lg/lgw.asp?pid=369)
-- [Ferruh Mavituna: “SQL Injection Cheat Sheet”](http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/)
-- [Kevin Spett from SPI Dynamics: “SQL Injection”](https://docs.google.com/file/d/0B5CQOTY4YRQCSWRHNkNaaFMyQTA/edit)
-- [Kevin Spett from SPI Dynamics: “Blind SQL Injection”](https://repo.zenk-security.com/Techniques%20d.attaques%20%20.%20%20Failles/Blind_SQLInjection.pdf)
-- [“ZeQ3uL” (Prathan Phongthiproek) and “Suphot Boonchamnan”: “Beyond SQLi: Obfuscate and Bypass”](https://www.exploit-db.com/papers/17934/)
-- [Adi Kaploun and Eliran Goshen, Check Point Threat Intelligence & Research Team: “The Latest SQL Injection Trends”](http://blog.checkpoint.com/2015/05/07/latest-sql-injection-trends/)
+- [Victor Chapela: "Advanced SQL Injection"](http://cs.unh.edu/~it666/reading_list/Web/advanced_sql_injection.pdf)
+- [Chris Anley: "More Advanced SQL Injection"](https://www.cgisecurity.com/lib/more_advanced_sql_injection.pdf)
+- [David Litchfield: "Data-mining with SQL Injection and Inference"](https://dl.packetstormsecurity.net/papers/attack/sqlinference.pdf)
+- [Imperva: "Blinded SQL Injection"](https://www.imperva.com/lg/lgw.asp?pid=369)
+- [Ferruh Mavituna: "SQL Injection Cheat Sheet"](http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/)
+- [Kevin Spett from SPI Dynamics: "SQL Injection"](https://docs.google.com/file/d/0B5CQOTY4YRQCSWRHNkNaaFMyQTA/edit)
+- [Kevin Spett from SPI Dynamics: "Blind SQL Injection"](https://repo.zenk-security.com/Techniques%20d.attaques%20%20.%20%20Failles/Blind_SQLInjection.pdf)
+- ["ZeQ3uL" (Prathan Phongthiproek) and "Suphot Boonchamnan": "Beyond SQLi: Obfuscate and Bypass"](https://www.exploit-db.com/papers/17934/)
+- [Adi Kaploun and Eliran Goshen, Check Point Threat Intelligence & Research Team: "The Latest SQL Injection Trends"](http://blog.checkpoint.com/2015/05/07/latest-sql-injection-trends/)
 
 ### Documentation on SQL Injection Vulnerabilities in Products
 

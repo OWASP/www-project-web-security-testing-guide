@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for HTTP Parameter Pollution
 
 |ID          |
@@ -52,6 +54,8 @@ Given the URL and querystring: `http://example.com/?color=red&color=blue`
   |--------------------------------|----------------|--------|
   | ASP.NET / IIS | All occurrences concatenated with a comma |  color=red,blue |
   | ASP / IIS     | All occurrences concatenated with a comma | color=red,blue |
+  | .NET Core 3.1 / Kestrel | All occurrences concatenated with a comma | color=red,blue |
+  | .NET 5 / Kestrel | All occurrences concatenated with a comma | color=red,blue |
   | PHP / Apache  | Last occurrence only | color=blue |
   | PHP / Zeus | Last occurrence only | color=blue |
   | JSP, Servlet / Apache Tomcat | First occurrence only | color=red |
@@ -59,12 +63,18 @@ Given the URL and querystring: `http://example.com/?color=red&color=blue`
   | JSP, Servlet / Jetty  | First occurrence only | color=red |
   | IBM Lotus Domino | Last occurrence only | color=blue |
   | IBM HTTP Server | First occurrence only | color=red |
+  | node.js / express | First occurence only | color=red |
   | mod_perl, libapreq2 / Apache | First occurrence only | color=red |
   | Perl CGI / Apache | First occurrence only | color=red |
   | mod_wsgi (Python) / Apache | First occurrence only | color=red |
   | Python / Zope | All occurrences in List data type | color=['red','blue'] |
 
 (source: [Appsec EU 2009 Carettoni & Paola](https://owasp.org/www-pdf-archive/AppsecEU09_CarettoniDiPaola_v0.8.pdf))
+
+## Test Objectives
+
+- Identify the backend and the parsing method used.
+- Assess injection points and try bypassing input filters using HPP.
 
 ## How to Test
 
@@ -74,17 +84,23 @@ Luckily, because the assignment of HTTP parameters is typically handled via the 
 
 To test for HPP vulnerabilities, identify any form or action that allows user-supplied input. Query string parameters in HTTP GET requests are easy to tweak in the navigation bar of the browser. If the form action submits data via POST, the tester will need to use an intercepting proxy to tamper with the POST data as it is sent to the server. Having identified a particular input parameter to test, one can edit the GET or POST data by intercepting the request, or change the query string after the response page loads. To test for HPP vulnerabilities simply append the same parameter to the GET or POST data but with a different value assigned.
 
-For example: if testing the `search_string` parameter in the query string, the request URL would include that parameter name and value.
+For example: if testing the `search_string` parameter in the query string, the request URL would include that parameter name and value:
 
-`http://example.com/?search_string=kittens`
+```text
+http://example.com/?search_string=kittens
+```
 
-The particular parameter might be hidden among several other parameters, but the approach is the same; leave the other parameters in place and append the duplicate.
+The particular parameter might be hidden among several other parameters, but the approach is the same; leave the other parameters in place and append the duplicate:
 
-`http://example.com/?mode=guest&search_string=kittens&num_results=100`
+```text
+http://example.com/?mode=guest&search_string=kittens&num_results=100
+```
 
-Append the same parameter with a different value
+Append the same parameter with a different value:
 
-`http://example.com/?mode=guest&search_string=kittens&num_results=100&search_string=puppies`
+```text
+http://example.com/?mode=guest&search_string=kittens&num_results=100&search_string=puppies
+```
 
 and submit the new request.
 
@@ -111,7 +127,7 @@ Similarly to server-side HPP, pollute each HTTP parameter with `%26HPP_TEST` and
 
 - `&HPP_TEST`
 - `&amp;HPP_TEST`
-- … and others
+- etc.
 
 In particular, pay attention to responses having HPP vectors within `data`, `src`, `href` attributes or forms actions. Again, whether or not this default behavior reveals a potential vulnerability depends on the specific input validation, filtering and application business logic. In addition, it is important to notice that this vulnerability can also affect query string parameters used in XMLHttpRequest (XHR), runtime attribute creation and other plugin technologies (e.g. Adobe Flash’s flashvars variables).
 

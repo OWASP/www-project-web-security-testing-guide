@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for Cross Site Script Inclusion
 
 |ID          |
@@ -20,6 +22,11 @@ By default, websites are only allowed to access data if they are from the same o
 When the browser opens a website with `<script>` tags, the resources are fetched from the cross-origin domain. The resources then run in the same context as the including site or browser, which presents the opportunity to leak sensitive data. In most cases, this is achieved using JavaScript, however, the script source doesn't have to be a JavaScript file with type `text/javascript` or `.js` extension.
 
 Older browser's vulnerabilities (IE9/10) allowed data leakage via JavaScript error messages at runtime, but those vulnerabilities have now been patched by vendors and are considered less relevant. By setting the charset attribute of the `<script>` tag, an attacker or tester can enforce UTF-16 encoding, allowing data leakage for other data formats (e.g. JSON) in some cases. For more on these attacks, see [Identifier based XSSI attacks](https://www.mbsd.jp/Whitepaper/xssi.pdf).
+
+## Test Objectives
+
+- Locate sensitive data across the system.
+- Assess the leakage of sensitive data through various techniques.
 
 ## How to Test
 
@@ -113,7 +120,7 @@ There are other XSSI vulnerabilities that can result in sensitive data leakage e
 
 To leak data the attacker/tester has to be able to inject JavaScript code into the CSV data. The following example code is an excerpt from Takeshi Terada's [Identifier based XSSI attacks](https://www.mbsd.jp/Whitepaper/xssi.pdf) whitepaper.
 
-```txt
+```text
 HTTP/1.1 200 OK
 Content-Type: text/csv
 Content-Disposition: attachment; filename="a.csv"
@@ -128,7 +135,7 @@ Content-Length: xxxx
 
 In this example, using the `___` columns as injection points and inserting JavaScript strings in their place has the following result.
 
-```txt
+```text
 1,"\"",$$$=function(){/*","aaa@a.example","03-0000-0001"
 2,"foo","bbb@b.example","03-0000-0002"
 ...
@@ -159,7 +166,7 @@ In this example, using the `___` columns as injection points and inserting JavaS
 
 Browsers normally present standardized [JavaScript error messages](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors). However, in the case of IE9/10, runtime error messages provided additional details that could be used to leak data. For example, a website `victim.com` serves the following content at the URI `http://victim.com/service/csvendpoint` for authenticated users:
 
-```txt
+```text
 HTTP/1.1 200 OK
 Content-Type: text/csv
 Content-Disposition: attachment; filename="a.csv"
@@ -179,7 +186,8 @@ This vulnerability could be exploited with the following:
 
 When the browser tries to render the CSV content as JavaScript, it fails and leaks the sensitive data:
 
-![JavaScript runtime error message ](images/XSSI1.jpeg)
+![JavaScript runtime error message ](images/XSSI1.jpeg)\
+*Figure 4.11.13-1: JavaScript runtime error message*
 
 ### 5. Sensitive Data Leakage via Prototype Chaining Using `this`
 
@@ -201,7 +209,7 @@ Here is an excerpt of a JavaScript file containing sensitive data, `javascript.j
 
 The sensitive data can be leaked with the following JavaScript code:
 
-```javascript
+```html
 ...
  <div id="result">
 

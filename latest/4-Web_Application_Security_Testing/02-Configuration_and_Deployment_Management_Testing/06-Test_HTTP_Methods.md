@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Test HTTP Methods
 
 |ID          |
@@ -30,7 +32,7 @@ However, most web applications only need to respond to GET and POST requests, re
 
 ## Test Objectives
 
-- Test supported HTTP methods.
+- Enumerate supported HTTP methods.
 - Test for access control bypass.
 - Test XST vulnerabilities.
 - Test HTTP method overriding techniques.
@@ -143,7 +145,7 @@ Some web frameworks provide a way to override the actual HTTP method in the requ
 - `X-HTTP-Method-Override`
 - `X-Method-Override`
 
-In order to test this, in the scenarios where restricted verbs such as PUT or DELETE return a “405 Method not allowed”, replay the same request with the addition of the alternative headers for HTTP method overriding, and observe how the system responds. The application should respond with a different status code (*e.g.* 200) in cases where method overriding is supported.
+In order to test this, in the scenarios where restricted verbs such as PUT or DELETE return a "405 Method not allowed", replay the same request with the addition of the alternative headers for HTTP method overriding, and observe how the system responds. The application should respond with a different status code (*e.g.* 200) in cases where method overriding is supported.
 
 The web server in the following example does not allow the `DELETE` method and blocks it:
 
@@ -161,7 +163,7 @@ Content-Type: text/html; charset=iso-8859-1
 Vary: Accept-Encoding
 ```
 
-After adding the `X-HTTP-Header`, the server responds to the request with a 200:
+After adding the `X-HTTP-Method` header, the server responds to the request with a 200:
 
 ```bash
 $ ncat www.example.com 80
@@ -188,8 +190,8 @@ Server: Apache
 
 ## References
 
-- [RFC 2109](https://tools.ietf.org/html/rfc2109) and [RFC 2965](https://tools.ietf.org/html/rfc2965): “HTTP State Management Mechanism”
+- [RFC 2109](https://tools.ietf.org/html/rfc2109) and [RFC 2965](https://tools.ietf.org/html/rfc2965): "HTTP State Management Mechanism"
 - [HTACCESS: BILBAO Method Exposed](https://web.archive.org/web/20160616172703/http://www.kernelpanik.org/docs/kernelpanik/bme.eng.pdf)
-- [Amit Klein: “XS(T) attack variants which can, in some cases, eliminate the need for TRACE”](https://www.securityfocus.com/archive/107/308433)
+- [Amit Klein: "XS(T) attack variants which can, in some cases, eliminate the need for TRACE"](https://www.securityfocus.com/archive/107/308433)
 - [Fortify - Misused HTTP Method Override](https://vulncat.fortify.com/en/detail?id=desc.dynamic.xtended_preview.often_misused_http_method_override)
 - [CAPEC-107: Cross Site Tracing](https://capec.mitre.org/data/definitions/107.html)

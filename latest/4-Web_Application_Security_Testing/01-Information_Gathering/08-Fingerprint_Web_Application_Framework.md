@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Fingerprint Web Application Framework
 
 |ID          |
@@ -17,7 +19,7 @@ There is nothing new under the sun, and nearly every web application that one ma
 
 ## Test Objectives
 
-To define type of web components used so as to have a better understanding of the target being assessed.
+- Fingerprint the components being used by the web applications.
 
 ## How to Test
 
@@ -62,7 +64,7 @@ Vary: Accept-Encoding
 X-Powered-By: Blood, sweat and tears
 ```
 
-Sometimes there are more HTTP-headers that point at a certain framework. In the following example, according to the information from HTTP-request, one can see that `X-Powered-By` header contains PHP version. However, the `X-Generator` header points out the used framework is actually `Swiftlet`, which helps a penetration tester to expand their attack vectors. When performing fingerprinting, carefully inspect every HTTP-header for such leaks.
+Sometimes there are more HTTP headers that point at a certain framework. In the following example, according to the information from HTTP request, one can see that `X-Powered-By` header contains PHP version. However, the `X-Generator` header points out the used framework is actually `Swiftlet`, which helps a penetration tester to expand their attack vectors. When performing fingerprinting, carefully inspect every HTTP header for such leaks.
 
 ```html
 HTTP/1.1 200 OK
@@ -144,8 +146,8 @@ URLs may include file extensions, which can also help to identify the web platfo
 
 For example, the OWASP wiki used PHP:
 
-```php
-https://www.owasp.org/index.php?title=Fingerprint_Web_Application_Framework&action=edit&section=4
+```text
+https://wiki.owasp.org/index.php?title=Fingerprint_Web_Application_Framework&action=edit&section=4
 ```
 
 Here are some common web file extensions and associated technologies:
@@ -197,7 +199,7 @@ As can be seen in the following screenshot the listed file system path points to
 | Application | Keyword                                                                        |
 |-------------|--------------------------------------------------------------------------------|
 | WordPress   | `<meta name="generator" content="WordPress 3.9.2" />`                          |
-| phpBB       | `&lt;body id=“phpbb”`                                                          |
+| phpBB       | `<body id="phpbb"`                                                             |
 | Mediawiki   | `<meta name="generator" content="MediaWiki 1.21.9" />`                         |
 | Joomla      | `<meta name="generator" content="Joomla! - Open Source Content Management" />` |
 | Drupal      | `<meta name="Generator" content="Drupal 7 (http://drupal.org)" />`             |
@@ -214,11 +216,15 @@ As can be seen in the following screenshot the listed file system path points to
 
 | Framework         | Keyword                        |
 |-------------------|--------------------------------|
-| Adobe ColdFusion  | `&lt;!-- START headerTags.cfm` |
+| Adobe ColdFusion  | `<!-- START headerTags.cfm` |
 | Microsoft ASP.NET | `__VIEWSTATE`                  |
-| ZK                | `&lt;!-- ZK`                   |
-| Business Catalyst | `&lt;!-- BC_OBNW --&gt;`       |
+| ZK                | `<!-- ZK`                   |
+| Business Catalyst | `<!-- BC_OBNW -->`       |
 | Indexhibit        | `ndxz-studio`                  |
+
+## Remediation
+
+While efforts can be made to use different cookie names (through changing configs), hiding or changing file/directory paths (through rewriting or source code changes), removing known headers, etc. such efforts boil down to "security through obscurity". System owners/admins should recognize that those efforts only slow down the most basic of adversaries. The time/effort may be better used on stakeholder awareness and solution maintenance activities.
 
 ## Tools
 
@@ -254,13 +260,9 @@ Sample output of a plug-in is presented on a screenshot below.
 ![Wappalyzer Output for OWASP Website](images/Owasp-wappalyzer.png)\
 *Figure 4.1.8-9: Wappalyzer Output for OWASP Website*
 
-## Remediation
-
-While efforts can be made to use different cookie names (through changing configs), hiding or changing file/directory paths (through rewriting or source code changes), removing known headers, etc. such efforts boil down to "security through obscurity". System owners/admins should recognize that those efforts only slow down the most basic of adversaries. The time/effort may be better used on stakeholder awareness and solution maintenance activities.
-
 ## References
 
 ### Whitepapers
 
-- [Saumil Shah: “An Introduction to HTTP fingerprinting”](https://web.archive.org/web/20190526182734/https://net-square.com/httprint_paper.html)
-- [Anant Shrivastava : “Web Application Finger Printing”](https://anantshri.info/articles/web_app_finger_printing.html)
+- [Saumil Shah: "An Introduction to HTTP fingerprinting"](https://web.archive.org/web/20190526182734/https://net-square.com/httprint_paper.html)
+- [Anant Shrivastava : "Web Application Finger Printing"](https://anantshri.info/articles/web_app_finger_printing.html)

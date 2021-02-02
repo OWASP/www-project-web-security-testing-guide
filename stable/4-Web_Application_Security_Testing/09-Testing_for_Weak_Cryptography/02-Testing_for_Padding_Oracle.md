@@ -5,10 +5,12 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for Padding Oracle
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-CRYP-02|
 
 ## Summary
@@ -25,9 +27,14 @@ An error condition is present if the padding doesn't match the syntax of the use
 
 Certain modes of operation of cryptography allow bit-flipping attacks, where flipping of a bit in the cipher text causes that the bit is also flipped in the plain text. Flipping a bit in the n-th block of CBC encrypted data causes that the same bit in the (n+1)-th block is flipped in the decrypted data. The n-th block of the decrypted cipher text is garbaged by this manipulation.
 
-The padding oracle attack enables an attacker to decrypt encrypted data without knowledge of the encryption key and used cipher by sending skillful manipulated cipher texts to the padding oracle and observing of the results returned by it. This causes loss of confidentiality of the encrypted data. E.g. in the case of session data stored on the client side the attacker can gain information about the internal state and structure of the application.
+The padding oracle attack enables an attacker to decrypt encrypted data without knowledge of the encryption key and used cipher by sending skillful manipulated cipher texts to the padding oracle and observing of the results returned by it. This causes loss of confidentiality of the encrypted data. E.g. in the case of session data stored on the client-side the attacker can gain information about the internal state and structure of the application.
 
 A padding oracle attack also enables an attacker to encrypt arbitrary plain texts without knowledge of the used key and cipher. If the application assumes that integrity and authenticity of the decrypted data is given, an attacker could be able to manipulate internal session state and possibly gain higher privileges.
+
+## Test Objectives
+
+- Identify encrypted messages that rely on padding.
+- Attempt to break the padding of the encrypted messages and analyze the returned error messages for further analysis.
 
 ## How to Test
 
@@ -69,6 +76,10 @@ Verify that all places where encrypted data from the client, that should only be
 1. The integrity of the cipher text should be verified by a secure mechanism, like HMAC or authenticated cipher operation modes like GCM or CCM.
 2. All error states while decryption and further processing are handled uniformly.
 
+### Example 4
+
+[Visualization of the decryption process](https://erlend.oftedal.no/blog/poet/)
+
 ## Tools
 
 - [Bletchley](https://code.blindspotsecurity.com/trac/bletchley)
@@ -77,13 +88,7 @@ Verify that all places where encrypted data from the client, that should only be
 - [Poracle](https://github.com/iagox86/Poracle)
 - [python-paddingoracle](https://github.com/mwielgoszewski/python-paddingoracle)
 
-### Example 4
-
-- [Visualization of the decryption process](https://erlend.oftedal.no/blog/poet/)
-
 ## References
-
-### Whitepapers
 
 - [Wikepedia - Padding Oracle Attack](https://en.wikipedia.org/wiki/Padding_oracle_attack)
 - [Juliano Rizzo, Thai Duong, "Practical Padding Oracle Attacks"](https://www.usenix.org/event/woot10/tech/full_papers/Rizzo.pdf)

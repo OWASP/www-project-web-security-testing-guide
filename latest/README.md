@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Table of Contents
 
 ## 0. [Foreword by Eoin Keary](0-Foreword/README.md)
@@ -165,6 +167,8 @@ tags: WSTG
 
 #### 4.6.8 [Testing for Session Puzzling](4-Web_Application_Security_Testing/06-Session_Management_Testing/08-Testing_for_Session_Puzzling.md)
 
+#### 4.6.9 [Testing for Session Hijacking](4-Web_Application_Security_Testing/06-Session_Management_Testing/09-Testing_for_Session_Hijacking.md)
+
 ### 4.7 [Input Validation Testing](4-Web_Application_Security_Testing/07-Input_Validation_Testing/README.md)
 
 #### 4.7.1 [Testing for Reflected Cross Site Scripting](4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting.md)
@@ -211,13 +215,7 @@ tags: WSTG
 
 #### 4.7.12 [Testing for Command Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection.md)
 
-#### 4.7.13 [Testing for Buffer Overflow](4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Buffer_Overflow.md)
-
-##### 4.7.13.1 [Testing for Heap Overflow](4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.1-Testing_for_Heap_Overflow.md)
-
-##### 4.7.13.2 [Testing for Stack Overflow](4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.2-Testing_for_Stack_Overflow.md)
-
-##### 4.7.13.3 [Testing for Format String](4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.3-Testing_for_Format_String.md)
+#### 4.7.13 [Testing for Format String Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Format_String_Injection.md)
 
 #### 4.7.14 [Testing for Incubated Vulnerability](4-Web_Application_Security_Testing/07-Input_Validation_Testing/14-Testing_for_Incubated_Vulnerability.md)
 
@@ -229,15 +227,17 @@ tags: WSTG
 
 #### 4.7.18 [Testing for Server-side Template Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server-side_Template_Injection.md)
 
+#### 4.7.19 [Testing for Server-Side Request Forgery](4-Web_Application_Security_Testing/07-Input_Validation_Testing/19-Testing_for_Server-Side_Request_Forgery.md)
+
 ### 4.8 [Testing for Error Handling](4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/README.md)
 
-#### 4.8.1 [Testing for Error Code](4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_for_Error_Code.md)
+#### 4.8.1 [Testing for Improper Error Handling](4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling.md)
 
 #### 4.8.2 [Testing for Stack Traces](4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces.md)
 
 ### 4.9 [Testing for Weak Cryptography](4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README.md)
 
-#### 4.9.1 [Testing for Weak SSL TLS Ciphers Insufficient Transport Layer Protection](4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_SSL_TLS_Ciphers_Insufficient_Transport_Layer_Protection.md)
+#### 4.9.1 [Testing for Weak Transport Layer Security](4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security.md)
 
 #### 4.9.2 [Testing for Padding Oracle](4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/02-Testing_for_Padding_Oracle.md)
 
@@ -294,6 +294,10 @@ tags: WSTG
 #### 4.11.12 [Testing Browser Storage](4-Web_Application_Security_Testing/11-Client-side_Testing/12-Testing_Browser_Storage.md)
 
 #### 4.11.13 [Testing for Cross Site Script Inclusion](4-Web_Application_Security_Testing/11-Client-side_Testing/13-Testing_for_Cross_Site_Script_Inclusion.md)
+
+### 4.12 [API Testing](4-Web_Application_Security_Testing/12-API_Testing/README.md)
+
+#### 4.12.1 [Testing GraphQL](4-Web_Application_Security_Testing/12-API_Testing/01-Testing_GraphQL.md)
 
 ## 5. [Reporting](5-Reporting/README.md)
 

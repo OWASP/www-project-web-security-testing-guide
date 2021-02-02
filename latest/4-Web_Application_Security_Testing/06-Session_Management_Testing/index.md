@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # 4.6 Session Management Testing
 
 4.6.1 [Testing for Session Management Schema](01-Testing_for_Session_Management_Schema.md)
@@ -22,3 +24,5 @@ tags: WSTG
 4.6.7 [Testing Session Timeout](07-Testing_Session_Timeout.md)
 
 4.6.8 [Testing for Session Puzzling](08-Testing_for_Session_Puzzling.md)
+
+4.6.9 [Testing for Session Hijacking](09-Testing_for_Session_Hijacking.md)

@@ -5,6 +5,8 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Table of Contents
 
 ## 0. [Foreword by Eoin Keary](0-Foreword/README.md)
@@ -67,7 +69,7 @@ tags: WSTG
 
 #### 4.1.4 [Enumerate Applications on Webserver](4-Web_Application_Security_Testing/01-Information_Gathering/04-Enumerate_Applications_on_Webserver.md)
 
-#### 4.1.5 [Review Webpage Comments and Metadata for Information Leakage](4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Comments_and_Metadata_for_Information_Leakage.md)
+#### 4.1.5 [Review Webpage Content for Information Leakage](4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage.md)
 
 #### 4.1.6 [Identify Application Entry Points](4-Web_Application_Security_Testing/01-Information_Gathering/06-Identify_Application_Entry_Points.md)
 
@@ -165,6 +167,8 @@ tags: WSTG
 
 #### 4.6.8 [Testing for Session Puzzling](4-Web_Application_Security_Testing/06-Session_Management_Testing/08-Testing_for_Session_Puzzling.md)
 
+#### 4.6.9 [Testing for Session Hijacking](4-Web_Application_Security_Testing/06-Session_Management_Testing/09-Testing_for_Session_Hijacking.md)
+
 ### 4.7 [Input Validation Testing](4-Web_Application_Security_Testing/07-Input_Validation_Testing/README.md)
 
 #### 4.7.1 [Testing for Reflected Cross Site Scripting](4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting.md)
@@ -191,7 +195,7 @@ tags: WSTG
 
 ##### 4.7.5.7 [Testing for ORM Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.7-Testing_for_ORM_Injection.md)
 
-##### 4.7.5.8 [Testing for Client Side](4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.8-Testing_for_Client_Side.md)
+##### 4.7.5.8 [Testing for Client-side](4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.8-Testing_for_Client-side.md)
 
 #### 4.7.6 [Testing for LDAP Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/06-Testing_for_LDAP_Injection.md)
 
@@ -211,13 +215,7 @@ tags: WSTG
 
 #### 4.7.12 [Testing for Command Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection.md)
 
-#### 4.7.13 [Testing for Buffer Overflow](4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Buffer_Overflow.md)
-
-##### 4.7.13.1 [Testing for Heap Overflow](4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.1-Testing_for_Heap_Overflow.md)
-
-##### 4.7.13.2 [Testing for Stack Overflow](4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.2-Testing_for_Stack_Overflow.md)
-
-##### 4.7.13.3 [Testing for Format String](4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.3-Testing_for_Format_String.md)
+#### 4.7.13 [Testing for Format String Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Format_String_Injection.md)
 
 #### 4.7.14 [Testing for Incubated Vulnerability](4-Web_Application_Security_Testing/07-Input_Validation_Testing/14-Testing_for_Incubated_Vulnerability.md)
 
@@ -227,17 +225,19 @@ tags: WSTG
 
 #### 4.7.17 [Testing for Host Header Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/17-Testing_for_Host_Header_Injection.md)
 
-#### 4.7.18 [Testing for Server Side Template Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server_Side_Template_Injection.md)
+#### 4.7.18 [Testing for Server-side Template Injection](4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server-side_Template_Injection.md)
+
+#### 4.7.19 [Testing for Server-Side Request Forgery](4-Web_Application_Security_Testing/07-Input_Validation_Testing/19-Testing_for_Server-Side_Request_Forgery.md)
 
 ### 4.8 [Testing for Error Handling](4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/README.md)
 
-#### 4.8.1 [Testing for Error Code](4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_for_Error_Code.md)
+#### 4.8.1 [Testing for Improper Error Handling](4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling.md)
 
 #### 4.8.2 [Testing for Stack Traces](4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces.md)
 
 ### 4.9 [Testing for Weak Cryptography](4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README.md)
 
-#### 4.9.1 [Testing for Weak SSL TLS Ciphers Insufficient Transport Layer Protection](4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_SSL_TLS_Ciphers_Insufficient_Transport_Layer_Protection.md)
+#### 4.9.1 [Testing for Weak Transport Layer Security](4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security.md)
 
 #### 4.9.2 [Testing for Padding Oracle](4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/02-Testing_for_Padding_Oracle.md)
 
@@ -267,33 +267,37 @@ tags: WSTG
 
 #### 4.10.9 [Test Upload of Malicious Files](4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files.md)
 
-### 4.11 [Client Side Testing](4-Web_Application_Security_Testing/11-Client_Side_Testing/README.md)
+### 4.11 [Client-side Testing](4-Web_Application_Security_Testing/11-Client-side_Testing/README.md)
 
-#### 4.11.1 [Testing for DOM-Based Cross Site Scripting](4-Web_Application_Security_Testing/11-Client_Side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting.md)
+#### 4.11.1 [Testing for DOM-Based Cross Site Scripting](4-Web_Application_Security_Testing/11-Client-side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting.md)
 
-#### 4.11.2 [Testing for JavaScript Execution](4-Web_Application_Security_Testing/11-Client_Side_Testing/02-Testing_for_JavaScript_Execution.md)
+#### 4.11.2 [Testing for JavaScript Execution](4-Web_Application_Security_Testing/11-Client-side_Testing/02-Testing_for_JavaScript_Execution.md)
 
-#### 4.11.3 [Testing for HTML Injection](4-Web_Application_Security_Testing/11-Client_Side_Testing/03-Testing_for_HTML_Injection.md)
+#### 4.11.3 [Testing for HTML Injection](4-Web_Application_Security_Testing/11-Client-side_Testing/03-Testing_for_HTML_Injection.md)
 
-#### 4.11.4 [Testing for Client Side URL Redirect](4-Web_Application_Security_Testing/11-Client_Side_Testing/04-Testing_for_Client_Side_URL_Redirect.md)
+#### 4.11.4 [Testing for Client-side URL Redirect](4-Web_Application_Security_Testing/11-Client-side_Testing/04-Testing_for_Client-side_URL_Redirect.md)
 
-#### 4.11.5 [Testing for CSS Injection](4-Web_Application_Security_Testing/11-Client_Side_Testing/05-Testing_for_CSS_Injection.md)
+#### 4.11.5 [Testing for CSS Injection](4-Web_Application_Security_Testing/11-Client-side_Testing/05-Testing_for_CSS_Injection.md)
 
-#### 4.11.6 [Testing for Client Side Resource Manipulation](4-Web_Application_Security_Testing/11-Client_Side_Testing/06-Testing_for_Client_Side_Resource_Manipulation.md)
+#### 4.11.6 [Testing for Client-side Resource Manipulation](4-Web_Application_Security_Testing/11-Client-side_Testing/06-Testing_for_Client-side_Resource_Manipulation.md)
 
-#### 4.11.7 [Testing Cross Origin Resource Sharing](4-Web_Application_Security_Testing/11-Client_Side_Testing/07-Testing_Cross_Origin_Resource_Sharing.md)
+#### 4.11.7 [Testing Cross Origin Resource Sharing](4-Web_Application_Security_Testing/11-Client-side_Testing/07-Testing_Cross_Origin_Resource_Sharing.md)
 
-#### 4.11.8 [Testing for Cross Site Flashing](4-Web_Application_Security_Testing/11-Client_Side_Testing/08-Testing_for_Cross_Site_Flashing.md)
+#### 4.11.8 [Testing for Cross Site Flashing](4-Web_Application_Security_Testing/11-Client-side_Testing/08-Testing_for_Cross_Site_Flashing.md)
 
-#### 4.11.9 [Testing for Clickjacking](4-Web_Application_Security_Testing/11-Client_Side_Testing/09-Testing_for_Clickjacking.md)
+#### 4.11.9 [Testing for Clickjacking](4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking.md)
 
-#### 4.11.10 [Testing WebSockets](4-Web_Application_Security_Testing/11-Client_Side_Testing/10-Testing_WebSockets.md)
+#### 4.11.10 [Testing WebSockets](4-Web_Application_Security_Testing/11-Client-side_Testing/10-Testing_WebSockets.md)
 
-#### 4.11.11 [Testing Web Messaging](4-Web_Application_Security_Testing/11-Client_Side_Testing/11-Testing_Web_Messaging.md)
+#### 4.11.11 [Testing Web Messaging](4-Web_Application_Security_Testing/11-Client-side_Testing/11-Testing_Web_Messaging.md)
 
-#### 4.11.12 [Testing Browser Storage](4-Web_Application_Security_Testing/11-Client_Side_Testing/12-Testing_Browser_Storage.md)
+#### 4.11.12 [Testing Browser Storage](4-Web_Application_Security_Testing/11-Client-side_Testing/12-Testing_Browser_Storage.md)
 
-#### 4.11.13 [Testing for Cross Site Script Inclusion](4-Web_Application_Security_Testing/11-Client_Side_Testing/13-Testing_for_Cross_Site_Script_Inclusion.md)
+#### 4.11.13 [Testing for Cross Site Script Inclusion](4-Web_Application_Security_Testing/11-Client-side_Testing/13-Testing_for_Cross_Site_Script_Inclusion.md)
+
+### 4.12 [API Testing](4-Web_Application_Security_Testing/12-API_Testing/README.md)
+
+#### 4.12.1 [Testing GraphQL](4-Web_Application_Security_Testing/12-API_Testing/01-Testing_GraphQL.md)
 
 ## 5. [Reporting](5-Reporting/README.md)
 
@@ -306,3 +310,5 @@ tags: WSTG
 ## Appendix D. [Encoded Injection](6-Appendix/D-Encoded_Injection.md)
 
 ## Appendix E. [History](6-Appendix/E-History.md)
+
+## Appendix F. [Leveraging Dev Tools](6-Appendix/F-Leveraging_Dev_Tools.md)

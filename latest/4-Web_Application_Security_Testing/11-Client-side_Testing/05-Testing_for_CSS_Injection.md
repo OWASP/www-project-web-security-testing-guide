@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for CSS Injection
 
 |ID          |
@@ -30,8 +32,8 @@ The following JavaScript code shows a possible vulnerable script in which the at
 
 The attacker could target the victim by asking them to visit the following URLs:
 
-- `www.victim.com/\#red;-o-link:'<javascript:alert(1)>';-o-link-source:current;` (Opera \[8,12\])
-- `www.victim.com/\#red;-:expression(alert(URL=1));` (IE 7/8)
+- `www.victim.com/#red;-o-link:'<javascript:alert(1)>';-o-link-source:current;` (Opera \[8,12\])
+- `www.victim.com/#red;-:expression(alert(URL=1));` (IE 7/8)
 
 The same vulnerability may appear in the case of reflected XSS, for example, in the following PHP code:
 
@@ -58,6 +60,11 @@ input[name=csrf_token][value=^a] {
 
 Other attacks using solicited content such as CSS are highlighted in [Mario Heiderich's talk, "Got Your Nose"](https://www.youtube.com/watch?v=FIQvAaZj_HA) on YouTube.
 
+## Test Objectives
+
+- Identify CSS injection points.
+- Assess the impact of the injection.
+
 ## How to Test
 
 Code should be analyzed to determine if a user is permitted to inject content in the CSS context. Particularly, the way in which the website returns CSS rules on the basis of the inputs should be inspected.
@@ -78,8 +85,8 @@ The above code contains a source `location.hash`, controlled by the attacker, th
 
 The following pages provide examples of CSS injection vulnerabilities:
 
-- [Password “cracker” via CSS and HTML5](http://html5sec.org/invalid/?length=25)
+- [Password "cracker" via CSS and HTML5](http://html5sec.org/invalid/?length=25)
 - [CSS attribute reading](http://eaea.sirdarckcat.net/cssar/v2/)
-- [JavaScript based attacks using `CSSStyleDeclaration` with unescaped input](https://code.google.com/p/domxsswiki/wiki/CssText)
+- [JavaScript based attacks using `CSSStyleDeclaration` with unescaped input](https://github.com/wisec/domxsswiki/wiki/CSS-Text-sink)
 
 For further OWASP resources on preventing CSS injection, see the [Securing Cascading Style Sheets Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet.html).

@@ -11,7 +11,13 @@ tags: wstg
 
 View the always-current stable version at [stable](stable/).
 
-## [Unreleased 4.2]
+## [Unreleased 4.3]
+
+## [Version 4.2] - 2020-12-03
+
+[Version 4.2](v42/) introduces new testing scenarios, updates existing chapters, and offers an improved writing style and chapter layout.
+
+[Download the v4.2 PDF](https://github.com/OWASP/wstg/releases/download/v4.2/wstg-v4.2.pdf) here.
 
 ## [Version 4.1] - 2020-04-21
 

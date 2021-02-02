@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Leveraging Dev Tools
 
 This appendix outlines various details for use of in browser Developer Tool functionality to aid in security testing activities.
@@ -42,7 +44,7 @@ Opening Dev Tools can be accomplished in a number of ways.
 | Encoding and Decoding | Y       | Y       | Y       | Y      |
 | Responsive Design Mode| Y       | Y       | Y       | Y      |
 
-`*` Anything that applies to Google Chrome should be applicable to "New" Edge.
+`*` Anything that applies to Google Chrome should be applicable to all Chromium based applications. (Which includes Microsoft rebadging Edge around 2019/2020.)
 
 ## User-Agent Switching
 
@@ -53,11 +55,11 @@ Opening Dev Tools can be accomplished in a number of ways.
 ### Google Chrome
 
 1. Click on triple dot 'kabob' menu on the right side of the Developer Tools pane, select `More tools` then select `Network conditions`.
-2. Un-check the “Select automatically” checkbox.
+2. Un-check the "Select automatically" checkbox.
 3. Select the user agent from dropdown menu or enter a custom user agent
 
 ![User-Agent selection dropdown menu in Google Chrome](images/f_chrome_devtools_ua_switch.png)\
-_Figure 6.F-1: Google Chrome Dev Tools User-Agent Switching Functionality_
+*Figure 6.F-1: Google Chrome Dev Tools User-Agent Switching Functionality*
 
 ### Mozilla Firefox
 
@@ -67,7 +69,7 @@ _Figure 6.F-1: Google Chrome Dev Tools User-Agent Switching Functionality_
 4. Set the value of `general.useragent.override` to whatever [User-Agent](https://developers.whatismybrowser.com/useragents/explore/) you might need.
 
 ![User-Agent configuration preference in Mozilla Firefox](images/f_firefox_ua_switch.png)\
-_Figure 6.F-2: Mozilla Firefox User-Agent Switching Functionality_
+*Figure 6.F-2: Mozilla Firefox User-Agent Switching Functionality*
 
 Later click on the garbage can `Delete` button to the right of the `general.useragent.override` preference to remove the override and switch back to the default user agent.
 
@@ -117,7 +119,7 @@ Later click on the garbage can `Delete` button to the right of the `general.user
 > Note: Cookies can be deleted once selected by pressing the `delete` key, or with various options from the right-click context menu.
 
 ![Cookie Editing functionality in Mozilla Firefox](images/f_firefox_cookie_edit.png)\
-_Figure 6.F-3: Mozilla Firefox Cookie Editing Functionality_
+*Figure 6.F-3: Mozilla Firefox Cookie Editing Functionality*
 
 ## Local Storage Editing
 
@@ -179,7 +181,7 @@ All major browsers support manipulating CSS leveraging the Dev Tools Console and
 
 ### Related Testing
 
-- [Information Gathering](../4-Web_Application_Security_Testing/01-Information_Gathering/)
+- [Information Gathering](../4-Web_Application_Security_Testing/01-Information_Gathering/README.md)
 
 ### Google Chrome
 
@@ -187,7 +189,7 @@ All major browsers support manipulating CSS leveraging the Dev Tools Console and
 2. In the lower right hand pane select the `Headers` tab.
 
 ![Headers View in Google Chrome](images/f_chrome_devtools_headers.png)\
-_Figure 6.F-4: Google Chrome Headers View_
+*Figure 6.F-4: Google Chrome Headers View*
 
 ### Mozilla Firefox
 
@@ -195,7 +197,7 @@ _Figure 6.F-4: Google Chrome Headers View_
 2. In the lower right hand pane select the `Headers` tab.
 
 ![Headers View in Mozilla Firefox](images/f_firefox_devtools_headers.png)\
-_Figure 6.F-5: Mozilla Firefox Headers View_
+*Figure 6.F-5: Mozilla Firefox Headers View*
 
 ## Screenshots
 
@@ -223,14 +225,14 @@ _Figure 6.F-5: Mozilla Firefox Headers View_
 2. In the `Throttle` dropdown select `Offline`.
 
 ![Offline Option in Google Chrome](images/f_chrome_devtools_offline.png)\
-_Figure 6.F-6: Google Chrome Offline Option_
+*Figure 6.F-6: Google Chrome Offline Option*
 
 ### Mozilla Firefox
 
 1. From the triple line 'hamburger' (or 'pancake') menu select `Web Developer` and then `Work Offline`.
 
 ![Offline Option in Mozilla Firefox](images/f_firefox_devtools_offline.png)\
-_Figure 6.F-7: Mozilla Firefox Offline Option_
+*Figure 6.F-7: Mozilla Firefox Offline Option*
 
 ## Encoding and Decoding
 
@@ -262,14 +264,14 @@ All major browsers support encoding and decoding strings in various ways leverag
 1. Click the `Toggle device toolbar` button or press `ctrl` + `shift` + `m`.
 
 ![Responsive Design Mode in Google Chrome](images/f_chrome_responsive_design_mode.png)\
-_Figure 6.F-8: Google Chrome Responsive Design Mode_
+*Figure 6.F-8: Google Chrome Responsive Design Mode*
 
 ### Mozilla Firefox
 
 1. Click the `Responsive Design Mode` button or press `ctrl` + `shift` + `m`.
 
 ![Responsive Design Mode in Mozilla Firefo](images/f_firefox_responsive_design_mode.png)\
-_Figure 6.F-9: Mozilla Firefox Responsive Design Mode_
+*Figure 6.F-9: Mozilla Firefox Responsive Design Mode*
 
 ## References
 

@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing Browser Storage
 
 |ID          |
@@ -27,7 +29,8 @@ Note: While cache is also a form of storage it is covered in a [separate section
 
 ## Test Objectives
 
-Testing should be conducted to determine whether the website is storing sensitive data in client-side storage. The code handling of the storage objects should be examined for possibilities of injection attacks, such as utilizing unvalidated input. JavaScript in particular should be examined to determine if scripts or third party libraries are introducing vulnerabilities.
+- Determine whether the website is storing sensitive data in client-side storage.
+- The code handling of the storage objects should be examined for possibilities of injection attacks, such as utilizing unvalidated input or vulnerable libraries.
 
 ## How to Test
 
@@ -171,9 +174,9 @@ _(Modified version of this [snippet](https://stackoverflow.com/a/17246535/309913
 
 Following the identification any of the above attack vectors, an attack chain can be formed with different types of client-side attacks, such as [DOM based XSS](01-Testing_for_DOM-based_Cross_Site_Scripting.md) attacks.
 
-### Remediation
+## Remediation
 
-- Applications should be storing sensitive data on the server-side, and not on the client-side, in a secured manner following best practices.
+Applications should be storing sensitive data on the server-side, and not on the client-side, in a secured manner following best practices.
 
 ## References
 

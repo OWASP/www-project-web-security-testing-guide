@@ -5,21 +5,17 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Frontispiece
 
 ## Welcome
 
-> Open and collaborative knowledge: that is the OWASP way.
+> As we focus on incremental improvement, this release introduces numerous updates. We've standardized scenario formats to create a better reading experience, added objectives for each testing scenario, merged sections, and added new scenarios on some modern testing topics.
 >
-> With V4 we realized a new guide that will be the standard de-facto guide to perform Web Application Penetration Testing.
->
-> — Matteo Meucci
+> — Rick Mitchell
 
 OWASP thanks the many authors, reviewers, and editors for their hard work in bringing this guide to where it is today. If you have any comments or suggestions on the Testing Guide, please feel free to open an Issue or submit a fix/contribution via Pull Request to our [GitHub repository](https://github.com/OWASP/wstg/).
-
-## Version 4.1
-
-This minor release represents a transitional step between the 2014 release of v4 via the OWASP wiki, and the preparation of v5, currently underway on GitHub.
 
 ## Copyright and Licensee
 
@@ -30,7 +26,6 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 ## Leaders
 
 - Elie Saad
-- Matteo Meucci
 - Rick Mitchell
 
 ## Core Team
@@ -40,6 +35,8 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 
 ## Authors
 
+- Aaron Williams
+- Alessia Michela Di Campi
 - Elie Saad
 - Ismael Goncalves
 - Janos Zold
@@ -47,8 +44,13 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 - Joel Espunya
 - Manh Pham Tien
 - Mark Clayton
+- Or Asaf
+- rbsec
 - Rick Mitchell
+- Rishu Ranjan
 - Rubal Jain
+- Samuele Casarin
+- Stefano Calzavara
 - Tal Argoni
 - Victoria Drake
 - Phu Nguyen (Tony)
@@ -62,14 +64,23 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 
 ## Reviewers or Editors
 
+- Abhi M Balakrishnan
 - Asharaf Ali
 - Elie Saad
+- Eoin Murphy
+- Francisco Bustos
+- frozensolid
+- Hsiang-Chih Hsu
 - Jeremy Bonghwan Choi
 - Lukasz Lubczynski
+- Miguel Arevalo
+- Najam Ul Saqib
+- Nikoleta Misheva
 - Patrick Santos
 - Rejah Rehim
 - Rick Mitchell
 - Roman Mueller
+- Thomas Lim
 - Tom Bowyer
 - Victoria Drake
 

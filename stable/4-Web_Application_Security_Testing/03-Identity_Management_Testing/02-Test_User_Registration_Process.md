@@ -5,10 +5,12 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Test User Registration Process
 
-|ID            |
-|--------------|
+|ID          |
+|------------|
 |WSTG-IDNT-02|
 
 ## Summary
@@ -17,8 +19,8 @@ Some websites offer a user registration process that automates (or semi-automate
 
 ## Test Objectives
 
-1. Verify that the identity requirements for user registration are aligned with business and security requirements.
-2. Validate the registration process.
+- Verify that the identity requirements for user registration are aligned with business and security requirements.
+- Validate the registration process.
 
 ## How to Test
 
@@ -40,13 +42,17 @@ Validate the registration process:
 
 In the WordPress example below, the only identification requirement is an email address that is accessible to the registrant.
 
-![Wordpress Registration Page](images/Wordpress_registration_page.jpg)\
-*Figure 4.3.2-1: Wordpress Registration Page*
+![WordPress Registration Page](images/Wordpress_registration_page.jpg)\
+*Figure 4.3.2-1: WordPress Registration Page*
 
 In contrast, in the Google example below the identification requirements include name, date of birth, country, mobile phone number, email address and CAPTCHA response. While only two of these can be verified (email address and mobile number), the identification requirements are stricter than WordPress.
 
 ![Google Registration Page](images/Google_registration_page.jpg)\
 *Figure 4.3.2-2: Google Registration Page*
+
+## Remediation
+
+Implement identification and verification requirements that correspond to the security requirements of the information the credentials protect.
 
 ## Tools
 
@@ -55,7 +61,3 @@ A HTTP proxy can be a useful tool to test this control.
 ## References
 
 [User Registration Design](https://mashable.com/2011/06/09/user-registration-design/)
-
-## Remediation
-
-Implement identification and verification requirements that correspond to the security requirements of the information the credentials protect.

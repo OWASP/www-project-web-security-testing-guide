@@ -5,10 +5,12 @@ title: WSTG - Stable
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for XPath Injection
 
-|ID             |
-|---------------|
+|ID          |
+|------------|
 |WSTG-INPV-09|
 
 ## Summary
@@ -19,9 +21,13 @@ Web applications heavily use databases to store and access the data they need fo
 
 Since, from a conceptual point of view, XPath is very similar to SQL in its purpose and applications, an interesting result is that XPath injection attacks follow the same logic as [SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection) attacks. In some aspects, XPath is even more powerful than standard SQL, as its whole power is already present in its specifications, whereas a large number of the techniques that can be used in a SQL Injection attack depend on the characteristics of the SQL dialect used by the target database. This means that XPath injection attacks can be much more adaptable and ubiquitous. Another advantage of an XPath injection attack is that, unlike SQL, no ACLs are enforced, as our query can access every part of the XML document.
 
+## Test Objectives
+
+- Identify XPATH injection points.
+
 ## How to Test
 
-The [XPath attack pattern was first published by Amit Klein](http://dl.packetstormsecurity.net/papers/bypass/Blind_XPath_Injection_20040518.pdf) and is very similar to the usual SQL Injection. In order to get a first grasp of the problem, let's imagine a login page that manages the authentication to an application in which the user must enter his/her username and password. Let's assume that our database is represented by the following XML file:
+The [XPath attack pattern was first published by Amit Klein](http://dl.packetstormsecurity.net/papers/bypass/Blind_XPath_Injection_20040518.pdf) and is very similar to the usual SQL Injection. In order to get a first grasp of the problem, let's imagine a login page that manages the authentication to an application in which the user must enter their username and password. Let's assume that our database is represented by the following XML file:
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -50,7 +56,7 @@ An XPath query that returns the account whose username is `gandalf` and the pass
 
 If the application does not properly filter user input, the tester will be able to inject XPath code and interfere with the query result. For instance, the tester could input the following values:
 
-```txt
+```text
 Username: ' or '1' = '1
 Password: ' or '1' = '1
 ```
@@ -67,5 +73,5 @@ If there is no knowledge about the XML data internal details and if the applicat
 
 ### Whitepapers
 
-- [Amit Klein: “Blind XPath Injection”](http://dl.packetstormsecurity.net/papers/bypass/Blind_XPath_Injection_20040518.pdf)
+- [Amit Klein: "Blind XPath Injection"](http://dl.packetstormsecurity.net/papers/bypass/Blind_XPath_Injection_20040518.pdf)
 - [XPath 1.0 specifications](https://www.w3.org/TR/1999/REC-xpath-19991116/)

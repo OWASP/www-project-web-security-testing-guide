@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Fingerprint Web Server
 
 |ID          |
@@ -19,7 +21,7 @@ Accurately discovering the type of web server that an application runs on can en
 
 ## Test Objectives
 
-Determine the version and type of a running web server to enable further discovery of any known vulnerabilities.
+- Determine the version and type of a running web server to enable further discovery of any known vulnerabilities.
 
 ## How to Test
 
@@ -31,7 +33,7 @@ A banner grab is performed by sending an HTTP request to the web server and exam
 
 For example, here is the response to a request from an Apache server.
 
-```sh
+```http
 HTTP/1.1 200 OK
 Date: Thu, 05 Sep 2019 17:42:39 GMT
 Server: Apache/2.4.41 (Unix)
@@ -46,7 +48,7 @@ Content-Type: text/html
 
 Here is another response, this time from nginx.
 
-```sh
+```http
 HTTP/1.1 200 OK
 Server: nginx/1.17.3
 Date: Thu, 05 Sep 2019 17:50:24 GMT

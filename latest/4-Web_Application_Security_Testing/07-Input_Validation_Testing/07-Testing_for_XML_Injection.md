@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for XML Injection
 
 |ID          |
@@ -16,6 +18,11 @@ tags: WSTG
 XML Injection testing is when a tester tries to inject an XML doc to the application. If the XML parser fails to contextually validate data, then the test will yield a positive result.
 
 This section describes practical examples of XML Injection. First, an XML style communication will be defined and its working principles explained. Then, the discovery method in which we try to insert XML metacharacters. Once the first step is accomplished, the tester will have some information about the XML structure, so it will be possible to try to inject XML data and tags (Tag Injection).
+
+## Test Objectives
+
+- Identify XML injection points.
+- Assess the types of exploits that can be attained and their severities.
 
 ## How to Test
 
@@ -239,7 +246,7 @@ and obtain the following node:
 
 During the processing, the CDATA section delimiters are eliminated, generating the following HTML code:
 
-```javascript
+```html
 <script>
     alert('XSS')
 </script>
@@ -379,25 +386,27 @@ The original `userid` node has been commented out, leaving only the injected one
 
 The following Java API may be vulnerable to XXE if they are not configured properly.
 
-- javax.xml.parsers.DocumentBuilder
-- javax.xml.parsers.DocumentBuildFactory
-- org.xml.sax.EntityResolver
-- org.dom4j.*
-- javax.xml.parsers.SAXParser
-- javax.xml.parsers.SAXParserFactory
-- TransformerFactory
-- SAXReader
-- DocumentHelper
-- SAXBuilder
-- SAXParserFactory
-- XMLReaderFactory
-- XMLInputFactory
-- SchemaFactory
-- DocumentBuilderFactoryImpl
-- SAXTransformerFactory
-- DocumentBuilderFactoryImpl
-- XMLReader
-- Xerces: DOMParser, DOMParserImpl, SAXParser, XMLParser
+```text
+javax.xml.parsers.DocumentBuilder
+javax.xml.parsers.DocumentBuildFactory
+org.xml.sax.EntityResolver
+org.dom4j.*
+javax.xml.parsers.SAXParser
+javax.xml.parsers.SAXParserFactory
+TransformerFactory
+SAXReader
+DocumentHelper
+SAXBuilder
+SAXParserFactory
+XMLReaderFactory
+XMLInputFactory
+SchemaFactory
+DocumentBuilderFactoryImpl
+SAXTransformerFactory
+DocumentBuilderFactoryImpl
+XMLReader
+Xerces: DOMParser, DOMParserImpl, SAXParser, XMLParser
+```
 
 Check source code if the docType, external DTD, and external parameter entities are set as forbidden uses.
 
@@ -407,8 +416,8 @@ In addition, the Java POI office reader may be vulnerable to XXE if the version 
 
 The version of POI library can be identified from the filename of the JAR. For example,
 
-- poi-3.8.jar
-- poi-ooxml-3.8.jar
+- `poi-3.8.jar`
+- `poi-ooxml-3.8.jar`
 
 The followings source code keyword may apply to C.
 
@@ -421,8 +430,6 @@ The followings source code keyword may apply to C.
 
 ## References
 
-### Whitepapers
-
 - [XML Injection](https://www.whitehatsec.com/glossary/content/xml-injection)
-- [Gregory Steuck, “XXE (Xml eXternal Entity) attack”](https://www.securityfocus.com/archive/1/297714)
+- [Gregory Steuck, "XXE (Xml eXternal Entity) attack"](https://www.securityfocus.com/archive/1/297714)
 - [OWASP XXE Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)

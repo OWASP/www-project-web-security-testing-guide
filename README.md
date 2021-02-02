@@ -6,7 +6,7 @@ Documentation explaining the files in this repo can be found at: https://owasp.o
 
 ## Contributions
 
-Any contributions to the guide itself should be made via the [guide's project repo](https://github.com/OWASP/wstg).
+Any contributions to the guide itself should be made via the [guide's project repo](https://github.com/OWASP/wstg), using a pull request. (No one outside the project leadership or foundation automation should be pushing directly to either repo.)
 
 ## Getting Started
 

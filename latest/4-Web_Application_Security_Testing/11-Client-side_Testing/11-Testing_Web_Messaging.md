@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing Web Messaging
 
 |ID          |
@@ -28,13 +30,13 @@ There are some security concerns when using `*` as the domain that we discuss be
 Here is an example of the messaging API in use. To send a message:
 
 ```js
-iframe1.contentWindow.postMessage(“Hello world”,”http://www.example.com”);
+iframe1.contentWindow.postMessage("Hello world","http://www.example.com");
 ```
 
 To receive a message:
 
 ```js
-window.addEventListener(“message”, handler, true);
+window.addEventListener("message", handler, true);
 function handler(event) {
     if(event.origin === 'chat.example.com') {
         /* process message (event.data) */
@@ -47,6 +49,11 @@ function handler(event) {
 ### Origin Security
 
 The origin is made up of a scheme, host name, and port. It uniquely identifies the domain sending or receiving the message, and does not include the path or the fragment part of the URL. For instance, `https://example.com` will be considered different from `http://example.com` because the schema of the former is `https`, while the latter is `http`. This also applies to web servers running in the same domain but on different ports.
+
+## Test Objectives
+
+- Assess the security of the message's origin.
+- Validate that it's using safe methods and validating its input.
 
 ## How to Test
 
@@ -67,12 +74,12 @@ JavaScript code should be analyzed to determine how web messaging is implemented
 In this example, access is needed for every subdomain (www, chat, forums, ...) within the owasp.org domain. The code is trying to accept any domain with `.owasp.org`:
 
 ```js
-window.addEventListener(“message”, callback, true);
+window.addEventListener("message", callback, true);
 
 function callback(e) {
-        </b>if(e.origin.indexOf(".owasp.org")!=-1) {<b>
-            /* process message (e.data) */
-        }
+    if(e.origin.indexOf(".owasp.org")!=-1) {
+        /* process message (e.data) */
+    }
 }
 ```
 
@@ -87,7 +94,7 @@ Unfortunately, this introduces vulnerabilities. An attacker can easily bypass th
 Here is an example of code that lacks an origin check. This is very insecure, as it will accept input from any domain:
 
 ```js
-window.addEventListener(“message”, callback, true);
+window.addEventListener("message", callback, true);
 
 function callback(e) {
         /* process message (e.data) */
@@ -97,7 +104,7 @@ function callback(e) {
 Here is an example with input validation vulnerabilities that may lead to XSS attack:
 
 ```js
-window.addEventListener(“message”, callback, true);
+window.addEventListener("message", callback, true);
 
 function callback(e) {
         if(e.origin === "trusted.domain.com") {

