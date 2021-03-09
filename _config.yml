@@ -1,4 +1,4 @@
-remote_theme: "owasp/www--site-theme"
+remote_theme: "owasp/www--site-theme@main"
 #override default star and watch buttons
 code_user: OWASP
 code_repo: wstg
