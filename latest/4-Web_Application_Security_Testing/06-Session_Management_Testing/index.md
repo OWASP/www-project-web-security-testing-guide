@@ -26,3 +26,5 @@ tags: WSTG
 4.6.8 [Testing for Session Puzzling](08-Testing_for_Session_Puzzling.md)
 
 4.6.9 [Testing for Session Hijacking](09-Testing_for_Session_Hijacking.md)
+
+4.6.10 [Testing JSON Web Tokens](10-Testing_JSON_Web_Tokens.md)

@@ -241,6 +241,9 @@ docs:
 - title: '4.6.9 Testing for Session Hijacking'
   url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/09-Testing_for_Session_Hijacking.html
 
+- title: '4.6.10 Testing JSON Web Tokens'
+  url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/10-Testing_JSON_Web_Tokens.html
+
 - title: '4.7 Input Validation Testing'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/README.html
 
