@@ -160,7 +160,7 @@ In order to analyze web server attacks the error log files of the server need to
 - 40x (not found) error messages. A large amount of these from the same source might be indicative of a CGI scanner tool being used against the web server
 - 50x (server error) messages. These can be an indication of an attacker abusing parts of the application which fail unexpectedly. For example, the first phases of a SQL injection attack will produce these error message when the SQL query is not properly constructed and its execution fails on the back end database.
 
-Log statistics or analysis should not be generated, nor stored, in the same server that produces the logs. Otherwise, an attacker might, through a web server vulnerability or improper configuration, gain access to them and retrieve similar information as would be disclosed by log files themselves.
+Log statistics or analysis should not be generated, not stored, in the same server that produces the logs. Otherwise, an attacker might, through a web server vulnerability or improper configuration, gain access to them and retrieve similar information as would be disclosed by log files themselves.
 
 ## References
 
