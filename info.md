@@ -17,7 +17,7 @@
 
 ### Social
 
-* [Join OWASP Slack](https://owasp-slack.herokuapp.com/)
+* [Join OWASP Slack](https://owasp.org/slack/invite)
 * Channel: [#testing-guide](https://app.slack.com/client/T04T40NHX/CJ2QDHLRJ)
 * Twitter: [@owasp_wstg](https://twitter.com/owasp_wstg)
 
