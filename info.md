@@ -1,5 +1,3 @@
-[![OWASP 20th Anniversary Image](assets/images/OWASP-20th.jpeg)](https://20thanniversary.owasp.org/)
-
 ### Project Classification
 
 * <i class="fas fa-flag" style="color:#2ADA08;"></i> Flagship Project
