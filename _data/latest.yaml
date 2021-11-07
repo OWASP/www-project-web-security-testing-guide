@@ -334,6 +334,9 @@ docs:
 - title: '4.7.19 Testing for Server-Side Request Forgery'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/19-Testing_for_Server-Side_Request_Forgery
 
+- title: '4.7.20 Testing for Mass Assignment'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/20-Testing_for_Mass_Assignment
+
 - title: '4.8 Testing for Error Handling'
   url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/README
 
