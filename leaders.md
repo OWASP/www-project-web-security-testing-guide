@@ -1,7 +1,6 @@
 ### Leaders
 
-* [Elie Saad](https://twitter.com/7hunderSon)
+* [Elie Saad](mailto:elie.saad@owasp.org)
 * [Rick Mitchell](mailto:kingthorin@gmail.com)
-* Matteo Meucci
 
 {% include twitter-feed.html twitter="owasp_wstg" %}
