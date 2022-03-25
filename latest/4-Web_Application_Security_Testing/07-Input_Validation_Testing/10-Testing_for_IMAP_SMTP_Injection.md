@@ -78,7 +78,7 @@ The following examples can be used.
 
 `http://<webmail>/src/read_body.php?mailbox=INBOX PARAMETER2&passed_id=46106&startMessage=1`
 
-- Add non standard special characters (i.e.: `\`, `'`, `"`, `@`, `#`, `!`, `|`):
+- Add non-standard special characters (i.e.: `\`, `'`, `"`, `@`, `#`, `!`, `|`):
 
 `http://<webmail>/src/read_body.php?mailbox=INBOX"&passed_id=46106&startMessage=1`
 
@@ -113,7 +113,7 @@ Server responded: Unexpected extra arguments to Select
 
 The situation S2 is harder to test successfully. The tester needs to use blind command injection in order to determine if the server is vulnerable.
 
-On the other hand, the last situation (S3) is not revelant in this paragraph.
+On the other hand, the last situation (S3) is not relevant in this paragraph.
 
 > List of vulnerable parameters
 >
