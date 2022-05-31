@@ -460,6 +460,12 @@ docs:
 - title: '5. Reporting'
   url: 5-Reporting/README
 
+- title: '5.1 Reporting Structure'
+  url: 5-Reporting/01-Reporting_Structure
+
+- title: '5.2 Naming Schemes'
+  url: 5-Reporting/02-Naming_Schemes
+
 - title: 'Appendix A. Testing Tools Resource'
   url: 6-Appendix/A-Testing_Tools_Resource
 
