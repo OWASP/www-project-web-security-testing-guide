@@ -1,8 +1,8 @@
----
-
+#owasp software development auto security policy
+` Policy software security Auto scan map. owasp ~[ Security policy services Api'Potocol ( 1 Potocol 2 Atomic 3 nano technology nanobot skills security network matrix potocol network software development auto API w3s scanner count in the GIP.3.5 Pad.5 Services security automatic matrix and mobile devices back to pang Gun.3.5`
 layout: col-document
 title: WSTG - Latest
-tags: WSTG
+แท็ก: WSTG
 
 ---
 
