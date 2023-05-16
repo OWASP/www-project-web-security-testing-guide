@@ -99,6 +99,7 @@ tags: WSTG
 - [HCL AppScan](https://www.hcltechsw.com/products/appscan)
 - [Burp Intruder](https://portswigger.net/burp)
 - [Acunetix Web Vulnerability Scanner](https://www.acunetix.com)
+- [Akto API Security Testing](https://www.akto.io/)
 - [MaxPatrol Security Scanner](https://www.ptsecurity.com/ww-en/products/maxpatrol/)
 - [Parasoft SOAtest (more QA-type tool)](https://www.parasoft.com/products/soatest)
 - [N-Stalker Web Application Security Scanner](https://www.nstalker.com)
