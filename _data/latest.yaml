@@ -482,7 +482,7 @@ docs:
   url: 6-Appendix/B-Suggested_Reading
 
 - title: 'Appendix C. Fuzzing'
-  url: C-Fuzzing
+  url: 6-Appendix/C-Fuzzing
 
 - title: 'Appendix D. Encoded Injection'
   url: 6-Appendix/D-Encoded_Injection
