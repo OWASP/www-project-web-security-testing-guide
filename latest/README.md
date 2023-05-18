@@ -329,7 +329,7 @@ tags: WSTG
 
 ## Appendix B. [Suggested Reading](6-Appendix/B-Suggested_Reading.md)
 
-## Appendix C. [Fuzzing](C-Fuzzing.md)
+## Appendix C. [Fuzzing](6-Appendix/C-Fuzzing.md)
 
 ## Appendix D. [Encoded Injection](6-Appendix/D-Encoded_Injection.md)
 
