@@ -117,7 +117,7 @@ Apache:
 /server-status
 ```
 
-Ngnix:
+Nginx:
 
 ```html
 /index.html
