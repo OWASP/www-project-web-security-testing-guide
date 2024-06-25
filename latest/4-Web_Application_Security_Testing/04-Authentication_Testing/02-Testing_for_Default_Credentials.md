@@ -75,9 +75,11 @@ This type of issue of often difficult to identify from a black-box perspective.
 - [Burp Intruder](https://portswigger.net/burp/documentation/desktop/tools/intruder)
 - [THC Hydra](https://github.com/vanhauser-thc/thc-hydra)
 - [Nikto 2](https://www.cirt.net/nikto2)
+- [Nuclei](https://github.com/projectdiscovery/nuclei)
 
 ## References
 
 - [CIRT](https://cirt.net/passwords)
 - [SecLists Default Passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords/Default-Credentials)
 - [DefaultCreds-cheat-sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet/blob/main/DefaultCreds-Cheat-Sheet.csv)
+- [Nuclei-Templates](https://github.com/projectdiscovery/nuclei-templates/tree/6b26c63d8f63b2a812a478f14c4c098b485d54b4/http/default-logins)
