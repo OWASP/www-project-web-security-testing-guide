@@ -95,6 +95,7 @@ tags: WSTG
 
 ## Commercial Black-Box Testing Tools
 
+- [SecOps Solution](https://secopsolution.com)
 - [NGS Typhon](https://www.nccgroup.trust/uk/our-services/cyber-security/technology-solutions/)
 - [HCL AppScan](https://www.hcltechsw.com/products/appscan)
 - [Burp Intruder](https://portswigger.net/burp)
