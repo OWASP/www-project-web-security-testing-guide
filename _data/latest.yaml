@@ -469,8 +469,11 @@ docs:
 - title: '4.12.0 API Testing Overview'
   url: 4-Web_Application_Security_Testing/12-API_Testing/00-API_Testing_Overview
 
-- title: '4.12.1 Testing GraphQL'
-  url: 4-Web_Application_Security_Testing/12-API_Testing/01-Testing_GraphQL
+- title: '4.12.1 API Reconnaissance'
+  url: 4-Web_Application_Security_Testing/12-API_Testing/01-API_Reconnaissance
+
+- title: '4.12.99 Testing GraphQL'
+  url: 4-Web_Application_Security_Testing/12-API_Testing/99-Testing_GraphQL
 
 - title: '5. Reporting'
   url: 5-Reporting/README
