@@ -1,5 +1,7 @@
 remote_theme: "owasp/www--site-theme@main"
 permalink: :path
+gems:
+    - jemoji
 #override default star and watch buttons
 code_user: OWASP
 code_repo: wstg
