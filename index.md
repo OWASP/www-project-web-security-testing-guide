@@ -20,8 +20,7 @@ The WSTG is a comprehensive guide to testing the security of web applications an
 
 Any contributions to the guide itself should be made via the [guide's project repo](https://github.com/OWASP/wstg).
 
-> [!CAUTION]
-> Contributions should only be made in the proper repo against the latest content. Please don't open PRs here for versioned or stable content, they represent point-in-time state.  
+:stop_sign: Contributions should only be made in the proper repo against the latest content. Please don't open PRs here for versioned or stable content, they represent point-in-time state.  
 
 ## Stable
 
