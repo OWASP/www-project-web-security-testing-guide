@@ -8,6 +8,9 @@ Documentation explaining the files in this repo can be found at: https://owasp.o
 
 Any contributions to the guide itself should be made via the [guide's project repo](https://github.com/OWASP/wstg), using a pull request. (No one outside the project leadership or foundation automation should be pushing directly to either repo.)
 
+> [!CAUTION]
+> Contributions should only be made in the proper repo against the latest content. Please don't open PRs here for versioned or stable content, they represent point-in-time state.
+
 ## Getting Started
 
 To set up a local development environment for this [Jekyll](https://jekyllrb.com/docs/installation/ubuntu/) site:
