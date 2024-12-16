@@ -1,4 +1,4 @@
-:warning: Have you followed the "contributions guideance" -https://owasp.org/www-project-web-security-testing-guide/#contributions
+:warning: Have you followed the "contributions guideance" - https://owasp.org/www-project-web-security-testing-guide/#contributions
 
 Content PRs should generally be made against the the project repo: "OWASP/wstg" - https://github.com/OWASP/wstg
 
