@@ -62,29 +62,29 @@ IMAP special parameters that should be used are:
 
 In this example, the "mailbox" parameter is being tested by manipulating all requests with the parameter in:
 
-`http://<webmail>/src/read_body.php?mailbox=INBOX&passed_id=46106&startMessage=1`
+`https://<webmail>/src/read_body.php?mailbox=INBOX&passed_id=46106&startMessage=1`
 
 The following examples can be used.
 
 - Assign a null value to the parameter:
 
-`http://<webmail>/src/read_body.php?mailbox=&passed_id=46106&startMessage=1`
+`https://<webmail>/src/read_body.php?mailbox=&passed_id=46106&startMessage=1`
 
 - Substitute the value with a random value:
 
-`http://<webmail>/src/read_body.php?mailbox=NOTEXIST&passed_id=46106&startMessage=1`
+`https://<webmail>/src/read_body.php?mailbox=NOTEXIST&passed_id=46106&startMessage=1`
 
 - Add other values to the parameter:
 
-`http://<webmail>/src/read_body.php?mailbox=INBOX PARAMETER2&passed_id=46106&startMessage=1`
+`https://<webmail>/src/read_body.php?mailbox=INBOX PARAMETER2&passed_id=46106&startMessage=1`
 
 - Add non-standard special characters (i.e.: `\`, `'`, `"`, `@`, `#`, `!`, `|`):
 
-`http://<webmail>/src/read_body.php?mailbox=INBOX"&passed_id=46106&startMessage=1`
+`https://<webmail>/src/read_body.php?mailbox=INBOX"&passed_id=46106&startMessage=1`
 
 - Eliminate the parameter:
 
-`http://<webmail>/src/read_body.php?passed_id=46106&startMessage=1`
+`https://<webmail>/src/read_body.php?passed_id=46106&startMessage=1`
 
 The final result of the above testing gives the tester three possible situations:
 S1 - The application returns a error code/message
@@ -97,11 +97,11 @@ An attacker's aim is receiving the S1 response, as it is an indicator that the a
 
 Let's suppose that a user retrieves the email headers using the following HTTP request:
 
-`http://<webmail>/src/view_header.php?mailbox=INBOX&passed_id=46105&passed_ent_id=0`
+`https://<webmail>/src/view_header.php?mailbox=INBOX&passed_id=46105&passed_ent_id=0`
 
 An attacker might modify the value of the parameter INBOX by injecting the character `"` (%22 using URL encoding):
 
-`http://<webmail>/src/view_header.php?mailbox=INBOX%22&passed_id=46105&passed_ent_id=0`
+`https://<webmail>/src/view_header.php?mailbox=INBOX%22&passed_id=46105&passed_ent_id=0`
 
 In this case, the application answer may be:
 
@@ -126,11 +126,11 @@ After identifying all vulnerable parameters (for example, `passed_id`), the test
 
 In this test case, we have detected that the application's `passed_id` parameter is vulnerable and is used in the following request:
 
-`http://<webmail>/src/read_body.php?mailbox=INBOX&passed_id=46225&startMessage=1`
+`https://<webmail>/src/read_body.php?mailbox=INBOX&passed_id=46225&startMessage=1`
 
 Using the following test case (providing an alphabetical value when a numerical value is required):
 
-`http://<webmail>/src/read_body.php?mailbox=INBOX&passed_id=test&startMessage=1`
+`https://<webmail>/src/read_body.php?mailbox=INBOX&passed_id=test&startMessage=1`
 
 will generate the following error message:
 
@@ -169,7 +169,7 @@ It is important to remember that, in order to execute an IMAP/SMTP command, the 
 
 Let's suppose that in the [Identifying vulnerable parameters](#identifying-vulnerable-parameters) stage, the attacker detects that the parameter `message_id` in the following request is vulnerable:
 
-`http://<webmail>/read_email.php?message_id=4791`
+`https://<webmail>/read_email.php?message_id=4791`
 
 Let's suppose also that the outcome of the analysis performed in the stage 2 ("Understanding the data flow and deployment structure of the client") has identified the command and arguments associated with this parameter as:
 
@@ -177,7 +177,7 @@ Let's suppose also that the outcome of the analysis performed in the stage 2 ("U
 
 In this scenario, the IMAP injection structure would be:
 
-`http://<webmail>/read_email.php?message_id=4791 BODY[HEADER]%0d%0aV100 CAPABILITY%0d%0aV101 FETCH 4791`
+`https://<webmail>/read_email.php?message_id=4791 BODY[HEADER]%0d%0aV100 CAPABILITY%0d%0aV101 FETCH 4791`
 
 Which would generate the following commands:
 
@@ -205,4 +205,3 @@ Footer = V101 FETCH 4791
 
 - [RFC 0821 "Simple Mail Transfer Protocol"](https://tools.ietf.org/html/rfc821)
 - [RFC 3501 "Internet Message Access Protocol - Version 4rev1"](https://tools.ietf.org/html/rfc3501)
-- [Vicente Aguilera Díaz: "MX Injection: Capturing and Exploiting Hidden Mail Servers"](http://www.webappsec.org/projects/articles/121106.pdf)
