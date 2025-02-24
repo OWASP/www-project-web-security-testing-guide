@@ -20,6 +20,7 @@
 * [Join OWASP Slack](https://owasp.org/slack/invite)
 * Channel: [#testing-guide](https://app.slack.com/client/T04T40NHX/CJ2QDHLRJ)
 * Twitter: [@owasp_wstg](https://twitter.com/owasp_wstg)
+* BlueSky: [@owasp-wstg.bsky.social](https://bsky.app/profile/owasp-wstg.bsky.social)
 
 ### License
 
