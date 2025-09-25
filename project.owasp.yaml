@@ -1,0 +1,28 @@
+audience:
+  - breaker
+  - builder
+leaders:
+  - name: Elie Saad
+    email: elie.saad@owasp.org
+  - name: Rick Mitchell
+    email: rick.mitchell@owasp.org
+    github: kingthorin
+level: 4
+license:
+  - CC-BY-SA-4.0
+name: OWASP Web Security Testing Guide
+pitch: The Web Security Testing Guide (WSTG) Project produces the premier cybersecurity testing resource for web application developers and security professionals.
+repositories:
+  - name: www-project-web-security-testing-guide
+    url: https://github.com/OWASP/www-project-web-security-testing-guide
+    description: The Web Security Testing Guide (WSTG) Project produces the premier cybersecurity testing resource for web application developers and security
+      professionals.
+  - name: wstg
+    url: https://github.com/OWASP/wstg
+    description: The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web applications and web services.
+tags:
+  - otg
+  - wstg
+  - custom-tag-1
+type: documentation
+website: https://owasp.org/www-project-web-security-testing-guide
