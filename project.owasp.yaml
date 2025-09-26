@@ -1,0 +1,44 @@
+audience:
+  - breaker
+  - builder
+leaders:
+  - name: Elie Saad
+    email: elie.saad@owasp.org
+    github: ThunderSon
+  - name: Rick Mitchell
+    email: rick.mitchell@owasp.org
+    github: kingthorin
+community:
+  - platform: slack
+    url: https://app.slack.com/client/T04T40NHX/CJ2QDHLRJ
+    description: '#testing-guide on OWASP slack'
+logo:
+  - small: "https://github.com/OWASP/wstg/blob/master/.github/www/assets/202006-owasp_material/Github/Github%20-%20Shield%20400x400%20-%20Gradient%20%E2%80%93%201.png"
+    medium: "https://github.com/OWASP/wstg/blob/master/.github/www/assets/202006-owasp_material/Github/Github%20-%20Shield%20400x400%20-%20Gradient%20%E2%80%93%201.png"
+    large: "https://github.com/OWASP/wstg/blob/master/.github/www/assets/202006-owasp_material/Github/Github%20-%20Shield%20400x400%20-%20Gradient%20%E2%80%93%201.png"
+level: 4
+license:
+  - CC-BY-SA-4.0
+name: OWASP Web Security Testing Guide
+pitch: The Web Security Testing Guide (WSTG) Project produces the premier cybersecurity testing resource for web application developers and security professionals.
+repositories:
+  - name: www-project-web-security-testing-guide
+    url: https://github.com/OWASP/www-project-web-security-testing-guide
+    description: The Web Security Testing Guide (WSTG) Project produces the premier cybersecurity testing resource for web application developers and security
+      professionals.
+    code_of_conduct: https://github.com/OWASP/wstg/blob/master/CODE_OF_CONDUCT.md
+  - name: wstg
+    url: https://github.com/OWASP/wstg
+    description: The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web applications and web services.
+    code_of_conduct: https://github.com/OWASP/wstg/blob/master/CODE_OF_CONDUCT.md
+    contribution_guide: https://github.com/OWASP/wstg/blob/master/CONTRIBUTING.md
+tags:
+  - wstg
+  - appsec
+  - pentest
+  - otg
+type: documentation
+website: https://owasp.org/www-project-web-security-testing-guide
+social_media:
+  - platform: x
+    url: https://x.com/owasp_wstg
