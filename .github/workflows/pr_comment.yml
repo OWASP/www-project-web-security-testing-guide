@@ -7,7 +7,7 @@ on:
 
 jobs:
   PR-Comment:
-    if: github.actor != 'kingthorin' && github.actor != 'wstgbot' && github.actor != 'ThunderSon' && github.actor != 'rejahrehim' && github.actor != 'victoriadrake'  && github.actor != 'dependabot'
+    if: github.actor != 'kingthorin' && github.actor != 'wstgbot' && github.actor != 'ThunderSon' && github.actor != 'rejahrehim' && github.actor != 'victoriadrake'  && github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
     - name: PR Comment
