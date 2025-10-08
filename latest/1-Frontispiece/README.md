@@ -82,6 +82,7 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 - Miguel Arevalo
 - Najam Ul Saqib
 - Nikoleta Misheva
+- Olivier Konaté
 - Patrick Santos
 - Rejah Rehim
 - Rick Mitchell
