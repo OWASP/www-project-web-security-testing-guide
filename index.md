@@ -12,7 +12,7 @@ pitch: The Web Security Testing Guide (WSTG) Project produces the premier cybers
 [![WSTG Github Stars](https://img.shields.io/github/stars/OWASP/wstg?label=Stars%20on%20GitHub&style=social)](https://github.com/OWASP/wstg/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/owasp_wstg?style=social)](https://twitter.com/owasp_wstg)
 
-<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=baa881ef-ba4f-42c6-923f-6a58a85139d1" />
+<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=baa881ef-ba4f-42c6-923f-6a58a85139d1" width="0" height="0" />
 
 The Web Security Testing Guide (WSTG) Project produces the premier cybersecurity testing resource for web application developers and security professionals.
 
