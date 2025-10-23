@@ -10,6 +10,7 @@ leaders:
     github: kingthorin
 community:
   - platform: slack
+    name: Slack
     url: https://app.slack.com/client/T04T40NHX/CJ2QDHLRJ
     description: '#testing-guide on OWASP slack'
 logo:
