@@ -8,6 +8,9 @@ on:
     paths:
       - '*.owasp.yaml'
 
+permissions:
+  contents: read
+
 concurrency:
   cancel-in-progress: true
   group: ${{ github.repository }}-${{ github.workflow }}-${{ github.ref }}
@@ -21,8 +24,4 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Validate metadata file
-        # We want to use the latest version of the action which lives in the
-        # `owasp/nest-schema` repository subdirectory and doesn't have a separate release process.
-        # This approach simplifies the workflow support however
-        # you can change it to use a specific SHA version if needed.
-        uses: owasp/nest-schema/.github/actions/validate@v0  # NOSONAR
+        uses: owasp/nest-schema/.github/actions/validate@2ce57bd63b3d0a2eed24017891d014c7b8bc15fd
