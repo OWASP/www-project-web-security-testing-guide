@@ -73,7 +73,7 @@ To test for RIA policy file weakness the tester should try to retrieve the polic
 
 For example, if the application's URL is `http://www.owasp.org`, the tester should try to download the files `http://www.owasp.org/crossdomain.xml` and `http://www.owasp.org/clientaccesspolicy.xml`.
 
-After retrieving all the policy files, the permissions allowed should be be checked under the least privilege principle. Requests should only come from the domains, ports, or protocols that are necessary. Overly permissive policies should be avoided. Policies with `*` in them should be closely examined.
+After retrieving all the policy files, the permissions allowed should be checked under the least privilege principle. Requests should only come from the domains, ports, or protocols that are necessary. Overly permissive policies should be avoided. Policies with `*` in them should be closely examined.
 
 #### Example
 
