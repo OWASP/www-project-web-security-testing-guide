@@ -1,7 +1,7 @@
 docs_list_title: WSTG Contents
 docs:
 
-- title: '0. Foreword by Eoin Keary'
+- title: '0. Foreword'
   url: 0-Foreword/README
 
 - title: '1. Frontispiece'
@@ -462,6 +462,9 @@ docs:
 
 - title: '4.11.14 Testing for Reverse Tabnabbing'
   url: 4-Web_Application_Security_Testing/11-Client-side_Testing/14-Testing_for_Reverse_Tabnabbing
+
+- title: '4.11.15 Testing for Client-side Template Injection'
+  url: 4-Web_Application_Security_Testing/11-Client-side_Testing/15-Testing_for_Client-side_Template_Injection
 
 - title: '4.12 API Testing'
   url: 4-Web_Application_Security_Testing/12-API_Testing/README
