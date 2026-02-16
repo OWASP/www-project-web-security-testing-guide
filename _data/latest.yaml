@@ -337,11 +337,11 @@ docs:
 - title: '4.7.14 Testing for Incubated Vulnerability'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/14-Testing_for_Incubated_Vulnerability
 
-- title: '4.7.15 Testing for HTTP Splitting Smuggling'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/15-Testing_for_HTTP_Splitting_Smuggling
+- title: '4.7.15 Testing for HTTP Response Splitting'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/15-Testing_for_HTTP_Response_Splitting
 
-- title: '4.7.16 Testing for HTTP Incoming Requests'
-  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/16-Testing_for_HTTP_Incoming_Requests
+- title: '4.7.16 Testing for HTTP Request Smuggling'
+  url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/16-Testing_for_HTTP_Request_Smuggling
 
 - title: '4.7.17 Testing for Host Header Injection'
   url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/17-Testing_for_Host_Header_Injection
