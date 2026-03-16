@@ -7,7 +7,7 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
-# Testing for Weak Encryption
+# Testing for Weak Cryptographic Primitives
 
 |ID          |
 |------------|
@@ -119,7 +119,7 @@ Other common sensitive keywords: sysadmin, root, privilege, pass, key, 
 
 ## Tools
 
-- Vulnerability scanners such as Nessus, NMAP (scripts), or OpenVAS can scan for use or acceptance of weak encryption against protocol such as SNMP, TLS, SSH, SMTP, etc.
+- Vulnerability scanners such as Nessus, Nmap (scripts), or OpenVAS can scan for use or acceptance of weak encryption against protocol such as SNMP, TLS, SSH, SMTP, etc.
 - Use static code analysis tool to do source code review such as klocwork, Fortify, Coverity, CheckMark for the following cases.
 
 ```text
