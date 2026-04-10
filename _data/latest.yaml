@@ -481,6 +481,12 @@ docs:
 - title: '4.12.2 API Broken Object Level Authorization'
   url: 4-Web_Application_Security_Testing/12-API_Testing/02-API_Broken_Object_Level_Authorization
 
+- title: '4.12.3 Testing for Excessive Data Exposure'
+  url: 4-Web_Application_Security_Testing/12-API_Testing/03-Testing_for_Excessive_Data_Exposure
+
+- title: '4.12.4 API Broken Function Level Authorization'
+  url: 4-Web_Application_Security_Testing/12-API_Testing/04-API_Broken_Function_Level_Authorization
+
 - title: '4.12.99 Testing GraphQL'
   url: 4-Web_Application_Security_Testing/12-API_Testing/99-Testing_GraphQL
 
