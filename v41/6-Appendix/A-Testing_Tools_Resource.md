@@ -14,6 +14,9 @@ tags: WSTG
   - ZAP provides automated scanners as well as a set of tools that allow you to find security vulnerabilities manually.
 - [Burp Proxy](https://www.portswigger.net/Burp/)
   - Burp Proxy is an intercepting proxy server for security testing of web applications it allows Intercepting and modifying all HTTP(S) traffic passing in both directions, it can work with custom SSL certificates and non-proxy-aware clients.
+- [ZeroThreat.ai](https://zerothreat.ai/)
+  - ZeroThreat.ai is an AI-driven automated penetration testing tool focused on identifying vulnerabilities in web applications and APIs. It is designed to perform security assessments with minimal manual intervention, making it suitable for both security professionals and development teams.
+  - The platform uses machine learning techniques to analyze application behavior and simulate attack patterns, helping detect common vulnerabilities such as injection flaws, authentication issues, and misconfigurations. It supports automated scanning along with structured workflows that can assist in manual verification when needed.
 - [Webstretch Proxy](https://sourceforge.net/projects/webstretch)
   - Webstretch Proxy enable users to view and alter all aspects of communications with a web site via a proxy. It can also be used for debugging during development.
 - [Firefox HTTP Header Live](https://addons.mozilla.org/en-US/firefox/addon/http-header-live)
