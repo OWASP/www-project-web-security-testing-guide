@@ -122,6 +122,7 @@ tags: WSTG
 - [SAINT](https://www.carson-saint.com/)
 - [QualysGuard WAS](https://www.qualys.com/apps/web-app-scanning/)
 - [IndusGuard Web](https://www.indusface.com/products/application-security/web-application-scanning/)
+- [ZeroThreat.ai (Automated Penetration Testing Tool)](https://zerothreat.ai/automated-penetration-testing)
 
 ### Linux Distrubtion
 
