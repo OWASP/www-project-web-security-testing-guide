@@ -46,7 +46,7 @@ Content-Type: text/html
 ...
 ```
 
-Here is another response, this time sent by nginx.
+Here is another response, this time sent by Nginx.
 
 ```http
 HTTP/1.1 200 OK
@@ -86,7 +86,7 @@ Status: 200 OK
 ...
 ```
 
-In cases where the server information is obscured, testers may guess the type of server based on the ordering of the header fields. Note that in the Apache example above, the fields follow this order:
+In cases where the server information is obscured, testers may guess the type of server based on the ordering of the header fields. Notice that in the Apache example above, the fields follow this order:
 
 - Date
 - Server
@@ -97,13 +97,13 @@ In cases where the server information is obscured, testers may guess the type of
 - Connection
 - Content-Type
 
-However, in both the nginx and obscured server examples, the fields in common follow this order:
+However, in both the Nginx and obscured server examples, the fields in common follow this order:
 
 - Server
 - Date
 - Content-Type
 
-Testers can use this information to guess that the obscured server is nginx. However, considering that a number of different web servers may share the same field ordering and fields can be modified or removed, this method is not definite.
+Testers can use this information to guess that the obscured server is Nginx. However, considering that a number of different web servers may share the same field ordering and fields can be modified or removed, this method is not definite.
 
 ### Sending Malformed Requests
 
@@ -132,7 +132,7 @@ Content-Type: text/html; charset=iso-8859-1
 </body></html>
 ```
 
-Here is the response to the same request from nginx.
+Here is the response to the same request from Nginx.
 
 ```sh
 GET / SANTA CLAUS/1.1

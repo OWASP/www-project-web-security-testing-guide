@@ -208,7 +208,7 @@ It would be fairly simple for a tester to review the RFC/drafts and create a lis
 ## Tools
 
 - Browser (View Source or Dev Tools functionality)
-- cURL
+- curl
 - wget
 - Burp Suite
 - ZAP
