@@ -146,7 +146,7 @@ If the JWT is signed using a HMAC-based algorithm (such as HS256), the security 
 
 If the application is using off-the-shelf or open source software, the first step should be go investigate the code, and see whether there is default HMAC signing key that is used.
 
-If there isn't a default, then it may be possible to crack guess or brute-force the key. The simplest way to do this is to use the [crackjwt.py](https://github.com/Sjord/jwtcrack) script, which simply requires the JWT and a dictionary file.
+If there isn't a default, then it may be possible to crack, guess, or brute-force the key. The simplest way to do this is to use the [crackjwt.py](https://github.com/Sjord/jwtcrack) script, which simply requires the JWT and a dictionary file.
 
 A more powerful option is to convert the JWT into a format that can be used by [John the Ripper](https://github.com/openwall/john) using the [jwt2john.py](https://github.com/Sjord/jwtcrack/blob/master/jwt2john.py) script. John can then be used to carry out much more advanced attacks against the key.
 
