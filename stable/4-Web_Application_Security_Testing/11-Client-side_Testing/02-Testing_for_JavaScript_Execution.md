@@ -38,7 +38,7 @@ This implies that an attacker could inject JavaScript code simply by submitting 
 
 ## How to Test
 
-Consider the following: [DOM XSS exercise](http://www.domxss.com/domxss/01_Basics/04_eval.html)
+Consider the following: [DOM XSS exercise](http://example.com/01_Basics/04_eval.html)
 
 The page contains the following script:
 

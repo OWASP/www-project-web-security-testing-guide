@@ -54,7 +54,7 @@ tags: WSTG
 - [Security in the Java platform](https://docs.oracle.com/javase/6/docs/technotes/guides/security/overview/jsoverview.html)
 - [System Administration, Networking, and Security Institute (SANS)](https://www.sans.org)
 - [Web Security – Articles](https://www.acunetix.com/blog/category/web-security-zone/)
-- [Testing Client-Side Security issues](http://www.domxss.com/domxss/)
+- [Testing Client-Side Security issues](http://example.com/)
 
 ## Videos
 
