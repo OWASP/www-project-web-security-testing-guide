@@ -31,9 +31,7 @@ This implies that an attacker could inject JavaScript code simply by submitting 
 
 ## How to Test
 
-For example, consider the following URL: `http://www.domxss.com/domxss/01_Basics/04_eval.html`
-
-The page contains the following script:
+For example, consider a page that contains the following script:
 
 ```html
 <script>
