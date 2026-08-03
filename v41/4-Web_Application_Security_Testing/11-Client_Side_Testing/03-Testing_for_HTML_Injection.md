@@ -45,11 +45,7 @@ This input will add an image tag to the page that will execute arbitrary JavaScr
 
 ## How to Test
 
-For example, consider at the following URL:
-
-`http://www.domxss.com/domxss/01_Basics/06_jquery_old_html.html`
-
-The HTML code contains the following script:
+For example, consider at the following HTML code and script:
 
 ```html
 <script src="../js/jquery-1.7.1.js"></script>
