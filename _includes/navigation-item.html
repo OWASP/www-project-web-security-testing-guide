@@ -1,0 +1,26 @@
+{% assign item = include.item %}
+{% assign collection = include.collection %}
+{% assign item_path = item.url | split: '#' | first %}
+{% assign open_branch = false %}
+{% if item_path != blank and page.path contains item_path %}
+  {% assign open_branch = true %}
+{% endif %}
+<li class="wstg-nav-item" data-title="{{ item.title | escape }}">
+  {% if item.children and item.children.size > 0 %}
+  <details{% if open_branch %} open{% endif %}>
+    <summary>
+      <span class="wstg-nav-summary-row">
+        <span class="wstg-nav-chevron" aria-hidden="true"></span>
+        <a href="{{ site.baseurl }}/{{ collection }}/{{ item.url }}" data-nav-url="{{ item.url }}" title="{{ item.title | escape }}">{{ item.title | escape }}</a>
+      </span>
+    </summary>
+    <ul>
+      {% for child in item.children %}
+        {% include navigation-item.html item=child collection=collection %}
+      {% endfor %}
+    </ul>
+  </details>
+  {% else %}
+  <a href="{{ site.baseurl }}/{{ collection }}/{{ item.url }}" data-nav-url="{{ item.url }}" title="{{ item.title | escape }}">{{ item.title | escape }}</a>
+  {% endif %}
+</li>
