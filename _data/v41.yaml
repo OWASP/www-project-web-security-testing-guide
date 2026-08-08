@@ -59,128 +59,181 @@ docs:
       children:
         - title: '4.1.1 Conduct Search Engine Discovery Reconnaissance for Information Leakage'
           url: 4-Web_Application_Security_Testing/01-Information_Gathering/01-Conduct_Search_Engine_Discovery_Reconnaissance_for_Information_Leakage
+          hints: 'wstg-info-01 info-01'
         - title: '4.1.2 Fingerprint Web Server'
           url: 4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server
+          hints: 'wstg-info-02 info-02'
         - title: '4.1.3 Review Webserver Metafiles for Information Leakage'
           url: 4-Web_Application_Security_Testing/01-Information_Gathering/03-Review_Webserver_Metafiles_for_Information_Leakage
+          hints: 'robots robots.txt sitemap sitemap.xml wstg-info-03 info-03'
         - title: '4.1.4 Enumerate Applications on Webserver'
           url: 4-Web_Application_Security_Testing/01-Information_Gathering/04-Enumerate_Applications_on_Webserver
+          hints: 'wstg-info-04 info-04'
         - title: '4.1.5 Review Webpage Comments and Metadata for Information Leakage'
           url: 4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Comments_and_Metadata_for_Information_Leakage
+          hints: 'wstg-info-05 info-05'
         - title: '4.1.6 Identify Application Entry Points'
           url: 4-Web_Application_Security_Testing/01-Information_Gathering/06-Identify_Application_Entry_Points
+          hints: 'wstg-info-06 info-06'
         - title: '4.1.7 Map Execution Paths Through Application'
           url: 4-Web_Application_Security_Testing/01-Information_Gathering/07-Map_Execution_Paths_Through_Application
+          hints: 'wstg-info-07 info-07'
         - title: '4.1.8 Fingerprint Web Application Framework'
           url: 4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework
+          hints: 'wstg-info-08 info-08'
         - title: '4.1.9 Fingerprint Web Application'
           url: 4-Web_Application_Security_Testing/01-Information_Gathering/09-Fingerprint_Web_Application
+          hints: 'wstg-info-09 info-09'
         - title: '4.1.10 Map Application Architecture'
           url: 4-Web_Application_Security_Testing/01-Information_Gathering/10-Map_Application_Architecture
+          hints: 'wstg-info-10 info-10'
     - title: '4.2 Configuration and Deployment Management Testing'
       url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README
       children:
         - title: '4.2.1 Test Network Infrastructure Configuration'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/01-Test_Network_Infrastructure_Configuration
+          hints: 'wstg-conf-01 conf-01'
         - title: '4.2.2 Test Application Platform Configuration'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/02-Test_Application_Platform_Configuration
+          hints: 'wstg-conf-02 conf-02'
         - title: '4.2.3 Test File Extensions Handling for Sensitive Information'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/03-Test_File_Extensions_Handling_for_Sensitive_Information
+          hints: 'wstg-conf-03 conf-03'
         - title: '4.2.4 Review Old Backup and Unreferenced Files for Sensitive Information'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information
+          hints: 'wstg-conf-04 conf-04'
         - title: '4.2.5 Enumerate Infrastructure and Application Admin Interfaces'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces
+          hints: 'wstg-conf-05 conf-05'
         - title: '4.2.6 Test HTTP Methods'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods
+          hints: 'wstg-conf-06 conf-06'
         - title: '4.2.7 Test HTTP Strict Transport Security'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_HTTP_Strict_Transport_Security
+          hints: 'hsts headers wstg-conf-07 conf-07'
         - title: '4.2.8 Test RIA Cross Domain Policy'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/08-Test_RIA_Cross_Domain_Policy
+          hints: 'crossdomain.xml clientaccesspolicy wstg-conf-08 conf-08'
         - title: '4.2.9 Test File Permission'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/09-Test_File_Permission
+          hints: 'wstg-conf-09 conf-09'
         - title: '4.2.10 Test for Subdomain Takeover'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/10-Test_for_Subdomain_Takeover
+          hints: 'wstg-conf-10 conf-10'
         - title: '4.2.11 Test Cloud Storage'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/11-Test_Cloud_Storage
+          hints: 's3 bucket blob storage wstg-conf-11 conf-11'
     - title: '4.3 Identity Management Testing'
       url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/README
       children:
         - title: '4.3.1 Test Role Definitions'
           url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/01-Test_Role_Definitions
+          hints: 'wstg-idnt-01 idnt-01'
         - title: '4.3.2 Test User Registration Process'
           url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/02-Test_User_Registration_Process
+          hints: 'wstg-idnt-02 idnt-02'
         - title: '4.3.3 Test Account Provisioning Process'
           url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/03-Test_Account_Provisioning_Process
+          hints: 'wstg-idnt-03 idnt-03'
         - title: '4.3.4 Testing for Account Enumeration and Guessable User Account'
           url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/04-Testing_for_Account_Enumeration_and_Guessable_User_Account
+          hints: 'wstg-idnt-04 idnt-04'
         - title: '4.3.5 Testing for Weak or Unenforced Username Policy'
           url: 4-Web_Application_Security_Testing/03-Identity_Management_Testing/05-Testing_for_Weak_or_Unenforced_Username_Policy
+          hints: 'wstg-idnt-05 idnt-05'
     - title: '4.4 Authentication Testing'
       url: 4-Web_Application_Security_Testing/04-Authentication_Testing/README
       children:
         - title: '4.4.1 Testing for Credentials Transported over an Encrypted Channel'
           url: 4-Web_Application_Security_Testing/04-Authentication_Testing/01-Testing_for_Credentials_Transported_over_an_Encrypted_Channel
+          hints: 'tls ssl https wstg-athn-01 athn-01'
         - title: '4.4.2 Testing for Default Credentials'
           url: 4-Web_Application_Security_Testing/04-Authentication_Testing/02-Testing_for_Default_Credentials
+          hints: 'wstg-athn-02 athn-02'
         - title: '4.4.3 Testing for Weak Lock Out Mechanism'
           url: 4-Web_Application_Security_Testing/04-Authentication_Testing/03-Testing_for_Weak_Lock_Out_Mechanism
+          hints: 'rate limit bruteforce brute force account lockout wstg-athn-03 athn-03'
         - title: '4.4.4 Testing for Bypassing Authentication Schema'
           url: 4-Web_Application_Security_Testing/04-Authentication_Testing/04-Testing_for_Bypassing_Authentication_Schema
+          hints: 'wstg-athn-04 athn-04'
         - title: '4.4.5 Testing for Vulnerable Remember Password'
           url: 4-Web_Application_Security_Testing/04-Authentication_Testing/05-Testing_for_Vulnerable_Remember_Password
+          hints: 'wstg-athn-05 athn-05'
         - title: '4.4.6 Testing for Browser Cache Weaknesses'
           url: 4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses
+          hints: 'wstg-athn-06 athn-06'
         - title: '4.4.7 Testing for Weak Password Policy'
           url: 4-Web_Application_Security_Testing/04-Authentication_Testing/07-Testing_for_Weak_Password_Policy
+          hints: 'wstg-athn-07 athn-07'
         - title: '4.4.8 Testing for Weak Security Question Answer'
           url: 4-Web_Application_Security_Testing/04-Authentication_Testing/08-Testing_for_Weak_Security_Question_Answer
+          hints: 'wstg-athn-08 athn-08'
         - title: '4.4.9 Testing for Weak Password Change or Reset Functionalities'
           url: 4-Web_Application_Security_Testing/04-Authentication_Testing/09-Testing_for_Weak_Password_Change_or_Reset_Functionalities
+          hints: 'wstg-athn-09 athn-09'
         - title: '4.4.10 Testing for Weaker Authentication in Alternative Channel'
           url: 4-Web_Application_Security_Testing/04-Authentication_Testing/10-Testing_for_Weaker_Authentication_in_Alternative_Channel
+          hints: 'wstg-athn-10 athn-10'
     - title: '4.5 Authorization Testing'
       url: 4-Web_Application_Security_Testing/05-Authorization_Testing/README
       children:
         - title: '4.5.1 Testing Directory Traversal File Include'
           url: 4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include
+          hints: 'path traversal dotdot lfi wstg-athz-01 athz-01'
         - title: '4.5.2 Testing for Bypassing Authorization Schema'
           url: 4-Web_Application_Security_Testing/05-Authorization_Testing/02-Testing_for_Bypassing_Authorization_Schema
+          hints: 'wstg-athz-02 athz-02'
         - title: '4.5.3 Testing for Privilege Escalation'
           url: 4-Web_Application_Security_Testing/05-Authorization_Testing/03-Testing_for_Privilege_Escalation
+          hints: 'privesc wstg-athz-03 athz-03'
         - title: '4.5.4 Testing for Insecure Direct Object References'
           url: 4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References
+          hints: 'idor wstg-athz-04 athz-04'
     - title: '4.6 Session Management Testing'
       url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/README
       children:
         - title: '4.6.1 Testing for Session Management Schema'
           url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/01-Testing_for_Session_Management_Schema
+          hints: 'wstg-sess-01 sess-01'
         - title: '4.6.2 Testing for Cookies Attributes'
           url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes
+          hints: 'cookies set-cookie httponly samesite secure flag wstg-sess-02 sess-02'
         - title: '4.6.3 Testing for Session Fixation'
           url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/03-Testing_for_Session_Fixation
+          hints: 'wstg-sess-03 sess-03'
         - title: '4.6.4 Testing for Exposed Session Variables'
           url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/04-Testing_for_Exposed_Session_Variables
+          hints: 'wstg-sess-04 sess-04'
         - title: '4.6.5 Testing for Cross Site Request Forgery'
           url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery
+          hints: 'csrf xsrf wstg-sess-05 sess-05'
         - title: '4.6.6 Testing for Logout Functionality'
           url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/06-Testing_for_Logout_Functionality
+          hints: 'wstg-sess-06 sess-06'
         - title: '4.6.7 Testing Session Timeout'
           url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/07-Testing_Session_Timeout
+          hints: 'wstg-sess-07 sess-07'
         - title: '4.6.8 Testing for Session Puzzling'
           url: 4-Web_Application_Security_Testing/06-Session_Management_Testing/08-Testing_for_Session_Puzzling
+          hints: 'wstg-sess-08 sess-08'
     - title: '4.7 Input Validation Testing'
       url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/README
       children:
         - title: '4.7.1 Testing for Reflected Cross Site Scripting'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting
+          hints: 'xss wstg-inpv-01 inpv-01'
         - title: '4.7.2 Testing for Stored Cross Site Scripting'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/02-Testing_for_Stored_Cross_Site_Scripting
+          hints: 'xss wstg-inpv-02 inpv-02'
         - title: '4.7.3 Testing for HTTP Verb Tampering'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/03-Testing_for_HTTP_Verb_Tampering
+          hints: 'verb tampering wstg-inpv-03 inpv-03'
         - title: '4.7.4 Testing for HTTP Parameter Pollution'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/04-Testing_for_HTTP_Parameter_Pollution
+          hints: 'hpp wstg-inpv-04 inpv-04'
         - title: '4.7.5 Testing for SQL Injection'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection
+          hints: 'sqli wstg-inpv-05 inpv-05'
           children:
             - title: '4.7.5.1 Testing for Oracle'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.1-Testing_for_Oracle
@@ -188,37 +241,49 @@ docs:
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.2-Testing_for_MySQL
             - title: '4.7.5.3 Testing for SQL Server'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.3-Testing_for_SQL_Server
+              hints: 'mssql sql server'
             - title: '4.7.5.4 Testing PostgreSQL'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.4-Testing_PostgreSQL
             - title: '4.7.5.5 Testing for MS Access'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.5-Testing_for_MS_Access
             - title: '4.7.5.6 Testing for NoSQL Injection'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection
+              hints: 'sqli nosqli'
             - title: '4.7.5.7 Testing for ORM Injection'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.7-Testing_for_ORM_Injection
             - title: '4.7.5.8 Testing for Client Side'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.8-Testing_for_Client_Side
         - title: '4.7.6 Testing for LDAP Injection'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/06-Testing_for_LDAP_Injection
+          hints: 'ldapi wstg-inpv-06 inpv-06'
         - title: '4.7.7 Testing for XML Injection'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/07-Testing_for_XML_Injection
+          hints: 'xxe xmli xml injection wstg-inpv-07 inpv-07'
         - title: '4.7.8 Testing for SSI Injection'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/08-Testing_for_SSI_Injection
+          hints: 'ssi injection wstg-inpv-08 inpv-08'
         - title: '4.7.9 Testing for XPath Injection'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/09-Testing_for_XPath_Injection
+          hints: 'xpathi xml wstg-inpv-09 inpv-09'
         - title: '4.7.10 Testing for IMAP SMTP Injection'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/10-Testing_for_IMAP_SMTP_Injection
+          hints: 'email injection wstg-inpv-10 inpv-10'
         - title: '4.7.11 Testing for Code Injection'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/11-Testing_for_Code_Injection
+          hints: 'rce wstg-inpv-11 inpv-11'
           children:
             - title: '4.7.11.1 Testing for Local File Inclusion'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion
+              hints: 'lfi rfi'
             - title: '4.7.11.2 Testing for Remote File Inclusion'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.2-Testing_for_Remote_File_Inclusion
+              hints: 'lfi rfi'
         - title: '4.7.12 Testing for Command Injection'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection
+          hints: 'rce cmdi os command wstg-inpv-12 inpv-12'
         - title: '4.7.13 Testing for Buffer Overflow'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Buffer_Overflow
+          hints: 'wstg-inpv-13 inpv-13'
           children:
             - title: '4.7.13.1 Testing for Heap Overflow'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.1-Testing_for_Heap_Overflow
@@ -226,34 +291,46 @@ docs:
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.2-Testing_for_Stack_Overflow
             - title: '4.7.13.3 Testing for Format String'
               url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/13.3-Testing_for_Format_String
+              hints: 'format string bug'
         - title: '4.7.14 Testing for Incubated Vulnerability'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/14-Testing_for_Incubated_Vulnerability
+          hints: 'wstg-inpv-14 inpv-14'
         - title: '4.7.15 Testing for HTTP Splitting Smuggling'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/15-Testing_for_HTTP_Splitting_Smuggling
+          hints: 'wstg-inpv-15 inpv-15'
         - title: '4.7.16 Testing for HTTP Incoming Requests'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/16-Testing_for_HTTP_Incoming_Requests
+          hints: 'wstg-inpv-16 inpv-16'
         - title: '4.7.17 Testing for Host Header Injection'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/17-Testing_for_Host_Header_Injection
+          hints: 'host header injection headers wstg-inpv-17 inpv-17'
         - title: '4.7.18 Testing for Server Side Template Injection'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server_Side_Template_Injection
+          hints: 'ssti wstg-inpv-18 inpv-18'
     - title: '4.8 Testing for Error Handling'
       url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/README
       children:
         - title: '4.8.1 Testing for Error Code'
           url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_for_Error_Code
+          hints: 'wstg-errh-01 errh-01'
         - title: '4.8.2 Testing for Stack Traces'
           url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces
+          hints: 'wstg-errh-02 errh-02'
     - title: '4.9 Testing for Weak Cryptography'
       url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README
       children:
         - title: '4.9.1 Testing for Weak SSL TLS Ciphers Insufficient Transport Layer Protection'
           url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_SSL_TLS_Ciphers_Insufficient_Transport_Layer_Protection
+          hints: 'wstg-cryp-01 cryp-01'
         - title: '4.9.2 Testing for Padding Oracle'
           url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/02-Testing_for_Padding_Oracle
+          hints: 'padding oracle attack wstg-cryp-02 cryp-02'
         - title: '4.9.3 Testing for Sensitive Information Sent via Unencrypted Channels'
           url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/03-Testing_for_Sensitive_Information_Sent_via_Unencrypted_Channels
+          hints: 'tls ssl https cleartext wstg-cryp-03 cryp-03'
         - title: '4.9.4 Testing for Weak Encryption'
           url: 4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_Encryption
+          hints: 'wstg-cryp-04 cryp-04'
     - title: '4.10 Business Logic Testing'
       url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/README
       children:
@@ -261,51 +338,73 @@ docs:
           url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/00-Introduction_to_Business_Logic
         - title: '4.10.1 Test Business Logic Data Validation'
           url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/01-Test_Business_Logic_Data_Validation
+          hints: 'wstg-busl-01 busl-01'
         - title: '4.10.2 Test Ability to Forge Requests'
           url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/02-Test_Ability_to_Forge_Requests
+          hints: 'wstg-busl-02 busl-02'
         - title: '4.10.3 Test Integrity Checks'
           url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/03-Test_Integrity_Checks
+          hints: 'wstg-busl-03 busl-03'
         - title: '4.10.4 Test for Process Timing'
           url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/04-Test_for_Process_Timing
+          hints: 'race condition toctou wstg-busl-04 busl-04'
         - title: '4.10.5 Test Number of Times a Function Can Be Used Limits'
           url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/05-Test_Number_of_Times_a_Function_Can_Be_Used_Limits
+          hints: 'rate limit bruteforce brute force wstg-busl-05 busl-05'
         - title: '4.10.6 Testing for the Circumvention of Work Flows'
           url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/06-Testing_for_the_Circumvention_of_Work_Flows
+          hints: 'wstg-busl-06 busl-06'
         - title: '4.10.7 Test Defenses Against Application Misuse'
           url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/07-Test_Defenses_Against_Application_Misuse
+          hints: 'wstg-busl-07 busl-07'
         - title: '4.10.8 Test Upload of Unexpected File Types'
           url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/08-Test_Upload_of_Unexpected_File_Types
+          hints: 'wstg-busl-08 busl-08'
         - title: '4.10.9 Test Upload of Malicious Files'
           url: 4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files
+          hints: 'wstg-busl-09 busl-09'
     - title: '4.11 Client Side Testing'
       url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/README
       children:
         - title: '4.11.1 Testing for DOM-Based Cross Site Scripting'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting
+          hints: 'xss dom xss domxss wstg-clnt-01 clnt-01'
         - title: '4.11.2 Testing for JavaScript Execution'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/02-Testing_for_JavaScript_Execution
+          hints: 'wstg-clnt-02 clnt-02'
         - title: '4.11.3 Testing for HTML Injection'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/03-Testing_for_HTML_Injection
+          hints: 'wstg-clnt-03 clnt-03'
         - title: '4.11.4 Testing for Client Side URL Redirect'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/04-Testing_for_Client_Side_URL_Redirect
+          hints: 'open redirect wstg-clnt-04 clnt-04'
         - title: '4.11.5 Testing for CSS Injection'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/05-Testing_for_CSS_Injection
+          hints: 'wstg-clnt-05 clnt-05'
         - title: '4.11.6 Testing for Client Side Resource Manipulation'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/06-Testing_for_Client_Side_Resource_Manipulation
+          hints: 'wstg-clnt-06 clnt-06'
         - title: '4.11.7 Testing Cross Origin Resource Sharing'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/07-Testing_Cross_Origin_Resource_Sharing
+          hints: 'cors headers wstg-clnt-07 clnt-07'
         - title: '4.11.8 Testing for Cross Site Flashing'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/08-Testing_for_Cross_Site_Flashing
+          hints: 'wstg-clnt-08 clnt-08'
         - title: '4.11.9 Testing for Clickjacking'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/09-Testing_for_Clickjacking
+          hints: 'ui redress ui redressing x-frame-options framing wstg-clnt-09 clnt-09'
         - title: '4.11.10 Testing WebSockets'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/10-Testing_WebSockets
+          hints: 'ws wstg-clnt-10 clnt-10'
         - title: '4.11.11 Testing Web Messaging'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/11-Testing_Web_Messaging
+          hints: 'postmessage post message wstg-clnt-11 clnt-11'
         - title: '4.11.12 Testing Browser Storage'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/12-Testing_Browser_Storage
+          hints: 'localstorage sessionstorage wstg-clnt-12 clnt-12'
         - title: '4.11.13 Testing for Cross Site Script Inclusion'
           url: 4-Web_Application_Security_Testing/11-Client_Side_Testing/13-Testing_for_Cross_Site_Script_Inclusion
+          hints: 'xssi wstg-clnt-13 clnt-13'
 - title: '5. Reporting'
   url: 5-Reporting/README
 - title: 'Appendix A. Testing Tools Resource'

@@ -3,7 +3,7 @@
 <nav class="wstg-nav" id="wstg-nav-{{ include.collection }}" aria-label="{{ nav.docs_list_title | default: 'WSTG Contents' | escape }}">
   <h2 class="wstg-nav-title"><a href="{{ site.baseurl }}/{{ include.collection }}/">{{ nav.docs_list_title }}</a></h2>
   <label class="visually-hidden" for="wstg-nav-filter-{{ include.collection }}">Filter contents</label>
-  <input id="wstg-nav-filter-{{ include.collection }}" class="wstg-nav-filter" type="search" placeholder="Filter (e.g. XSS, 4.7, OAuth)" autocomplete="off">
+  <input id="wstg-nav-filter-{{ include.collection }}" class="wstg-nav-filter" type="search" placeholder="Filter (XSS, sqli, WSTG-INPV-01, 4.7)" autocomplete="off">
   <div class="wstg-nav-controls">
     <button type="button" data-wstg-expand>Expand All</button>
     <button type="button" data-wstg-collapse>Collapse All</button>

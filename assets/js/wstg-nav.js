@@ -161,7 +161,8 @@
     var ordered = [];
     for (i = 0; i < items.length; i++) {
       var title = (items[i].getAttribute("data-title") || "").toLowerCase();
-      items[i]._wstgSelfMatch = title.indexOf(query) !== -1;
+      var hints = (items[i].getAttribute("data-hints") || "").toLowerCase();
+      items[i]._wstgSelfMatch = (title + " " + hints).indexOf(query) !== -1;
       ordered.push(items[i]);
     }
 
