@@ -1,11 +1,19 @@
-/* WSTG sidebar contents: sticky, nested, filterable */
+/* WSTG sidebar contents: fixed-width panel with internal scroll */
 .wstg-nav {
-  position: sticky;
-  top: 1rem;
-  max-height: calc(100vh - 2rem);
-  overflow: auto;
+  /* Do not use position:sticky — later sidebar blocks (events, etc.)
+     would scroll underneath the stuck menu. */
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  max-height: min(70vh, 36rem);
+  overflow-x: auto;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   font-size: 0.9em;
   margin-bottom: 1.5rem;
+  padding-right: 0.25rem;
 }
 
 .wstg-nav-title {
@@ -22,6 +30,7 @@
 
 .wstg-nav-controls {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin: 0 0 0.5rem;
   font-size: 0.85em;
@@ -39,6 +48,8 @@
   padding: 0;
 }
 
+/* Indent nested levels without forcing the sidebar column wider;
+   horizontal overflow is handled by .wstg-nav. */
 .wstg-nav-list ul {
   padding-left: 0.75rem;
   border-left: 1px solid rgba(0, 0, 0, 0.12);
@@ -52,10 +63,7 @@
 .wstg-nav-item > a,
 .wstg-nav-summary-row > a {
   display: inline-block;
-  max-width: 100%;
   vertical-align: top;
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
   text-decoration: none;
 }
@@ -89,7 +97,8 @@
   display: flex;
   align-items: baseline;
   gap: 0.25rem;
-  min-width: 0;
+  width: max-content;
+  max-width: none;
 }
 
 .wstg-nav-chevron {
@@ -108,12 +117,24 @@
 }
 
 .wstg-nav-summary-row > a {
-  flex: 1 1 auto;
-  min-width: 0;
+  flex: 0 1 auto;
 }
 
 .wstg-nav-item.is-filtered-out {
   display: none;
+}
+
+/* Keep the theme sidebar column from growing when the tree is expanded. */
+.sidebar {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.sidebar .wstg-nav {
+  /* Prefer the sidebar's own width; never expand the grid track. */
+  width: 100%;
+  max-width: 100%;
 }
 
 .visually-hidden {
