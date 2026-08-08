@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # Leveraging Dev Tools
 
 This appendix outlines various details for use of in browser Developer Tool functionality to aid in security testing activities.

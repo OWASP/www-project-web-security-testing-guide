@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # 4.11 Client-Side Testing
 
 4.11.1 [Testing for DOM-Based Cross Site Scripting](01-Testing_for_DOM-based_Cross_Site_Scripting.md)

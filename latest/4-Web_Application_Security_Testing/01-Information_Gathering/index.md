@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # 4.1 Information Gathering
 
 4.1.1 [Conduct Search Engine Discovery Reconnaissance for Information Leakage](01-Conduct_Search_Engine_Discovery_Reconnaissance_for_Information_Leakage.md)

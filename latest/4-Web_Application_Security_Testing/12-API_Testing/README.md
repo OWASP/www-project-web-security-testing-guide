@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # 4.12 API Testing
 
 4.12.0 [API Testing Overview](00-API_Testing_Overview.md)

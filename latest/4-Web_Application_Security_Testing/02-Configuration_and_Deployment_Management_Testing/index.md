@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # 4.2 Configuration and Deployment Management Testing
 
 4.2.1 [Test Network Infrastructure Configuration](01-Test_Network_Infrastructure_Configuration.md)

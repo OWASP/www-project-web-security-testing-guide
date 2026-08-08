@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # Vulnerability Naming Schemes
 
 With a constantly growing number of IT assets to administer, security practitioners require new and more powerful tools to perform automated and large scale analysis. Thanks to software attention can be focused on the more creative and intellectually challenging problems. Unfortunately, having vulnerability assessment tools, antivirus software, and intrusion detection systems communicate its not an easy job. It has resulted in several technical complications, requiring a standardized way to identify each software flaw, vulnerability, or configuration issues identified. The lack of this interoperability capabilities can cause inconsistencies during the security assessment, confusing reporting, and extra correlation efforts among other problems that will produce an important waste of resources and time.

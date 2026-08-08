@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # 4.9 Testing for Weak Cryptography
 
 4.9.1 [Testing for Weak Transport Layer Security](01-Testing_for_Weak_Transport_Layer_Security.md)
