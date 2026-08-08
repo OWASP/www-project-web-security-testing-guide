@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # 4.4 Authentication Testing
 
 4.4.1 [Testing for Credentials Transported over an Encrypted Channel](01-Testing_for_Credentials_Transported_over_an_Encrypted_Channel.md)

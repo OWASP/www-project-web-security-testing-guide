@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # 4.8 Testing for Error Handling
 
 4.8.1 [Testing for Improper Error Handling](01-Testing_For_Improper_Error_Handling.md)

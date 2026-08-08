@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # 4.7 Input Validation Testing
 
 4.7.1 [Testing for Reflected Cross Site Scripting](01-Testing_for_Reflected_Cross_Site_Scripting.md)

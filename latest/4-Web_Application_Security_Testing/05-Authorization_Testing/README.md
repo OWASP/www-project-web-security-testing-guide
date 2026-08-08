@@ -7,6 +7,8 @@ tags: WSTG
 ---
 
 {% include breadcrumb.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # 4.5 Authorization Testing
 
 4.5.1 [Testing Directory Traversal File Include](01-Testing_Directory_Traversal_File_Include.md)
