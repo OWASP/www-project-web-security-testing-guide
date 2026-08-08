@@ -1,8 +1,28 @@
 {% assign nav = site.data[include.collection] %}
-
-<h2><a href="{{ site.baseurl }}/{{ include.collection }}/">{{ nav.docs_list_title }}</a></h2>
-<ul style="font-size:0.9em">
-   {% for item in nav.docs %}
-      <li><a href="{{ site.baseurl }}/{{ include.collection }}/{{ item.url }}">{{ item.title }}</a></li>
-   {% endfor %}
-</ul> 
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
+<nav class="wstg-nav" id="wstg-nav-{{ include.collection }}" aria-label="{{ nav.docs_list_title | default: 'WSTG Contents' | escape }}">
+  <h2 class="wstg-nav-title"><a href="{{ site.baseurl }}/{{ include.collection }}/">{{ nav.docs_list_title }}</a></h2>
+  <label class="visually-hidden" for="wstg-nav-filter-{{ include.collection }}">Filter contents</label>
+  <input id="wstg-nav-filter-{{ include.collection }}" class="wstg-nav-filter" type="search" placeholder="Filter (e.g. XSS, 4.7, OAuth)" autocomplete="off">
+  <div class="wstg-nav-controls">
+    <button type="button" data-wstg-expand>Expand All</button>
+    <button type="button" data-wstg-collapse>Collapse All</button>
+  </div>
+  <ul class="wstg-nav-list">
+    {% case include.collection %}
+      {% when "latest" %}
+        {% include nav-tree-latest.html %}
+      {% when "stable" %}
+        {% include nav-tree-stable.html %}
+      {% when "v42" %}
+        {% include nav-tree-v42.html %}
+      {% when "v41" %}
+        {% include nav-tree-v41.html %}
+      {% when "v43" %}
+        {% include nav-tree-v43.html %}
+      {% else %}
+        {% include nav-tree-latest.html %}
+    {% endcase %}
+  </ul>
+</nav>
+<script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
