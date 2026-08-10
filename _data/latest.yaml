@@ -3,8 +3,8 @@ docs:
 
 - title: '0. Foreword'
   url: 0-Foreword/README
-- title: '1. Frontispiece'
-  url: 1-Frontispiece/
+- title: '1. About'
+  url: 1-About/
 - title: '2. Introduction'
   url: 2-Introduction/
   children:
@@ -339,6 +339,9 @@ docs:
         - title: '4.7.22 Testing for Prototype Pollution'
           url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/22-Testing_for_Prototype_Pollution
           hints: 'pp wstg-inpv-22 inpv-22'
+        - title: '4.7.23 Testing for Insecure Deserialization'
+          url: 4-Web_Application_Security_Testing/07-Input_Validation_Testing/23-Testing_for_Insecure_Deserialization
+          hints: 'wstg-inpv-23 inpv-23'
     - title: '4.8 Testing for Error Handling'
       url: 4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/README
       children:

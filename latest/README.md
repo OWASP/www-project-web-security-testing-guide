@@ -9,13 +9,13 @@ tags: WSTG
 {% include breadcrumb.html %}
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
 <script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
-# Table of Contents
+# Contents
 
 Use the **WSTG Contents** menu on the right to browse sections and tests. Chapter landing pages are linked below.
 
 ## [0. Foreword](0-Foreword/README.md)
 
-## [1. Frontispiece](1-Frontispiece/)
+## [1. About](1-About/)
 
 ## [2. Introduction](2-Introduction/)
 
