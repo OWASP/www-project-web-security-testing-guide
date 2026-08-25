@@ -8,28 +8,22 @@ docs:
 - title: '2. Introduction'
   url: 2-Introduction/
   children:
-    - title: '2.1 The OWASP Testing Project'
-      url: 2-Introduction/README#the-owasp-testing-project
-    - title: '2.2 Principles of Testing'
-      url: 2-Introduction/README#principles-of-testing
-    - title: '2.3 Testing Techniques Explained'
-      url: 2-Introduction/README#testing-techniques-explained
-    - title: '2.4 Manual Inspections and Reviews'
-      url: 2-Introduction/README#manual-inspections-and-reviews
-    - title: '2.5 Threat Modeling'
-      url: 2-Introduction/README#threat-modeling
-    - title: '2.6 Source Code Review'
-      url: 2-Introduction/README#source-code-review
-    - title: '2.7 Penetration Testing'
-      url: 2-Introduction/README#penetration-testing
-    - title: '2.8 The Need for a Balanced Approach'
-      url: 2-Introduction/README#the-need-for-a-balanced-approach
-    - title: '2.9 Deriving Security Test Requirements'
-      url: 2-Introduction/README#deriving-security-test-requirements
-    - title: '2.10 Security Tests Integrated in Development and Testing Workflows'
-      url: 2-Introduction/README#security-tests-integrated-in-development-and-testing-workflows
-    - title: '2.11 Security Test Data Analysis and Reporting'
-      url: 2-Introduction/README#security-test-data-analysis-and-reporting
+    - title: '2.1 Purpose and Scope'
+      url: 2-Introduction/README#purpose-and-scope
+    - title: '2.2 Why Web Application Security Testing Matters'
+      url: 2-Introduction/README#why-web-application-security-testing-matters
+    - title: '2.3 Who Should Use This Guide'
+      url: 2-Introduction/README#who-should-use-this-guide
+    - title: '2.4 Core Principles of Effective Security Testing'
+      url: 2-Introduction/README#core-principles-of-effective-security-testing
+    - title: '2.5 How the Guide Is Organized'
+      url: 2-Introduction/README#how-the-guide-is-organized
+    - title: '2.6 How to Reference WSTG Scenarios'
+      url: 2-Introduction/README#how-to-reference-wstg-scenarios
+    - title: '2.7 Feedback and Comments'
+      url: 2-Introduction/README#feedback-and-comments
+    - title: '2.8 Related OWASP Projects'
+      url: 2-Introduction/README#related-owasp-projects
 - title: '3. The OWASP Testing Framework'
   url: 3-The_OWASP_Testing_Framework/
   children:
