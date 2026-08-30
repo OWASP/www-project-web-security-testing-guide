@@ -128,9 +128,9 @@ Let's disassemble what we did in this string:
 
 ### PHP Magic Hashes
 
-A similar issue can occur in PHP when hashes are are loosely compared, and end up being evaluated as numbers.
+A similar issue can occur in PHP when hashes are loosely compared, and end up being evaluated as numbers.
 
-PHP supports the use of [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation) for numbers, so the number `2e4` is treated as "two times ten to the power of four", which equals 20,000. Similarly, a number such as `0e4` would be "zero times ten to the power of four", which equals zero. Because zero times anything is zero, this means that an comparison such as `0e2 == 0e3` would evaluate to true, because both sides equal zero.
+PHP supports the use of [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation) for numbers, so the number `2e4` is treated as "two times ten to the power of four", which equals 20,000. Similarly, a number such as `0e4` would be "zero times ten to the power of four", which equals zero. Because zero times anything is zero, this means that a comparison such as `0e2 == 0e3` would evaluate to true, because both sides equal zero.
 
 This can be exploitable where two password hashes are compared, and both of them are in the form of string of zeros, the letter "e", and then a string of numbers. Consider the following code:
 
@@ -169,4 +169,4 @@ Testing is simple: try and login to an account with a password that is incorrect
 ## References
 
 - [Niels Teusink: phpBB 2.0.12 authentication bypass](http://blog.teusink.net/2008/12/classic-bug-phpbb-2012-authentication.html)
-- [David Endler: "Session ID Brute Force Exploitation and Prediction"](https://www.cgisecurity.com/lib/SessionIDs.pdf)
+- [David Endler: "Session ID Brute Force Exploitation and Prediction"](https://web.archive.org/web/20250711045439/https://www.cgisecurity.com/lib/SessionIDs.pdf)
