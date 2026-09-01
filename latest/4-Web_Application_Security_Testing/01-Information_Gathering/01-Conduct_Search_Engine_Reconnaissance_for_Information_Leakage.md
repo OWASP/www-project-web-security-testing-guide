@@ -9,7 +9,7 @@ tags: WSTG
 {% include breadcrumb.html %}
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
 <script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
-# Conduct Search Engine Discovery Reconnaissance for Information Leakage
+# Conduct Search Engine Reconnaissance for Information Leakage
 
 |ID          |
 |------------|
