@@ -62,6 +62,7 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 - Rishu Ranjan
 - Rubal Jain
 - Samuele Casarin
+- Sevban Dönmez
 - Stefano Calzavara
 - Tal Argoni
 - Victoria Drake
