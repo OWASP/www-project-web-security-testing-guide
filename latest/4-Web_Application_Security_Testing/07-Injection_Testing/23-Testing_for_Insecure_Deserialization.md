@@ -13,7 +13,7 @@ tags: WSTG
 
 |ID          |
 |------------|
-|WSTG-INPV-23|
+|WSTG-INJT-23|
 
 ## Summary
 
