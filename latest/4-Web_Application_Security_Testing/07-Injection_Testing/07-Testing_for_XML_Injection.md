@@ -13,7 +13,7 @@ tags: WSTG
 
 |ID          |
 |------------|
-|WSTG-INPV-07|
+|WSTG-INJT-07|
 
 ## Summary
 
@@ -542,7 +542,7 @@ For authoritative, parser-specific configuration snippets, defer to the [XML Ext
 ## References
 
 - [XML Injection](https://www.whitehatsec.com/glossary/content/xml-injection)
-- [Gregory Steuck, "XXE (XML eXternal Entity) attack"](https://www.securityfocus.com/archive/1/297714)
+- [Gregory Steuck, "XXE (XML eXternal Entity) attack"](https://seclists.org/bugtraq/2002/Oct/420)
 - [OWASP XXE Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)
 - [PortSwigger Web Security Academy – XML External Entity (XXE) Injection](https://portswigger.net/web-security/xxe)
 - [PortSwigger Web Security Academy – Blind XXE](https://portswigger.net/web-security/xxe/blind)
