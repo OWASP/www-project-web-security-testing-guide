@@ -1,13 +1,5 @@
----
 
-layout: col-document
-title: WSTG - Stable
-tags: WSTG
-
----
-
-{% include breadcrumb.html %}
-# Test for Subdomain Takeover
+# Subdomain Takeover
 
 |ID          |
 |------------|
