@@ -21,6 +21,6 @@ tags: WSTG
 
 4.5.5 [OAuth Weaknesses](05-OAuth_Weaknesses.md)
 
-4.5.5.1 [OAuth Authorization Server Weaknesses](05.1-Testing_for_OAuth_Authorization_Server_Weaknesses.md)
+4.5.5.1 [OAuth Authorization Server Weaknesses](05.1-OAuth_Authorization_Server_Weaknesses.md)
 
-4.5.5.2 [OAuth Client Weaknesses](05.2-Testing_for_OAuth_Client_Weaknesses.md)
+4.5.5.2 [OAuth Client Weaknesses](05.2-OAuth_Client_Weaknesses.md)

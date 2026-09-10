@@ -200,10 +200,10 @@ docs:
           hints: 'oauth2 wstg-athz-05 athz-05'
           children:
             - title: '4.5.5.1 OAuth Authorization Server Weaknesses'
-              url: 4-Web_Application_Security_Testing/05-Authorization/05.1-Testing_for_OAuth_Authorization_Server_Weaknesses
+              url: 4-Web_Application_Security_Testing/05-Authorization/05.1-OAuth_Authorization_Server_Weaknesses
               hints: 'oauth2'
             - title: '4.5.5.2 OAuth Client Weaknesses'
-              url: 4-Web_Application_Security_Testing/05-Authorization/05.2-Testing_for_OAuth_Client_Weaknesses
+              url: 4-Web_Application_Security_Testing/05-Authorization/05.2-OAuth_Client_Weaknesses
               hints: 'oauth2'
     - title: '4.6 Session Management'
       url: 4-Web_Application_Security_Testing/06-Session_Management/README
@@ -261,23 +261,23 @@ docs:
           hints: 'sqli wstg-injt-05 injt-05'
           children:
             - title: '4.7.5.1 Oracle'
-              url: 4-Web_Application_Security_Testing/07-Injection/05.1-Testing_for_Oracle
+              url: 4-Web_Application_Security_Testing/07-Injection/05.1-Oracle
             - title: '4.7.5.2 MySQL'
-              url: 4-Web_Application_Security_Testing/07-Injection/05.2-Testing_for_MySQL
+              url: 4-Web_Application_Security_Testing/07-Injection/05.2-MySQL
             - title: '4.7.5.3 SQL Server'
-              url: 4-Web_Application_Security_Testing/07-Injection/05.3-Testing_for_SQL_Server
+              url: 4-Web_Application_Security_Testing/07-Injection/05.3-SQL_Server
               hints: 'mssql sql server'
             - title: '4.7.5.4 PostgreSQL'
               url: 4-Web_Application_Security_Testing/07-Injection/05.4-Testing_PostgreSQL
             - title: '4.7.5.5 MS Access'
-              url: 4-Web_Application_Security_Testing/07-Injection/05.5-Testing_for_MS_Access
+              url: 4-Web_Application_Security_Testing/07-Injection/05.5-MS_Access
             - title: '4.7.5.6 NoSQL Injection'
-              url: 4-Web_Application_Security_Testing/07-Injection/05.6-Testing_for_NoSQL_Injection
+              url: 4-Web_Application_Security_Testing/07-Injection/05.6-NoSQL_Injection
               hints: 'sqli nosqli'
             - title: '4.7.5.7 ORM Injection'
-              url: 4-Web_Application_Security_Testing/07-Injection/05.7-Testing_for_ORM_Injection
+              url: 4-Web_Application_Security_Testing/07-Injection/05.7-ORM_Injection
             - title: '4.7.5.8 Client-side'
-              url: 4-Web_Application_Security_Testing/07-Injection/05.8-Testing_for_Client-side
+              url: 4-Web_Application_Security_Testing/07-Injection/05.8-Client-side
         - title: '4.7.6 LDAP Injection'
           url: 4-Web_Application_Security_Testing/07-Injection/06-LDAP_Injection
           hints: 'ldapi wstg-injt-06 injt-06'
@@ -298,7 +298,7 @@ docs:
           hints: 'rce wstg-injt-11 injt-11'
           children:
             - title: '4.7.11.1 File Inclusion'
-              url: 4-Web_Application_Security_Testing/07-Injection/11.1-Testing_for_File_Inclusion
+              url: 4-Web_Application_Security_Testing/07-Injection/11.1-File_Inclusion
               hints: 'lfi rfi'
         - title: '4.7.12 Command Injection'
           url: 4-Web_Application_Security_Testing/07-Injection/12-Command_Injection
@@ -403,7 +403,7 @@ docs:
           hints: 'xss dom xss domxss wstg-clnt-01 clnt-01'
           children:
             - title: '4.11.1.1 Self DOM Based Cross-Site Scripting'
-              url: 4-Web_Application_Security_Testing/11-Client-side/01.1-Testing_for_Self_DOM_Based_Cross_Site_Scripting
+              url: 4-Web_Application_Security_Testing/11-Client-side/01.1-Self_DOM_Based_Cross_Site_Scripting
               hints: 'xss dom xss domxss'
         - title: '4.11.2 JavaScript Execution'
           url: 4-Web_Application_Security_Testing/11-Client-side/02-JavaScript_Execution
