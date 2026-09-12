@@ -11,6 +11,8 @@ tags: WSTG
 <script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
 # 4.1 Information Gathering
 
+4.1.0 [Information Gathering Overview](00-Information_Gathering_Overview.md)
+
 4.1.1 [Conduct Search Engine Reconnaissance for Information Leakage](01-Conduct_Search_Engine_Reconnaissance_for_Information_Leakage.md)
 
 4.1.2 [Fingerprint Web Server](02-Fingerprint_Web_Server.md)
