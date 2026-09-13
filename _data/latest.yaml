@@ -467,6 +467,11 @@ docs:
         - title: '4.12.99 GraphQL'
           url: 4-Web_Application_Security_Testing/12-API_Testing/99-GraphQL
           hints: 'gql wstg-apit-99 apit-99'
+    - title: '4.13 WebAssembly Testing'
+      url: 4-Web_Application_Security_Testing/13-WebAssembly_Testing/README
+      children:
+        - title: '4.13.0 WebAssembly Testing Overview'
+          url: 4-Web_Application_Security_Testing/13-WebAssembly_Testing/00-WebAssembly_Testing_Overview
 - title: '5. Reporting'
   url: 5-Reporting/README
   children:
