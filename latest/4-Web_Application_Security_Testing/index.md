@@ -36,3 +36,5 @@ tags: WSTG
 4.11 [Client-side](11-Client-side/README.md)
 
 4.12 [API Testing](12-API_Testing/README.md)
+
+4.13 [WebAssembly Testing](13-WebAssembly_Testing/README.md)
