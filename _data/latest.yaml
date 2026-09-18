@@ -126,6 +126,9 @@ docs:
         - title: '4.2.14 Other HTTP Security Header Misconfigurations'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/14-Other_HTTP_Security_Header_Misconfigurations
           hints: 'headers wstg-conf-14 conf-14'
+        - title: '4.2.15 Feature Flag Security Bypass'
+          url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/15-Feature_Flag_Security_Bypass
+          hints: 'wstg-conf-15 conf-15'
     - title: '4.3 Identity Management'
       url: 4-Web_Application_Security_Testing/03-Identity_Management/README
       children:
@@ -268,7 +271,7 @@ docs:
               url: 4-Web_Application_Security_Testing/07-Injection/05.3-SQL_Server
               hints: 'mssql sql server'
             - title: '4.7.5.4 PostgreSQL'
-              url: 4-Web_Application_Security_Testing/07-Injection/05.4-Testing_PostgreSQL
+              url: 4-Web_Application_Security_Testing/07-Injection/05.4-PostgreSQL
             - title: '4.7.5.5 MS Access'
               url: 4-Web_Application_Security_Testing/07-Injection/05.5-MS_Access
             - title: '4.7.5.6 NoSQL Injection'
