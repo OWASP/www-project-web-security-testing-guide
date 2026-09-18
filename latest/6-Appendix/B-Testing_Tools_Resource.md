@@ -28,6 +28,8 @@ The list contains only tools that are freely available to download and use (alth
     - Burp Suite is an intercepting proxy for security testing. It allows intercepting and modifying all HTTP(S) traffic passing in both directions, it can work with custom TLS certificates and non-proxy-aware clients.
 - [Telerik Fiddler](https://www.telerik.com/fiddler)
     - Fiddler is an intercepting web proxy that is primarily aimed at developers rather than penetration testers, but still provides useful functionality. It also hooks directly into the Windows HTTP APIs, allowing it to intercept traffic from some software that doesn't allow custom proxies to be set.
+- [Gori](https://github.com/hahwul/gori)
+    - Gori is an intercepting proxy driven from a terminal user interface (TUI), with tabs for history, repeater and fuzzer, access control replay, JWT, session token analysis, and out-of-band testing. The same project is scriptable through `gori run` and reachable by AI tools through a Model Context Protocol server.
 
 ### Firefox Extensions
 
@@ -119,6 +121,13 @@ gau example.com
 ```bash
 unfurl "https://example.com/page?query=123"
 ```
+
+### Attack Surface Detection
+
+- [OWASP Noir](https://github.com/owasp-noir/noir)
+    - Noir analyzes source code to list endpoints, methods, and parameters for many languages and frameworks. It outputs plain text, JSON, OpenAPI, or curl commands, and can replay the discovered endpoints through ZAP or Burp Suite.
+- [OWASP Attack Surface Detector](https://owasp.org/projects/attack-surface-detector)
+    - The Attack Surface Detector uses static code analysis to identify endpoints and parameters, and is available as a command-line tool and as plugins for ZAP and Burp Suite.
 
 ### Port and Service Discovery
 
