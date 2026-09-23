@@ -75,4 +75,4 @@ End If
 
 - [Insecure.org](https://insecure.org/)
 - [Wikipedia](https://www.wikipedia.org)
-- [Reviewing Code for OS Injection](https://wiki.owasp.org/index.php/OS_Injection)
+- [OWASP Community - Code Injection](https://community.owasp.org/attacks/Code_Injection)
