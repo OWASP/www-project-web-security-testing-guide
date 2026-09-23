@@ -92,7 +92,7 @@ docs:
           hints: 'wstg-conf-02 conf-02'
         - title: '4.2.3 File Extensions Handling for Sensitive Information'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/03-File_Extensions_Handling_for_Sensitive_Information
-          hints: 'wstg-conf-03 conf-03'
+          hints: 'wstg-conf-03 conf-03 wstg-conf-04 conf-04'
         - title: '4.2.4 Review Old Backup and Unreferenced Files for Sensitive Information'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information
           hints: 'wstg-conf-04 conf-04'
@@ -108,8 +108,8 @@ docs:
         - title: '4.2.8 RIA Cross Domain Policy'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/08-RIA_Cross_Domain_Policy
           hints: 'crossdomain.xml clientaccesspolicy wstg-conf-08 conf-08'
-        - title: '4.2.9 File Permission'
-          url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/09-File_Permission
+        - title: '4.2.9 File Permissions'
+          url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/09-File_Permissions
           hints: 'wstg-conf-09 conf-09'
         - title: '4.2.10 Subdomain Takeover'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/10-Subdomain_Takeover
@@ -122,7 +122,7 @@ docs:
           hints: 'csp headers wstg-conf-12 conf-12'
         - title: '4.2.13 Path Confusion'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/13-Path_Confusion
-          hints: 'wstg-conf-13 conf-13'
+          hints: 'wstg-conf-13 conf-13 wstg-athz-01 athz-01'
         - title: '4.2.14 Other HTTP Security Header Misconfigurations'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/14-Other_HTTP_Security_Header_Misconfigurations
           hints: 'headers wstg-conf-14 conf-14'
