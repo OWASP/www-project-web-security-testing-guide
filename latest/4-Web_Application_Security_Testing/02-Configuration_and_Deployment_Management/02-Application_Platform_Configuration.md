@@ -68,7 +68,7 @@ Comment review should be done in order to determine if any information is being 
 
 Various tools, documents, or checklists can be used to give IT and security professionals a detailed assessment of the target systems' conformance to various configuration baselines or benchmarks. Such tools include, but are not limited to, the following:
 
-- [CIS-CAT Lite](https://www.cisecurity.org/blog/introducing-cis-cat-lite/)
+- [CIS-CAT Lite](https://learn.cisecurity.org/cis-cat-lite)
 - [Microsoft's Attack Surface Analyzer](https://github.com/microsoft/AttackSurfaceAnalyzer)
 - [NIST's National Checklist Program](https://ncp.nist.gov/repository)
 
@@ -163,11 +163,11 @@ For each framework in scope:
     - [Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html), OWASP
     - [SP 800-92](https://csrc.nist.gov/publications/detail/sp/800-92/final) Guide to Computer Security Log Management, NIST
     - [PCI DSS](https://www.pcisecuritystandards.org/document_library) Requirement 10, PCI Security Standards Council
-    - [CERT Security Improvement Modules: Securing Public Web Servers](https://resources.sei.cmu.edu/asset_files/SecurityImprovementModule/2000_006_001_13637.pdf)
+    - [CERT Security Improvement Modules: Securing Public Web Servers](https://www.sei.cmu.edu/library/securing-public-web-servers/)
 - Containers and Serverless
     - [CIS Docker Benchmark](https://www.cisecurity.org/benchmark/docker)
     - [OWASP Serverless Top 10](https://owasp.org/www-project-serverless-top-10/)
-    - [AWS Lambda Security Best Practices](https://docs.aws.amazon.com/lambda/latest/dg/security-best-practices.html)
+    - [AWS Lambda Security Best Practices](https://docs.aws.amazon.com/lambda/latest/dg/lambda-security.html)
 - Framework Production Hardening
     - [Django Deployment Checklist](https://docs.djangoproject.com/en/stable/howto/deployment/checklist/)
     - [Flask Deployment Options](https://flask.palletsprojects.com/en/stable/deploying/)
