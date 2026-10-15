@@ -475,6 +475,9 @@ docs:
       children:
         - title: '4.13.0 WebAssembly Testing Overview'
           url: 4-Web_Application_Security_Testing/13-WebAssembly_Testing/00-WebAssembly_Testing_Overview
+        - title: '4.13.1 WebAssembly Reconnaissance'
+          url: 4-Web_Application_Security_Testing/13-WebAssembly_Testing/01-WebAssembly_Reconnaissance
+          hints: 'wstg-wasm-01 wasm-01'
 - title: '5. Reporting'
   url: 5-Reporting/README
   children:
