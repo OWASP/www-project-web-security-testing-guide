@@ -36,3 +36,5 @@ Use the **WSTG Contents** menu on the right to browse sections and tests. Chapte
 ## [Appendix E. Encoded Injection](6-Appendix/E-Encoded_Injection.md)
 
 ## [Appendix F. Leveraging Dev Tools](6-Appendix/F-Leveraging_Dev_Tools.md)
+
+## [Appendix G. Penetration Testing Methodologies](6-Appendix/G-Penetration_Testing_Methodologies.md)
