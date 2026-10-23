@@ -29,20 +29,28 @@ docs:
   children:
     - title: '3.1 The Web Security Testing Framework'
       url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework
-    - title: '3.2 Phase 1 Before Development Begins'
-      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#phase-1-before-development-begins
-    - title: '3.3 Phase 2 During Definition and Design'
-      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#phase-2-during-definition-and-design
-    - title: '3.4 Phase 3 During Development'
-      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#phase-3-during-development
-    - title: '3.5 Phase 4 During Deployment'
-      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#phase-4-during-deployment
-    - title: '3.6 Phase 5 During Maintenance and Operations'
-      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#phase-5-during-maintenance-and-operations
-    - title: '3.7 A Typical SDLC Testing Workflow'
-      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#a-typical-sdlc-testing-workflow
-    - title: '3.8 Penetration Testing Methodologies'
-      url: 3-The_OWASP_Testing_Framework/1-Penetration_Testing_Methodologies
+    - title: '3.2 Testing Activities'
+      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#testing-activities
+    - title: '3.3 Requirements and Policy Review'
+      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#requirements-and-policy-review
+    - title: '3.4 Design, Architecture, and Threat Modeling'
+      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#design-architecture-and-threat-modeling
+    - title: '3.5 Code-Level Review and Analysis'
+      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#code-level-review-and-analysis
+    - title: '3.6 Dynamic and Penetration Testing'
+      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#dynamic-and-penetration-testing
+    - title: '3.7 Continuous Integration Pipeline Testing'
+      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#continuous-integration-pipeline-testing
+    - title: '3.8 Continuous and Crowd-Sourced Testing'
+      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#continuous-and-crowd-sourced-testing
+    - title: '3.9 Matching Activity to Cadence'
+      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#matching-activity-to-cadence
+    - title: '3.10 Where to Start'
+      url: 3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework#where-to-start
+    - title: '3.11 Bug Bounty Programs as a Testing Technique'
+      url: 3-The_OWASP_Testing_Framework/1-Bug_Bounty_Programs
+    - title: '3.12 Human-AI Collaborative Testing'
+      url: 3-The_OWASP_Testing_Framework/2-Human-AI_Collaborative_Testing
 - title: '4. Web Application Security Testing'
   url: 4-Web_Application_Security_Testing/
   children:
@@ -497,3 +505,5 @@ docs:
   url: 6-Appendix/E-Encoded_Injection
 - title: 'Appendix F. Leveraging Dev Tools'
   url: 6-Appendix/F-Leveraging_Dev_Tools
+- title: 'Appendix G. Penetration Testing Methodologies'
+  url: 6-Appendix/G-Penetration_Testing_Methodologies
