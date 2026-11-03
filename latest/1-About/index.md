@@ -64,6 +64,7 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 - Rubal Jain
 - Samuele Casarin
 - Sevban Dönmez
+- Srinivas Chippagiri
 - Stefano Calzavara
 - Tal Argoni
 - Victoria Drake
@@ -97,6 +98,7 @@ This document is released under the [Creative Commons 4.0 License](https://creat
 - Rejah Rehim
 - Rick Mitchell
 - Roman Mueller
+- Srinivas Chippagiri
 - Thomas Lim
 - Tom Bowyer
 - Victoria Drake
