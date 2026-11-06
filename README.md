@@ -27,3 +27,4 @@ To set up a local development environment for this [Jekyll](https://jekyllrb.com
 4. Serve the site to view it locally by running:
 
     `bundle exec jekyll serve`
+
