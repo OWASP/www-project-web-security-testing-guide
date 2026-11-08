@@ -194,7 +194,7 @@ docs:
     - title: '4.5 Authorization'
       url: 4-Web_Application_Security_Testing/05-Authorization/README
       children:
-        - title: '4.5.1 Directory Traversal File Include'
+        - title: '4.5.1 Directory Traversal and File Include'
           url: 4-Web_Application_Security_Testing/05-Authorization/01-Directory_Traversal_File_Include
           hints: 'path traversal dotdot lfi wstg-athz-01 athz-01'
         - title: '4.5.2 Bypassing Authorization Schema'
