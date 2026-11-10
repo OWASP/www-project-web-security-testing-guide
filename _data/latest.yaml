@@ -191,6 +191,9 @@ docs:
         - title: '4.4.11 Multi-Factor Authentication'
           url: 4-Web_Application_Security_Testing/04-Authentication/11-Multi-Factor_Authentication
           hints: 'mfa 2fa totp wstg-athn-11 athn-11'
+        - title: '4.4.12 SAML Authentication'
+          url: 4-Web_Application_Security_Testing/04-Authentication/12-SAML_Authentication
+          hints: 'wstg-athn-12 athn-12'
     - title: '4.5 Authorization'
       url: 4-Web_Application_Security_Testing/05-Authorization/README
       children:
