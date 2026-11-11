@@ -461,6 +461,9 @@ docs:
         - title: '4.11.15 Client-side Template Injection'
           url: 4-Web_Application_Security_Testing/11-Client-side/15-Client-Side_Template_Injection
           hints: 'csti wstg-clnt-15 clnt-15'
+        - title: '4.11.16 DOM Clobbering'
+          url: 4-Web_Application_Security_Testing/11-Client-side/16-DOM_Clobbering
+          hints: 'wstg-clnt-16 clnt-16'
     - title: '4.12 API Testing'
       url: 4-Web_Application_Security_Testing/12-API_Testing/README
       children:
