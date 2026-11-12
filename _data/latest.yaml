@@ -188,7 +188,7 @@ docs:
         - title: '4.4.10 Weaker Authentication in Alternative Channel'
           url: 4-Web_Application_Security_Testing/04-Authentication/10-Weaker_Authentication_in_Alternative_Channel
           hints: 'wstg-athn-10 athn-10'
-        - title: '4.4.11 Multi-Factor Authentication'
+        - title: '4.4.11 Multi-Factor Authentication (MFA)'
           url: 4-Web_Application_Security_Testing/04-Authentication/11-Multi-Factor_Authentication
           hints: 'mfa 2fa totp wstg-athn-11 athn-11'
         - title: '4.4.12 SAML Authentication'
@@ -416,7 +416,7 @@ docs:
           url: 4-Web_Application_Security_Testing/11-Client-side/01-DOM-based_Cross_Site_Scripting
           hints: 'xss dom xss domxss wstg-clnt-01 clnt-01'
           children:
-            - title: '4.11.1.1 Self DOM Based Cross-Site Scripting'
+            - title: '4.11.1.1 Self DOM Based Cross Site Scripting'
               url: 4-Web_Application_Security_Testing/11-Client-side/01.1-Self_DOM_Based_Cross_Site_Scripting
               hints: 'xss dom xss domxss'
         - title: '4.11.2 JavaScript Execution'
@@ -497,7 +497,7 @@ docs:
   children:
     - title: '5.1 Reporting Structure'
       url: 5-Reporting/01-Reporting_Structure
-    - title: '5.2 Naming Schemes'
+    - title: '5.2 Vulnerability Naming Schemes'
       url: 5-Reporting/02-Naming_Schemes
 - title: 'Appendix A. History'
   url: 6-Appendix/A-History

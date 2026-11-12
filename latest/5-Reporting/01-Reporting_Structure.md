@@ -9,7 +9,7 @@ tags: WSTG
 {% include breadcrumb.html %}
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wstg-nav.css">
 <script src="{{ site.baseurl }}/assets/js/wstg-nav.js" defer></script>
-# Reporting
+# Reporting Structure
 
 Performing the technical side of the assessment is only half of the overall assessment process. The final product is the production of a well written and informative report. A report should be easy to understand and should highlight all the risks found during the assessment phase. The report should appeal to both executive management and technical staff.
 
