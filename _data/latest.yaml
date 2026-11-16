@@ -464,6 +464,9 @@ docs:
         - title: '4.11.16 DOM Clobbering'
           url: 4-Web_Application_Security_Testing/11-Client-side/16-DOM_Clobbering
           hints: 'wstg-clnt-16 clnt-16'
+        - title: '4.11.21 DNS Rebinding'
+          url: 4-Web_Application_Security_Testing/11-Client-side/21-DNS_Rebinding
+          hints: 'wstg-clnt-21 clnt-21'
     - title: '4.12 API Testing'
       url: 4-Web_Application_Security_Testing/12-API_Testing/README
       children:
