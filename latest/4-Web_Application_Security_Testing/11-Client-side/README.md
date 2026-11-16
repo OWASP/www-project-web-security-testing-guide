@@ -44,3 +44,5 @@ tags: WSTG
 4.11.15 [Client-side Template Injection](15-Client-Side_Template_Injection.md)
 
 4.11.16 [DOM Clobbering](16-DOM_Clobbering.md)
+
+4.11.21 [DNS Rebinding](21-DNS_Rebinding.md)
