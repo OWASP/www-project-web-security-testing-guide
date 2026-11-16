@@ -131,9 +131,9 @@ docs:
         - title: '4.2.13 Path Confusion'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/13-Path_Confusion
           hints: 'wstg-conf-13 conf-13 wstg-athz-01 athz-01'
-        - title: '4.2.14 Other HTTP Security Header Misconfigurations'
-          url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/14-Other_HTTP_Security_Header_Misconfigurations
-          hints: 'headers wstg-conf-14 conf-14'
+        - title: '4.2.14 Additional Browser Security Controls'
+          url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/14-Additional_Browser_Security_Controls
+          hints: 'wstg-conf-14 conf-14'
         - title: '4.2.15 Feature Flag Security Bypass'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/15-Feature_Flag_Security_Bypass
           hints: 'wstg-conf-15 conf-15'
