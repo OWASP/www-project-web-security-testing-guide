@@ -45,6 +45,7 @@ tags: WSTG
 
 4.11.16 [DOM Clobbering](16-DOM_Clobbering.md)
 
+4.11.18 [Cross-Site Leaks](18-Cross_Site_Leaks.md)
 4.11.19 [Client-side Path Traversal](19-Client-side_Path_Traversal.md)
 
 4.11.21 [DNS Rebinding](21-DNS_Rebinding.md)

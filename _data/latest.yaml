@@ -482,6 +482,9 @@ docs:
         - title: '4.11.16 DOM Clobbering'
           url: 4-Web_Application_Security_Testing/11-Client-side/16-DOM_Clobbering
           hints: 'wstg-clnt-16 clnt-16'
+        - title: '4.11.18 Cross-Site Leaks'
+          url: 4-Web_Application_Security_Testing/11-Client-side/18-Cross_Site_Leaks
+          hints: 'wstg-clnt-18 clnt-18'
         - title: '4.11.19 Client-side Path Traversal'
           url: 4-Web_Application_Security_Testing/11-Client-side/19-Client-side_Path_Traversal
           hints: 'wstg-clnt-19 clnt-19'
