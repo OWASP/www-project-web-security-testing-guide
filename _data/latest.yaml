@@ -353,6 +353,9 @@ docs:
         - title: '4.7.24 Server-side URL Redirect'
           url: 4-Web_Application_Security_Testing/07-Injection/24-Server-side_URL_Redirect
           hints: 'open redirect wstg-injt-24 injt-24'
+        - title: '4.7.25 Unicode Normalization and Case Mapping'
+          url: 4-Web_Application_Security_Testing/07-Injection/25-Unicode_Normalization_and_Case_Mapping
+          hints: 'wstg-injt-25 injt-25'
         - title: '4.7.26 JSON Parser Differentials'
           url: 4-Web_Application_Security_Testing/07-Injection/26-JSON_Parser_Differentials
           hints: 'wstg-injt-26 injt-26'
@@ -421,6 +424,9 @@ docs:
         - title: '4.10.10 Payment Functionality'
           url: 4-Web_Application_Security_Testing/10-Business_Logic/10-Payment_Functionality
           hints: 'wstg-busl-10 busl-10'
+        - title: '4.10.11 Denial of Inventory'
+          url: 4-Web_Application_Security_Testing/10-Business_Logic/11-Denial_of_Inventory
+          hints: 'wstg-busl-11 busl-11'
     - title: '4.11 Client-side'
       url: 4-Web_Application_Security_Testing/11-Client-side/README
       children:
