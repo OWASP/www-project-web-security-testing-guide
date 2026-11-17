@@ -488,6 +488,9 @@ docs:
         - title: '4.11.19 Client-side Path Traversal'
           url: 4-Web_Application_Security_Testing/11-Client-side/19-Client-side_Path_Traversal
           hints: 'wstg-clnt-19 clnt-19'
+        - title: '4.11.20 Service Workers'
+          url: 4-Web_Application_Security_Testing/11-Client-side/20-Service_Workers
+          hints: 'wstg-clnt-20 clnt-20'
         - title: '4.11.21 DNS Rebinding'
           url: 4-Web_Application_Security_Testing/11-Client-side/21-DNS_Rebinding
           hints: 'wstg-clnt-21 clnt-21'
