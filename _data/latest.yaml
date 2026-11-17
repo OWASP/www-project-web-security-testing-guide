@@ -350,6 +350,9 @@ docs:
         - title: '4.7.23 Insecure Deserialization'
           url: 4-Web_Application_Security_Testing/07-Injection/23-Insecure_Deserialization
           hints: 'wstg-injt-23 injt-23'
+        - title: '4.7.26 JSON Parser Differentials'
+          url: 4-Web_Application_Security_Testing/07-Injection/26-JSON_Parser_Differentials
+          hints: 'wstg-injt-26 injt-26'
     - title: '4.8 Error Handling'
       url: 4-Web_Application_Security_Testing/08-Error_Handling/README
       children:
