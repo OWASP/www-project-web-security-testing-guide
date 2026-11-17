@@ -353,6 +353,9 @@ docs:
         - title: '4.7.26 JSON Parser Differentials'
           url: 4-Web_Application_Security_Testing/07-Injection/26-JSON_Parser_Differentials
           hints: 'wstg-injt-26 injt-26'
+        - title: '4.7.28 Regular Expression Denial of Service'
+          url: 4-Web_Application_Security_Testing/07-Injection/28-Regular_Expression_Denial_of_Service
+          hints: 'wstg-injt-28 injt-28'
     - title: '4.8 Error Handling'
       url: 4-Web_Application_Security_Testing/08-Error_Handling/README
       children:
