@@ -10,4 +10,5 @@ exclude:
     - README.md
 plugins:
     - jekyll-include-cache-0.2.0
+    - jekyll-redirect-from
 stable_version: v42
