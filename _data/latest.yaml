@@ -137,6 +137,9 @@ docs:
         - title: '4.2.15 Feature Flag Security Bypass'
           url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/15-Feature_Flag_Security_Bypass
           hints: 'wstg-conf-15 conf-15'
+        - title: '4.2.16 Web Cache Poisoning'
+          url: 4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management/16-Web_Cache_Poisoning
+          hints: 'wstg-conf-16 conf-16'
     - title: '4.3 Identity Management'
       url: 4-Web_Application_Security_Testing/03-Identity_Management/README
       children:
