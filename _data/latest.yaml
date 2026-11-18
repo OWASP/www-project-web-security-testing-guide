@@ -200,6 +200,9 @@ docs:
         - title: '4.4.13 Passkeys and WebAuthn'
           url: 4-Web_Application_Security_Testing/04-Authentication/13-Passkeys_and_WebAuthn
           hints: 'wstg-athn-13 athn-13'
+        - title: '4.4.14 OpenID Connect Relying Party'
+          url: 4-Web_Application_Security_Testing/04-Authentication/14-OpenID_Connect_Relying_Party
+          hints: 'wstg-athn-14 athn-14'
     - title: '4.5 Authorization'
       url: 4-Web_Application_Security_Testing/05-Authorization/README
       children:

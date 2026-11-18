@@ -36,3 +36,5 @@ tags: WSTG
 4.4.12 [SAML Authentication](12-SAML_Authentication.md)
 
 4.4.13 [Passkeys and WebAuthn](13-Passkeys_and_WebAuthn.md)
+
+4.4.14 [OpenID Connect Relying Party](14-OpenID_Connect_Relying_Party.md)
