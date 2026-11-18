@@ -4,6 +4,7 @@ title: OWASP Web Security Testing Guide
 tags: otg wstg
 level: 4
 type: documentation
+redirect_to: https://wstg.owasp.org
 pitch: The Web Security Testing Guide (WSTG) Project produces the premier cybersecurity testing resource for web application developers and security professionals.
 ---
 
